@@ -37,10 +37,25 @@ def test_creating_correct_cost_of_multiple_children():
         second_child.get_cost() == [10, 11, 10] and \
         third_child.get_cost() == [10, 10, 11], "Path cost of newly expanded node with multiple children is incorrect"
 
+def test_child_nodes_are_added_to_open_list():
+    ict = IncreasingCostTree([], [], [], [10, 10, 10])
+    ict.expand_next_node()
+    open_list = ict.get_open_list()
+    assert len(open_list) == 3, "Child nodes not correctly added to open list of ict"
+
+def test_expanding_node_from_tree():
+    ict = IncreasingCostTree([], [], [], [10, 10, 10])
+    ict.expand_next_node()
+    next_node = ict.get_next_node_to_expand()
+    node_cost = next_node.get_cost()
+    assert node_cost == [11, 10, 10], "Path cost of newly expanded node from ict with multiple children is incorrect"
+
 if __name__ == "__main__":
     test_constructor_adds_root_to_open_list()
     test_getting_node_to_expand()
     test_create_correct_number_of_children()
     test_creating_correct_cost_of_single_child()
     test_creating_correct_cost_of_multiple_children()
+    test_child_nodes_are_added_to_open_list()
+    test_expanding_node_from_tree()
     print("ALL TEST PASSED")
