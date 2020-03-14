@@ -19,13 +19,16 @@ class IncreasingCostTree:
         return self.open_list
 
     def get_next_node_to_expand(self):
+        return self.open_list[0]
+
+    def pop_next_node_to_expand(self):
         return self.open_list.pop(0)
 
     def add_node_to_open_list(self, node):
         self.open_list.append(node)
 
     def expand_next_node(self):
-        next_node = self.get_next_node_to_expand()
+        next_node = self.pop_next_node_to_expand()
         next_node.expand_node()
         children = next_node.get_all_children()
         for child in children:
