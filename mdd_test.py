@@ -15,7 +15,7 @@ def test_depth_d_bfs_tree(my_map, starts, goals):
     agent = 0
     depth = 3
     new_mdd = MDD(my_map, 0, starts[agent], goals[agent], depth)
-    bfs_tree = new_mdd.get_depth_d_bfs_tree(my_map, agent, starts[agent], goals[agent], depth)
+    bfs_tree = new_mdd.get_depth_d_bfs_tree(my_map, starts[agent], goals[agent], depth)
     for node in bfs_tree.keys():
         for val in bfs_tree[node]:
             loc, t = val
@@ -37,8 +37,18 @@ def test_mdd_generation(my_map, starts, goals):
     assert new_mdd.mdd[((3, 2), 3)] == [((3, 3), 4)], "test_mdd_generation Failed: test case ((3,2),3) -> ((3,3),4) failed"
     print("test_mdd_generation Passed")
 
+def test_mdd_level_i(my_map, starts, goals):
+    agent = 0
+    depth = 4
+    new_mdd = MDD(my_map, 0, starts[agent], goals[agent], depth)
+    assert [starts[agent]] == new_mdd.get_level(0), "test_mdd_level_i Failed: Level 0 isn't the start node"
+    assert [(2, 1), (1, 2)] == new_mdd.get_level(1), "test_mdd_level_i Failed: Level 1 isn't [((2, 1), 1), ((1, 2), 1)]"
+    print("test_mdd_level_i Passed")
+
 if __name__ == '__main__':
     my_map, starts, goals = util.import_mapf_instance("instances/mdd_test.txt")
-    #test_simple_construction(my_map, starts, goals)
-    #test_depth_d_bfs_tree(my_map, starts, goals)
+    print(" === Running MDD Tests === ")
+    test_simple_construction(my_map, starts, goals)
+    test_depth_d_bfs_tree(my_map, starts, goals)
     test_mdd_generation(my_map, starts, goals)
+    test_mdd_level_i(my_map, starts, goals)
