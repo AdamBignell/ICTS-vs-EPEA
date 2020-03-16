@@ -101,7 +101,6 @@ def is_solution_in_joint_mdd(mdds_list):
 def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
     curr_nodes = curr[0]
     curr_depth = curr[1]
-    # print("**************** Depth = ", curr_depth)
     if curr in visited or curr_depth > max_depth:
         return False, visited
     visited.add(curr)
@@ -109,12 +108,9 @@ def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
         return True, visited
     
     # Generate Next Nodes
-    # print("Curr Nodes = ", curr_nodes)
     all_indiv_children = get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth)
-    # print("All Individual Children = ", all_indiv_children)
     all_joint_child_nodes = list(itertools.product(*all_indiv_children))
     pruned_joint_child_nodes = prune_joint_children(all_joint_child_nodes)
-    # print("Pruned Joint Child Nodes = ", pruned_joint_child_nodes)
 
     # DFS below
     for node in pruned_joint_child_nodes:
@@ -123,7 +119,6 @@ def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
         if found_path:
             return found_path, visited
 
-    # print("No solution found")
     return False, visited
     
 def is_goal_state(mdds_list, curr_nodes, curr_depth):
@@ -136,7 +131,6 @@ def is_goal_state(mdds_list, curr_nodes, curr_depth):
 def get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth):
     all_indiv_children = []
     for i, node in enumerate(curr_nodes):
-        print(i, node)
         this_mdd = mdds_list[i]
         if this_mdd.goal == node and curr_depth == this_mdd.depth:
             all_indiv_children.append([this_mdd.goal])
