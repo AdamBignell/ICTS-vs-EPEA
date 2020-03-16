@@ -39,3 +39,23 @@ class ICTSSolver(object):
         ###################################################
 
         return None
+
+    def create_icts(self):
+        optimal_paths = self.find_most_optimal_paths()
+
+    def find_cost_of_initial_estimate_for_root(self):
+        optimal_paths = self.find_most_optimal_paths()
+        optimal_costs = []
+
+        for i in range(len(optimal_paths)):
+            optimal_costs.append(max(len(optimal_paths[i]) - 1, 0))
+
+        return optimal_costs
+
+    def find_most_optimal_paths(self):
+        optimal_paths = []
+
+        for agent in range(self.num_of_agents):
+            optimal_paths.append(a_star(self.my_map, self.starts[agent], self.goals[agent], self.heuristics[agent], agent, []))
+
+        return optimal_paths
