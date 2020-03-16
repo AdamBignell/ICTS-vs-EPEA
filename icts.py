@@ -1,7 +1,8 @@
 import time as timer
 import heapq
 import random
-from single_agent_planner import compute_heuristics, a_star, get_location, get_sum_of_cost
+from single_agent_planner import compute_heuristics, a_star
+from ict import IncreasingCostTree
 
 class ICTSSolver(object):
     """A high-level ICTS search."""
@@ -28,6 +29,8 @@ class ICTSSolver(object):
         for goal in self.goals:
             self.heuristics.append(compute_heuristics(my_map, goal))
 
+        self.ict = self.create_ict()
+
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
         """
@@ -40,8 +43,11 @@ class ICTSSolver(object):
 
         return None
 
-    def create_icts(self):
-        optimal_paths = self.find_most_optimal_paths()
+    def create_ict(self):
+        initial_estimate = self.find_cost_of_initial_estimate_for_root()
+        ict = IncreasingCostTree(self.my_map, self.starts, self.goals, initial_estimate)
+
+        return ict
 
     def find_cost_of_initial_estimate_for_root(self):
         optimal_paths = self.find_most_optimal_paths()
