@@ -1,10 +1,10 @@
-from mdd import MDD
+import mdd
 import map_utils as util
 
 def test_simple_construction(my_map, starts, goals):
     agent = 0
     depth = 7 # Arbitrary depth
-    new_mdd = MDD(my_map, 0, starts[agent], goals[agent], depth, False)
+    new_mdd = mdd.MDD(my_map, 0, starts[agent], goals[agent], depth, False)
     assert new_mdd.agent == 0, "test_simple_construction Failed: Agent is improperly set"
     assert new_mdd.depth == depth, "test_simple_construction Failed: Depth is improperly set"
     assert new_mdd.start == starts[agent], "test_simple_construction Failed: Start is improperly set"
@@ -14,7 +14,7 @@ def test_simple_construction(my_map, starts, goals):
 def test_depth_d_bfs_tree(my_map, starts, goals):
     agent = 0
     depth = 3
-    new_mdd = MDD(my_map, 0, starts[agent], goals[agent], depth)
+    new_mdd = mdd.MDD(my_map, 0, starts[agent], goals[agent], depth)
     bfs_tree = new_mdd.get_depth_d_bfs_tree(my_map, starts[agent], goals[agent], depth)
     for node in bfs_tree.keys():
         for val in bfs_tree[node]:
@@ -26,7 +26,7 @@ def test_depth_d_bfs_tree(my_map, starts, goals):
 def test_mdd_generation(my_map, starts, goals):
     agent = 0
     depth = 4
-    new_mdd = MDD(my_map, 0, starts[agent], goals[agent], depth)
+    new_mdd = mdd.MDD(my_map, 0, starts[agent], goals[agent], depth)
     # Hardcoded test for a simple case below
     assert new_mdd.mdd[((1, 1), 0)] == [((2, 1), 1), ((1, 2), 1)], "test_mdd_generation Failed: test case ((1, 1), 0) -> ((2, 1), 1), ((1, 2), 1) failed"
     assert new_mdd.mdd[((1, 2), 1)] == [((2, 2), 2), ((1, 3), 2)], "test_mdd_generation Failed: test case ((1, 2), 1) -> ((2, 2), 2), ((1, 3), 2) failed"
@@ -40,10 +40,64 @@ def test_mdd_generation(my_map, starts, goals):
 def test_mdd_level_i(my_map, starts, goals):
     agent = 0
     depth = 4
-    new_mdd = MDD(my_map, 0, starts[agent], goals[agent], depth)
+    new_mdd = mdd.MDD(my_map, agent, starts[agent], goals[agent], depth)
     assert [starts[agent]] == new_mdd.get_level(0), "test_mdd_level_i Failed: Level 0 isn't the start node"
     assert [(2, 1), (1, 2)] == new_mdd.get_level(1), "test_mdd_level_i Failed: Level 1 isn't [((2, 1), 1), ((1, 2), 1)]"
     print("test_mdd_level_i Passed")
+
+def test_two_agent_joint_mdd_search(my_map, starts, goals):
+    a1, a2 = 0, 1
+    depth = 2 # No solution
+    a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
+    a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth)
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    assert found_path == False, "test_two_agent_joint_mdd_search Failed: Finds a solution when none exists"
+
+    depth = 3 # Solution
+    a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
+    a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth)
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    assert found_path == True, "test_two_agent_joint_mdd_search Failed: Finds no solution when one exists"
+
+    depth1 = 3
+    depth2 = 2 # Mismatched solution depths
+    a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth1)
+    a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth2)  
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    assert found_path == True, "test_two_agent_joint_mdd_search Failed: Finds no solution when the depth of the input mdds mismatch"
+
+def test_three_agent_joint_mdd_search(my_map, starts, goals):
+    depth = 4
+    a1, a2, a3 = 0, 1, 2
+    a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
+    a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth) 
+    a3_mdd = mdd.MDD(my_map, a3, starts[a3], goals[a3], depth)
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd, a3_mdd])
+    assert found_path == True, "test_three_agent_joint_mdd_search Failed: Finds no solution with 3 agents when one exists"
+    print("test_three_agent_joint_mdd_search Passed")
+
+def test_find_solution_in_joint_mdd(my_map, starts, goals):
+    depth = 4
+    a1, a2, a3 = 0, 1, 2
+    a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
+    a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth) 
+    a3_mdd = mdd.MDD(my_map, a3, starts[a3], goals[a3], depth)
+    solution_path = mdd.find_solution_in_joint_mdd([a1_mdd, a2_mdd, a3_mdd])
+    for i in range(len(solution_path[0])-1):
+        this_locs = [solution_path[j][i] for j in range(len(solution_path))]
+        next_locs = [solution_path[j][i+1] for j in range(len(solution_path))]
+        assert all_moves_valid(this_locs, next_locs), "test_find_solution_in_joint_mdd Failed: Finds a solution with invalid steps"
+    print("test_find_solution_in_joint_mdd Passed")
+
+def all_moves_valid(this_locs, next_locs):
+    forward = [pair for pair in zip(this_locs, next_locs)]
+    has_edge_collision = mdd.has_edge_collisions(this_locs, next_locs)
+    for pair in forward:
+        this_loc = pair[0]
+        next_loc = pair[1]
+        if sum([abs(this_loc[0] - next_loc[0]), abs(this_loc[1] - next_loc[1])]) > 1:
+            return False
+    return not has_edge_collision
 
 if __name__ == '__main__':
     my_map, starts, goals = util.import_mapf_instance("instances/mdd_test.txt")
@@ -52,3 +106,10 @@ if __name__ == '__main__':
     test_depth_d_bfs_tree(my_map, starts, goals)
     test_mdd_generation(my_map, starts, goals)
     test_mdd_level_i(my_map, starts, goals)
+
+    my_joint_map, starts, goals = util.import_mapf_instance("instances/joint_mdd_test.txt")
+    test_two_agent_joint_mdd_search(my_joint_map, starts, goals)
+
+    my_3_agent_joint_map, starts, goals = util.import_mapf_instance("instances/joint_mdd_3_agent_test.txt")
+    test_three_agent_joint_mdd_search(my_3_agent_joint_map, starts, goals)
+    test_find_solution_in_joint_mdd(my_3_agent_joint_map, starts, goals)
