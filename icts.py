@@ -1,5 +1,6 @@
 from single_agent_planner import compute_heuristics, a_star
 from ict import IncreasingCostTree
+from mdd import MDD, find_solution_in_joint_mdd
 
 class ICTSSolver(object):
     """A high-level ICTS search."""
@@ -43,16 +44,29 @@ class ICTSSolver(object):
         while(len(open_list) != 0):
             current_node = ict.get_next_node_to_expand()
 
-            if(self.node_contains_solution(current_node)):
-                return current_node
+            node_cost = current_node.get_cost()
+            solution_paths = self.find_paths_for_agents_for_given_cost(node_cost)
+            if(self.solution_exists(solution_paths)):
+                return solution_paths
             else:
                 ict.expand_next_node()
 
-        return "Could not find solution"
+        print("Could not find solution")
+        return []
 
 
-    def node_contains_solution(self, node):
-        return False
+    def solution_exists(self, paths):
+        return paths != None
+
+    def find_paths_for_agents_for_given_cost(self, agent_path_costs):
+        mdds = []
+
+        for i in range(len(agent_path_costs)):
+            new_mdd = MDD(self.my_map, i, self.starts[i], self.goals[i], agent_path_costs[i])
+            mdds.append(new_mdd)
+
+        solution_path = find_solution_in_joint_mdd(mdds)
+        return solution_path
 
     def create_ict(self):
         initial_estimate = self.find_cost_of_initial_estimate_for_root()

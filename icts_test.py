@@ -30,7 +30,8 @@ def test_bfs_on_ict_with_valid_solution():
     my_map, starts, goals = map_utils.import_mapf_instance(file_name)
     icts = ICTSSolver(my_map, starts, goals)
     solution = icts.find_solution()
-    assert solution == 1, "BFS in ICTS could not find solution even though valid solution exists"
+    assert solution == [[(1,1), (1,2), (1,3), (1,4), (1,5)],
+                        [(1,2), (1,3), (2,3), (1,3), (1,4)]], "BFS in ICTS could not find solution even though valid solution exists"
 
 if __name__ == "__main__":
     test_find_most_optimal_paths()
