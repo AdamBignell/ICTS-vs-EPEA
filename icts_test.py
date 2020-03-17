@@ -25,8 +25,16 @@ def test_create_initial_cost_for_ict():
     root_costs = root.get_cost()
     assert root_costs == [4, 2], "Cost of the root node of the ict is incorrect"
 
+def test_bfs_on_ict_with_valid_solution():
+    file_name = "instances/exp2_1.txt"
+    my_map, starts, goals = map_utils.import_mapf_instance(file_name)
+    icts = ICTSSolver(my_map, starts, goals)
+    solution = icts.find_solution()
+    assert solution == 1, "BFS in ICTS could not find solution even though valid solution exists"
+
 if __name__ == "__main__":
     test_find_most_optimal_paths()
     test_find_most_optimal_cost_of_paths()
     test_create_initial_cost_for_ict()
+    test_bfs_on_ict_with_valid_solution()
     print("ALL TEST PASSED")

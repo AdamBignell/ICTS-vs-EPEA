@@ -1,6 +1,3 @@
-import time as timer
-import heapq
-import random
 from single_agent_planner import compute_heuristics, a_star
 from ict import IncreasingCostTree
 
@@ -36,12 +33,26 @@ class ICTSSolver(object):
         """
         print("\nFinding ICTS Solution...")
         ######### Fill in the ICTS Algorithm here #########
-
-
-
+        return self.bfs()
         ###################################################
 
-        return None
+    def bfs (self):
+        ict = self.ict
+        open_list = ict.get_open_list()
+
+        while(len(open_list) != 0):
+            current_node = ict.get_next_node_to_expand()
+
+            if(self.node_contains_solution(current_node)):
+                return current_node
+            else:
+                ict.expand_next_node()
+
+        return "Could not find solution"
+
+
+    def node_contains_solution(self, node):
+        return False
 
     def create_ict(self):
         initial_estimate = self.find_cost_of_initial_estimate_for_root()
