@@ -83,7 +83,7 @@ class MDD:
 
 # ========== Non-Class Functions Below ========== 
 
-def is_solution_in_joint_mdd(mdds_list):
+def is_solution_in_joint_mdd(mdds_list, return_solution = False):
     for mdd in mdds_list:
         if not mdd.mdd:
             return False
@@ -95,31 +95,60 @@ def is_solution_in_joint_mdd(mdds_list):
         depths.append(mdd.depth)
     visited = set()
     roots_key = tuple(roots)
-    found_path, visited = joint_mdd_dfs(mdds_list, (roots_key, 0), max(depths), visited)
-    return found_path
+    if not return_solution:
+        found_path, visited = joint_mdd_dfs(mdds_list, (roots_key, 0), max(depths), visited)
+        return found_path
+    # else == return_solution
+    solution, visited = joint_mdd_dfs_return_solution(mdds_list, (roots_key, 0), max(depths), visited)
+    return solution
+
+def find_solution_in_joint_mdd(mdds_list):
+    solution = is_solution_in_joint_mdd(mdds_list, True)
+    return joint_mdd_nodes_to_list_of_paths(solution)
 
 def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
     curr_nodes = curr[0]
     curr_depth = curr[1]
     if curr in visited or curr_depth > max_depth:
         return False, visited
+
     visited.add(curr)
     if is_goal_state(mdds_list, curr_nodes, curr_depth):
         return True, visited
     
-    # Generate Next Nodes
-    all_indiv_children = get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth)
-    all_joint_child_nodes = list(itertools.product(*all_indiv_children))
-    pruned_joint_child_nodes = prune_joint_children(all_joint_child_nodes)
+    valid_children = get_valid_children(mdds_list, curr_nodes, curr_depth)
 
     # DFS below
-    for node in pruned_joint_child_nodes:
+    for node in valid_children:
         child = (node, curr_depth+1)
+        # Checking if a solution exists
         found_path, visited = joint_mdd_dfs(mdds_list, child, max_depth, visited)
         if found_path:
             return found_path, visited
-
     return False, visited
+
+def joint_mdd_dfs_return_solution(mdds_list, curr, max_depth, visited):
+    curr_nodes = curr[0]
+    curr_depth = curr[1]
+    if curr in visited or curr_depth > max_depth:
+        return [], visited
+
+    visited.add(curr)
+    if is_goal_state(mdds_list, curr_nodes, curr_depth):
+        return [curr], visited
+    
+    valid_children = get_valid_children(mdds_list, curr_nodes, curr_depth)
+
+    # DFS below
+    partial_solution = [curr]
+    for node in valid_children:
+        child = (node, curr_depth+1)
+        # Finding a solution
+        solution, visited = joint_mdd_dfs_return_solution(mdds_list, child, max_depth, visited)
+        if solution != []:
+            partial_solution.extend(solution)
+            return partial_solution, visited
+    return [], visited
     
 def is_goal_state(mdds_list, curr_nodes, curr_depth):
     for i, node in enumerate(curr_nodes):
@@ -127,6 +156,12 @@ def is_goal_state(mdds_list, curr_nodes, curr_depth):
         if curr_depth < this_mdd.depth or this_mdd.goal != node:
             return False
     return True
+
+def get_valid_children(mdds_list, curr_nodes, curr_depth):
+    all_indiv_children = get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth)
+    all_joint_child_nodes = list(itertools.product(*all_indiv_children))
+    pruned_joint_child_nodes = prune_joint_children(all_joint_child_nodes, curr_nodes)
+    return pruned_joint_child_nodes
 
 def get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth):
     all_indiv_children = []
@@ -139,12 +174,28 @@ def get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth):
         i_children_locs = [i_child[0] for i_child in i_children]
         all_indiv_children.append(i_children_locs)
     return all_indiv_children
-
     
-def prune_joint_children(all_joint_nodes):
+def prune_joint_children(all_joint_nodes, curr_nodes):
+
     # print("All Joint Child Nodes = ", all_joint_nodes)
     all_joint_child_nodes = []
     for node in all_joint_nodes:
-        if len(set(node)) == len(node):
+        if len(set(node)) == len(node) and not has_edge_collisions(curr_nodes, node):
             all_joint_child_nodes.append(node)
     return all_joint_child_nodes
+
+def has_edge_collisions(curr_nodes, next_nodes):
+    forward = [pair for pair in zip(curr_nodes, next_nodes) if pair[0] != pair[1]]
+    backward = [pair for pair in zip(next_nodes, curr_nodes) if pair[0] != pair[1]]
+    edge_collisions = set(forward).intersection(set(backward))
+    return len(edge_collisions) > 0
+
+def joint_mdd_nodes_to_list_of_paths(mdd_nodes):
+    if not mdd_nodes or not mdd_nodes[0]:
+        return None
+    num_agents = len(mdd_nodes[0][0])
+    paths = [[] for i in range(num_agents)]
+    for node in mdd_nodes:
+        for i, loc in enumerate(node[0]):
+            paths[i].append(loc)
+    return paths
