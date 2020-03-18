@@ -43,8 +43,8 @@ def test_calculate_upperbound_cost_of_all_agents():
     file_name = "instances/no_solution.txt"
     my_map, starts, goals = map_utils.import_mapf_instance(file_name)
     icts = ICTSSolver(my_map, starts, goals)
-    upper_bound = icts.calculate_upper_bound_cost_of_all_agents()
-    assert upper_bound == 10, "ICTS cannot find the correct upper bound for a map"
+    upper_bound = icts.calculate_upper_bound_cost()
+    assert upper_bound == 15, "ICTS cannot find the correct upper bound for a map"
 
 def test_node_has_exceeded_upper_bound():
     node = TreeNode([10, 11])

@@ -13,7 +13,9 @@ class IncreasingCostTree:
         self.goals = goals
         self.num_of_agents = len(goals)
         self.root = TreeNode(self.initial_cost)
+
         self.open_list = [self.root]
+        self.closed_list = set(initial_cost)
 
     def get_open_list(self):
         return self.open_list
@@ -27,12 +29,25 @@ class IncreasingCostTree:
     def add_node_to_open_list(self, node):
         self.open_list.append(node)
 
+    def add_unexplored_node_to_open_list(self, node):
+        node_cost = node.get_cost()
+        node_has_been_visited = node_cost in self.closed_list
+
+        if not node_has_been_visited:
+            self.closed_list.add(node_cost)
+            self.open_list.append(node)
+
     def expand_next_node(self):
         next_node = self.get_next_node_to_expand()
         next_node.expand_node()
         children = next_node.get_all_children()
         for child in children:
-            self.add_node_to_open_list(child)
+            if not self.node_exists_in_open_list(child):
+                self.add_unexplored_node_to_open_list(child)
+
+    def node_exists_in_open_list(self, node):
+        node_is_in_open_list = node in self.open_list
+        return node_is_in_open_list
 
 
 class TreeNode:
@@ -55,7 +70,7 @@ class TreeNode:
 
     def expand_node(self):
         for i in range(len(self.agent_path_costs)):
-            new_costs = copy.deepcopy(self.agent_path_costs)
+            new_costs = list(copy.deepcopy(self.agent_path_costs))
             new_costs[i] = new_costs[i] + 1
-            new_child = TreeNode(new_costs)
+            new_child = TreeNode(tuple(new_costs))
             self.child_nodes.append(new_child)

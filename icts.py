@@ -29,7 +29,7 @@ class ICTSSolver(object):
             self.heuristics.append(compute_heuristics(my_map, goal))
 
         self.ict = self.create_ict()
-        self.upper_bound = self.calculate_upper_bound_cost_of_all_agents()
+        self.upper_bound = self.calculate_upper_bound_cost()
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
@@ -39,9 +39,12 @@ class ICTSSolver(object):
         return self.bfs()
         ###################################################
 
-    def calculate_upper_bound_cost_of_all_agents(self):
+    def calculate_upper_bound_cost(self):
         number_of_open_spaces = find_number_of_open_spaces(self.my_map)
-        upper_bound = self.num_of_agents * number_of_open_spaces
+        upper_bound = 0
+
+        for i in range(self.num_of_agents):
+            upper_bound = upper_bound + ((i + 1) * (number_of_open_spaces))
 
         return upper_bound
 
@@ -65,14 +68,10 @@ class ICTSSolver(object):
         return []
 
     def node_has_exceeded_upper_bound(self, node, upper_bound):
-        node_exceeds_upper_bound = False
-
         agent_costs = node.get_cost()
-        for i in range(len(agent_costs)):
-            if agent_costs[i] > upper_bound:
-                node_exceeds_upper_bound = True
+        summed_agent_costs = sum(agent_costs)
 
-        return node_exceeds_upper_bound
+        return summed_agent_costs > upper_bound
 
     def solution_exists(self, paths):
         return paths != None
