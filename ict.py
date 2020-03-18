@@ -28,7 +28,7 @@ class IncreasingCostTree:
         self.open_list.append(node)
 
     def expand_next_node(self):
-        next_node = self.pop_next_node_to_expand()
+        next_node = self.get_next_node_to_expand()
         next_node.expand_node()
         children = next_node.get_all_children()
         for child in children:

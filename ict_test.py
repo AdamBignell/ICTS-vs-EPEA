@@ -40,12 +40,14 @@ def test_creating_correct_cost_of_multiple_children():
 def test_child_nodes_are_added_to_open_list():
     ict = IncreasingCostTree([], [], [], [10, 10, 10])
     ict.expand_next_node()
+    ict.pop_next_node_to_expand()
     open_list = ict.get_open_list()
     assert len(open_list) == 3, "Child nodes not correctly added to open list of ict"
 
 def test_expanding_node_from_tree():
     ict = IncreasingCostTree([], [], [], [10, 10, 10])
     ict.expand_next_node()
+    ict.pop_next_node_to_expand()
     next_node = ict.get_next_node_to_expand()
     node_cost = next_node.get_cost()
     assert node_cost == [11, 10, 10], "Path cost of newly expanded node from ict with multiple children is incorrect"

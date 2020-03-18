@@ -48,7 +48,7 @@ def test_calculate_upperbound_cost_of_all_agents():
 
 def test_node_has_exceeded_upper_bound():
     node = TreeNode([10, 11])
-    upper_bound = [10, 10]
+    upper_bound = 20
 
     file_name = "instances/no_solution.txt"
     my_map, starts, goals = map_utils.import_mapf_instance(file_name)
@@ -59,7 +59,7 @@ def test_node_has_exceeded_upper_bound():
 
 def test_node_has_not_exceeded_upper_bound():
     node = TreeNode([10, 9])
-    upper_bound = [10, 10]
+    upper_bound = 20
 
     file_name = "instances/no_solution.txt"
     my_map, starts, goals = map_utils.import_mapf_instance(file_name)
@@ -67,6 +67,14 @@ def test_node_has_not_exceeded_upper_bound():
     node_exceeds_bound = icts.node_has_exceeded_upper_bound(node, upper_bound)
 
     assert node_exceeds_bound is False, "ICTS believes nodes has exceeded the upper bound even though the node has not exceeded the upper bound"
+
+def test_bfs_terminates_if_no_solution_exists():
+    file_name = "instances/no_solution.txt"
+    my_map, starts, goals = map_utils.import_mapf_instance(file_name)
+    icts = ICTSSolver(my_map, starts, goals)
+    solution_paths = icts.find_solution()
+
+    assert solution_paths is [], "ICTS returns a solution when no solution exists"
 
 if __name__ == "__main__":
     test_find_most_optimal_paths()
@@ -77,4 +85,5 @@ if __name__ == "__main__":
     test_calculate_upperbound_cost_of_all_agents()
     test_node_has_exceeded_upper_bound()
     test_node_has_not_exceeded_upper_bound()
+    test_bfs_terminates_if_no_solution_exists()
     print("ALL TEST PASSED")
