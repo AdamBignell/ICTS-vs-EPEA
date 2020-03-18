@@ -44,6 +44,16 @@ class ICTSSolver(object):
 
         return upper_bound
 
+    def node_has_exceeded_upper_bound(self, node, upper_bound):
+        node_exceeds_upper_bound = False
+
+        agent_costs = node.get_cost()
+        for i in range(len(agent_costs)):
+            if agent_costs[i] > upper_bound[i]:
+                node_exceeds_upper_bound = True
+
+        return node_exceeds_upper_bound
+
     def bfs (self):
         ict = self.ict
         open_list = ict.get_open_list()

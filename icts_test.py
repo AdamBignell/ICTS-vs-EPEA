@@ -1,6 +1,6 @@
 import map_utils
 
-from ict import IncreasingCostTree
+from ict import IncreasingCostTree, TreeNode
 from icts import ICTSSolver
 
 def test_find_most_optimal_paths():
@@ -46,6 +46,28 @@ def test_calculate_upperbound_cost_of_all_agents():
     upper_bound = icts.calculate_upper_bound_cost_of_all_agents()
     assert upper_bound == 10, "ICTS cannot find the correct upper bound for a map"
 
+def test_node_has_exceeded_upper_bound():
+    node = TreeNode([10, 11])
+    upper_bound = [10, 10]
+
+    file_name = "instances/no_solution.txt"
+    my_map, starts, goals = map_utils.import_mapf_instance(file_name)
+    icts = ICTSSolver(my_map, starts, goals)
+    node_exceeds_bound = icts.node_has_exceeded_upper_bound(node, upper_bound)
+
+    assert node_exceeds_bound is True, "ICTS believes nodes has not exceeded the upper bound even though the node exceeds the upper bound"
+
+def test_node_has_not_exceeded_upper_bound():
+    node = TreeNode([10, 9])
+    upper_bound = [10, 10]
+
+    file_name = "instances/no_solution.txt"
+    my_map, starts, goals = map_utils.import_mapf_instance(file_name)
+    icts = ICTSSolver(my_map, starts, goals)
+    node_exceeds_bound = icts.node_has_exceeded_upper_bound(node, upper_bound)
+
+    assert node_exceeds_bound is False, "ICTS believes nodes has exceeded the upper bound even though the node has not exceeded the upper bound"
+
 if __name__ == "__main__":
     test_find_most_optimal_paths()
     test_find_most_optimal_cost_of_paths()
@@ -53,4 +75,6 @@ if __name__ == "__main__":
     test_bfs_on_ict_with_valid_solution()
     test_number_of_open_spaces()
     test_calculate_upperbound_cost_of_all_agents()
+    test_node_has_exceeded_upper_bound()
+    test_node_has_not_exceeded_upper_bound()
     print("ALL TEST PASSED")
