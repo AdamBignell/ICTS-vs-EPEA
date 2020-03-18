@@ -33,9 +33,16 @@ def test_bfs_on_ict_with_valid_solution():
     assert solution == [[(1,1), (1,2), (1,3), (1,4), (1,5)],
                         [(1,2), (1,3), (2,3), (1,3), (1,4)]], "BFS in ICTS could not find solution even though valid solution exists"
 
+def test_calculate_upper_bound_cost():
+    file_name = "instances/no_solution.txt"
+    my_map, starts, goals = map_utils.import_mapf_instance(file_name)
+    number_of_open_spaces = map_utils.find_number_of_open_spaces(my_map)
+    assert number_of_open_spaces == 5, "ICTS cannot find the correct number of open spaces in a map"
+
 if __name__ == "__main__":
     test_find_most_optimal_paths()
     test_find_most_optimal_cost_of_paths()
     test_create_initial_cost_for_ict()
     test_bfs_on_ict_with_valid_solution()
+    test_calculate_upper_bound_cost()
     print("ALL TEST PASSED")

@@ -55,3 +55,13 @@ def import_mapf_instance(filename):
         goals.append((gx, gy))
     f.close()
     return my_map, starts, goals
+
+def find_number_of_open_spaces(map):
+    number_of_open_spaces = 0
+
+    for row in map:
+        for space in row:
+            if space is False:
+                number_of_open_spaces = number_of_open_spaces + 1
+
+    return number_of_open_spaces
