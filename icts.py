@@ -1,6 +1,7 @@
 from single_agent_planner import compute_heuristics, a_star
 from ict import IncreasingCostTree
 from mdd import MDD, find_solution_in_joint_mdd
+from map_utils import find_number_of_open_spaces
 
 class ICTSSolver(object):
     """A high-level ICTS search."""
@@ -36,6 +37,12 @@ class ICTSSolver(object):
         ######### Fill in the ICTS Algorithm here #########
         return self.bfs()
         ###################################################
+
+    def calculate_upper_bound_cost_of_all_agents(self):
+        number_of_open_spaces = find_number_of_open_spaces(self.my_map)
+        upper_bound = self.num_of_agents * number_of_open_spaces
+
+        return upper_bound
 
     def bfs (self):
         ict = self.ict
