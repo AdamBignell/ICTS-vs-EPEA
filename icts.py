@@ -51,11 +51,12 @@ class ICTSSolver(object):
     def bfs (self):
         ict = self.ict
         open_list = ict.get_open_list()
+        mdd_cache = {}
 
         while(len(open_list) != 0):
             current_node = ict.get_next_node_to_expand()
             node_cost = current_node.get_cost()
-            solution_paths = self.find_paths_for_agents_for_given_cost(node_cost)
+            solution_paths = self.find_paths_for_agents_for_given_cost(node_cost, mdd_cache)
 
             if(self.solution_exists(solution_paths)):
                 return solution_paths
@@ -76,11 +77,16 @@ class ICTSSolver(object):
     def solution_exists(self, paths):
         return paths != None
 
-    def find_paths_for_agents_for_given_cost(self, agent_path_costs):
+    def find_paths_for_agents_for_given_cost(self, agent_path_costs, mdd_cache):
         mdds = []
 
         for i in range(len(agent_path_costs)):
-            new_mdd = MDD(self.my_map, i, self.starts[i], self.goals[i], agent_path_costs[i])
+            agent_depth_key = (i, agent_path_costs[i])
+            if agent_depth_key not in mdd_cache:
+                new_mdd = MDD(self.my_map, i, self.starts[i], self.goals[i], agent_path_costs[i])
+                mdd_cache[agent_depth_key] = new_mdd
+            else: # Already cached
+                new_mdd = mdd_cache[agent_depth_key]
             mdds.append(new_mdd)
 
         solution_path = find_solution_in_joint_mdd(mdds)
