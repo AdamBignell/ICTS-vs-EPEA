@@ -42,13 +42,7 @@ class IncreasingCostTree:
         next_node.expand_node()
         children = next_node.get_all_children()
         for child in children:
-            if not self.node_exists_in_open_list(child):
-                self.add_unexplored_node_to_open_list(child)
-
-    def node_exists_in_open_list(self, node):
-        node_is_in_open_list = node in self.open_list
-        return node_is_in_open_list
-
+            self.add_unexplored_node_to_open_list(child)
 
 class TreeNode:
     def __init__(self, agent_path_costs):
