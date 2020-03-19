@@ -89,6 +89,15 @@ def test_find_solution_in_joint_mdd(my_map, starts, goals):
         assert all_moves_valid(this_locs, next_locs), "test_find_solution_in_joint_mdd Failed: Finds a solution with invalid steps"
     print("test_find_solution_in_joint_mdd Passed")
 
+def test_find_no_solution_where_none_exists(my_map, starts, goals):
+    depth = 5
+    a1, a2 = 0, 1
+    a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
+    a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth)  
+    solution_path = mdd.find_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    assert solution_path == None, "test_find_no_solution_where_none_exists Failed: Finds a solution where none exists"
+    print("test_find_no_solution_where_none_exists Passed")
+
 def all_moves_valid(this_locs, next_locs):
     forward = [pair for pair in zip(this_locs, next_locs)]
     has_edge_collision = mdd.has_edge_collisions(this_locs, next_locs)
@@ -113,3 +122,6 @@ if __name__ == '__main__':
     my_3_agent_joint_map, starts, goals = util.import_mapf_instance("instances/joint_mdd_3_agent_test.txt")
     test_three_agent_joint_mdd_search(my_3_agent_joint_map, starts, goals)
     test_find_solution_in_joint_mdd(my_3_agent_joint_map, starts, goals)
+
+    my_impossible_map, starts, goals = util.import_mapf_instance("instances/no_solution.txt")
+    test_find_no_solution_where_none_exists(my_impossible_map, starts, goals)
