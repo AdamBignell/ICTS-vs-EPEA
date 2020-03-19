@@ -5,7 +5,7 @@ from collections import defaultdict
 import itertools
 
 class MDD:
-    def __init__(self, my_map, agent, start, goal, depth, generate = True):
+    def __init__(self, my_map, agent, start, goal, depth, generate = True, last_mdd = None):
         """ Note that in order to save memory, we do not store the map on each
         MDD, but instead pass the map as an argument to the generation function"""
         self.agent = agent
@@ -14,6 +14,7 @@ class MDD:
         self.depth = depth
         self.mdd = None
         self.level = defaultdict(list)
+        self.bfs_tree = {}
         if generate:
             self.generate_mdd(my_map)
 
@@ -44,14 +45,14 @@ class MDD:
         while fringe:
             curr = fringe.popleft()
             loc, d = curr
-            if curr in visited:
-                continue
             children = self.get_valid_children(my_map, loc, d)
             for c in children:
                 if c[1] <= depth:
                     if curr not in prev_dict[c]:
                         prev_dict[c].append(curr)
-                    fringe.append(c)
+                    if not c in visited:
+                        fringe.append(c)
+                        visited.add(c)
         return prev_dict
 
     def bfs_to_mdd(self, bfs_tree, start, goal, depth):
