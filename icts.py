@@ -55,13 +55,14 @@ class ICTSSolver(object):
 
         while(len(open_list) != 0):
             current_node = ict.get_next_node_to_expand()
-            node_cost = current_node.get_cost()
-            solution_paths = self.find_paths_for_agents_for_given_cost(node_cost, mdd_cache)
+            if not self.node_has_exceeded_upper_bound(current_node, self.upper_bound):
+                node_cost = current_node.get_cost()
+                solution_paths = self.find_paths_for_agents_for_given_cost(node_cost, mdd_cache)
 
-            if(self.solution_exists(solution_paths)):
-                return solution_paths
-            elif not self.node_has_exceeded_upper_bound(current_node, self.upper_bound):
-                ict.expand_next_node()
+                if(self.solution_exists(solution_paths)):
+                    return solution_paths
+                else:
+                    ict.expand_next_node()
 
             ict.pop_next_node_to_expand()
 
