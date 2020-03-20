@@ -65,7 +65,6 @@ class ICTSSolver(object):
                 if(self.solution_exists(solution_paths)):
                     #print("Generating MDDs took " + str(total_gen_time) + " s of the total")
                     #print("Solving Joint MDDs took " + str(total_sol_time) + " s of the total")
-                    print("Found Solution")
                     return solution_paths
                 else:
                     ict.expand_next_node()
@@ -74,7 +73,6 @@ class ICTSSolver(object):
 
         #print("Generating MDDs took " + str(total_gen_time) + " s of the total")
         #print("Solving Joint MDDs took " + str(total_sol_time) + " s of the total")
-        print("Could not find solution")
         return []
 
     def node_has_exceeded_upper_bound(self, node, upper_bound):
@@ -113,6 +111,8 @@ class ICTSSolver(object):
 
     def create_ict(self):
         initial_estimate = self.find_cost_of_initial_estimate_for_root()
+        if not initial_estimate:
+            return None
         ict = IncreasingCostTree(self.my_map, self.starts, self.goals, initial_estimate)
 
         return ict
@@ -122,6 +122,8 @@ class ICTSSolver(object):
         optimal_costs = []
 
         for i in range(len(optimal_paths)):
+            if not optimal_paths[i]:
+                return []
             optimal_costs.append(max(len(optimal_paths[i]) - 1, 0))
 
         return optimal_costs

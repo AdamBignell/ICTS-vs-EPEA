@@ -55,7 +55,7 @@ def test_mdd_level_i(my_map, starts, goals):
     agent = 0
     depth = 4
     new_mdd = mdd.MDD(my_map, agent, starts[agent], goals[agent], depth)
-    assert [starts[agent]] == new_mdd.get_level(0), "test_mdd_level_i Failed: Level 0 isn't the start node"
+    assert {starts[agent]} == new_mdd.get_level(0), "test_mdd_level_i Failed: Level 0 isn't the start node"
     assert set([(2, 1), (1, 2)]) == set(new_mdd.get_level(1)), "test_mdd_level_i Failed: Level 1 isn't [((2, 1), 1), ((1, 2), 1)]"
     print("test_mdd_level_i Passed")
 

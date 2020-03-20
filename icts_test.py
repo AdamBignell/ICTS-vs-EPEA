@@ -33,6 +33,7 @@ def test_bfs_on_ict_with_valid_solution():
     solution = icts.find_solution()
     assert solution == [[(1,1), (1,2), (1,3), (1,4), (1,5)],
                         [(1,2), (1,3), (2,3), (1,3), (1,4)]], "BFS in ICTS could not find solution even though valid solution exists"
+    print("Found solution.")
 
 def test_number_of_open_spaces():
     file_name = "instances/no_solution.txt"
@@ -75,6 +76,7 @@ def test_bfs_terminates_if_no_solution_exists():
     icts = ICTSSolver(my_map, starts, goals)
     solution_paths = icts.find_solution()
     assert solution_paths == [], "ICTS returns a solution when no solution exists"
+    print("Could not find solution.")
 
 if __name__ == "__main__":
     test_find_most_optimal_paths()

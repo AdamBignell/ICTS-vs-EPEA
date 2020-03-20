@@ -14,7 +14,7 @@ class MDD:
         self.goal = goal
         self.depth = depth
         self.mdd = None
-        self.level = defaultdict(list)
+        self.level = defaultdict(set)
         self.bfs_tree = {}
         if generate:
             if last_mdd and last_mdd.depth < depth and last_mdd.agent == agent:
@@ -35,14 +35,14 @@ class MDD:
             self.populate_levels(self.mdd)
 
     def populate_levels(self, mdd):
-        self.level[0] = [self.start]
+        self.level[0] = {self.start}
         for adjacent in mdd.values():
             for node in adjacent:
-                self.level[node[1]].append(node[0])
+                self.level[node[1]].add(node[0])
 
     def get_level(self, i):
         if i > self.depth:
-            return self.level[self.depth]
+            return {self.goal}
         return self.level[i]
 
     def get_depth_d_bfs_tree(self, my_map, start, depth):
@@ -108,7 +108,7 @@ class MDD:
     def get_valid_children(self, my_map, loc, d):
         # Get all children that are on the map
         x, y = loc[0], loc[1]
-        all_children = [(x, y), (x+1, y), (x-1, y), (x, y+1), (x, y-1)]
+        all_children = [(x+1, y), (x-1, y), (x, y+1), (x, y-1), (x, y)]
         good_children = []
         for c in all_children:
             if not my_map[c[0]][c[1]]:
@@ -202,7 +202,7 @@ def get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth):
     all_indiv_children = []
     for i, node in enumerate(curr_nodes):
         this_mdd = mdds_list[i]
-        if this_mdd.goal == node and curr_depth == this_mdd.depth:
+        if this_mdd.goal == node and curr_depth >= this_mdd.depth:
             all_indiv_children.append([this_mdd.goal])
             continue
         i_children = this_mdd.mdd[(node, curr_depth)]
