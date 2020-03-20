@@ -2,6 +2,7 @@ import map_utils
 
 from ict import IncreasingCostTree, TreeNode
 from icts import ICTSSolver
+import time
 
 def test_find_most_optimal_paths():
     file_name = "instances/exp2_1.txt"
@@ -73,8 +74,8 @@ def test_bfs_terminates_if_no_solution_exists():
     my_map, starts, goals = map_utils.import_mapf_instance(file_name)
     icts = ICTSSolver(my_map, starts, goals)
     solution_paths = icts.find_solution()
-
     assert solution_paths == [], "ICTS returns a solution when no solution exists"
+    #print("No Solution run took " + str((time2-time1)) + " s to complete")
 
 if __name__ == "__main__":
     test_find_most_optimal_paths()

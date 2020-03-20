@@ -2,6 +2,7 @@ from single_agent_planner import compute_heuristics, a_star
 from ict import IncreasingCostTree
 from mdd import MDD, find_solution_in_joint_mdd
 from map_utils import find_number_of_open_spaces
+import time
 
 class ICTSSolver(object):
     """A high-level ICTS search."""
@@ -52,20 +53,27 @@ class ICTSSolver(object):
         ict = self.ict
         open_list = ict.get_open_list()
         mdd_cache = {}
-
+        total_gen_time = 0
+        total_sol_time = 0
         while(len(open_list) != 0):
             current_node = ict.get_next_node_to_expand()
             if not self.node_has_exceeded_upper_bound(current_node, self.upper_bound):
                 node_cost = current_node.get_cost()
-                solution_paths = self.find_paths_for_agents_for_given_cost(node_cost, mdd_cache)
-
+                solution_paths, new_gen_time, new_sol_time = self.find_paths_for_agents_for_given_cost(node_cost, mdd_cache)
+                total_gen_time += new_gen_time
+                total_sol_time += new_sol_time
                 if(self.solution_exists(solution_paths)):
+                    #print("Generating MDDs took " + str(total_gen_time) + " s of the total")
+                    #print("Solving Joint MDDs took " + str(total_sol_time) + " s of the total")
+                    print("Found Solution")
                     return solution_paths
                 else:
                     ict.expand_next_node()
 
             ict.pop_next_node_to_expand()
 
+        #print("Generating MDDs took " + str(total_gen_time) + " s of the total")
+        #print("Solving Joint MDDs took " + str(total_sol_time) + " s of the total")
         print("Could not find solution")
         return []
 
@@ -80,18 +88,28 @@ class ICTSSolver(object):
 
     def find_paths_for_agents_for_given_cost(self, agent_path_costs, mdd_cache):
         mdds = []
-
+        new_gen_time = 0
+        new_sol_time = 0
         for i in range(len(agent_path_costs)):
             agent_depth_key = (i, agent_path_costs[i])
             if agent_depth_key not in mdd_cache:
-                new_mdd = MDD(self.my_map, i, self.starts[i], self.goals[i], agent_path_costs[i])
+                t1 = time.time()
+                agent_prev_depth_key = (i, agent_path_costs[i]-1)
+                if agent_prev_depth_key in mdd_cache:
+                    new_mdd = MDD(self.my_map, i, self.starts[i], self.goals[i], agent_path_costs[i], last_mdd = mdd_cache[agent_prev_depth_key])
+                else:
+                    new_mdd = MDD(self.my_map, i, self.starts[i], self.goals[i], agent_path_costs[i])
+                t2 = time.time()
+                new_gen_time += (t2-t1)
                 mdd_cache[agent_depth_key] = new_mdd
             else: # Already cached
                 new_mdd = mdd_cache[agent_depth_key]
             mdds.append(new_mdd)
-
+        t1 = time.time()
         solution_path = find_solution_in_joint_mdd(mdds)
-        return solution_path
+        t2 = time.time()
+        new_sol_time += t2-t1
+        return solution_path, new_gen_time, new_sol_time
 
     def create_ict(self):
         initial_estimate = self.find_cost_of_initial_estimate_for_root()
@@ -110,8 +128,6 @@ class ICTSSolver(object):
 
     def find_most_optimal_paths(self):
         optimal_paths = []
-
         for agent in range(self.num_of_agents):
             optimal_paths.append(a_star(self.my_map, self.starts[agent], self.goals[agent], self.heuristics[agent], agent, []))
-
         return optimal_paths

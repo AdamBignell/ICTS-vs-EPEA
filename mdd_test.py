@@ -13,9 +13,10 @@ def test_simple_construction(my_map, starts, goals):
 
 def test_depth_d_bfs_tree(my_map, starts, goals):
     agent = 0
-    depth = 3
+    depth = 4
     new_mdd = mdd.MDD(my_map, 0, starts[agent], goals[agent], depth)
-    bfs_tree = new_mdd.get_depth_d_bfs_tree(my_map, starts[agent], goals[agent], depth)
+    bfs_tree_dict = new_mdd.get_depth_d_bfs_tree(my_map, starts[agent], depth)
+    bfs_tree = bfs_tree_dict['tree']
     for node in bfs_tree.keys():
         for val in bfs_tree[node]:
             loc, t = val
@@ -23,18 +24,31 @@ def test_depth_d_bfs_tree(my_map, starts, goals):
             assert t <= depth, "test_depth_d_bfs_tree Failed: BFS explores to depth greater than " + str(depth)
     print("test_depth_d_bfs_tree Passed")
 
+def test_bootstrap_bfs_tree(my_map, starts, goals):
+    agent = 0
+    depth = 4
+    mdd_4 = mdd.MDD(my_map, 0, starts[agent], goals[agent], depth)
+    mdd_5 = mdd.MDD(my_map, 0, starts[agent], goals[agent], depth+1, mdd_4)
+    bfs_tree = mdd_5.bfs_tree['tree']
+    for node in bfs_tree.keys():
+        for val in bfs_tree[node]:
+            loc, t = val
+            assert not my_map[loc[0]][loc[1]], "test_bootstrap_bfs_tree Failed: Bootstrap BFS explores invalid cells"
+            assert t <= depth+1, "test_bootstrap_bfs_tree Failed: Bootstrap BFS explores to depth greater than " + str(depth+1)
+    print("test_bootstrap_bfs_tree Passed")   
+
 def test_mdd_generation(my_map, starts, goals):
     agent = 0
     depth = 4
     new_mdd = mdd.MDD(my_map, 0, starts[agent], goals[agent], depth)
     # Hardcoded test for a simple case below
-    assert new_mdd.mdd[((1, 1), 0)] == [((2, 1), 1), ((1, 2), 1)], "test_mdd_generation Failed: test case ((1, 1), 0) -> ((2, 1), 1), ((1, 2), 1) failed"
-    assert new_mdd.mdd[((1, 2), 1)] == [((2, 2), 2), ((1, 3), 2)], "test_mdd_generation Failed: test case ((1, 2), 1) -> ((2, 2), 2), ((1, 3), 2) failed"
-    assert new_mdd.mdd[((2, 1), 1)] == [((2, 2), 2)], "test_mdd_generation Failed: test case ((2, 1), 1) -> ((2, 2), 2) failed"
-    assert new_mdd.mdd[((1, 3), 2)] == [((2, 3), 3)], "test_mdd_generation Failed: test case (((1, 3), 2) -> ((2, 3), 3) failed"
-    assert new_mdd.mdd[((2, 2), 2)] == [((3, 2), 3), ((2, 3), 3)], "test_mdd_generation Failed: test case ((2, 2), 2) -> ((3, 2), 3), ((2, 3), 3) failed"
-    assert new_mdd.mdd[((2, 3), 3)] == [((3, 3), 4)], "test_mdd_generation Failed: test case ((2,3),3) -> ((3,3),4) failed"
-    assert new_mdd.mdd[((3, 2), 3)] == [((3, 3), 4)], "test_mdd_generation Failed: test case ((3,2),3) -> ((3,3),4) failed"
+    assert set(new_mdd.mdd[((1, 1), 0)]) == set([((2, 1), 1), ((1, 2), 1)]), "test_mdd_generation Failed: test case ((1, 1), 0) -> ((2, 1), 1), ((1, 2), 1) failed"
+    assert set(new_mdd.mdd[((1, 2), 1)]) == set([((2, 2), 2), ((1, 3), 2)]), "test_mdd_generation Failed: test case ((1, 2), 1) -> ((2, 2), 2), ((1, 3), 2) failed"
+    assert set(new_mdd.mdd[((2, 1), 1)]) == set([((2, 2), 2)]), "test_mdd_generation Failed: test case ((2, 1), 1) -> ((2, 2), 2) failed"
+    assert set(new_mdd.mdd[((1, 3), 2)]) == set([((2, 3), 3)]), "test_mdd_generation Failed: test case (((1, 3), 2) -> ((2, 3), 3) failed"
+    assert set(new_mdd.mdd[((2, 2), 2)]) == set([((3, 2), 3), ((2, 3), 3)]), "test_mdd_generation Failed: test case ((2, 2), 2) -> ((3, 2), 3), ((2, 3), 3) failed"
+    assert set(new_mdd.mdd[((2, 3), 3)]) == set([((3, 3), 4)]), "test_mdd_generation Failed: test case ((2,3),3) -> ((3,3),4) failed"
+    assert set(new_mdd.mdd[((3, 2), 3)]) == set([((3, 3), 4)]), "test_mdd_generation Failed: test case ((3,2),3) -> ((3,3),4) failed"
     print("test_mdd_generation Passed")
 
 def test_mdd_level_i(my_map, starts, goals):
@@ -42,7 +56,7 @@ def test_mdd_level_i(my_map, starts, goals):
     depth = 4
     new_mdd = mdd.MDD(my_map, agent, starts[agent], goals[agent], depth)
     assert [starts[agent]] == new_mdd.get_level(0), "test_mdd_level_i Failed: Level 0 isn't the start node"
-    assert [(2, 1), (1, 2)] == new_mdd.get_level(1), "test_mdd_level_i Failed: Level 1 isn't [((2, 1), 1), ((1, 2), 1)]"
+    assert set([(2, 1), (1, 2)]) == set(new_mdd.get_level(1)), "test_mdd_level_i Failed: Level 1 isn't [((2, 1), 1), ((1, 2), 1)]"
     print("test_mdd_level_i Passed")
 
 def test_two_agent_joint_mdd_search(my_map, starts, goals):
@@ -113,6 +127,7 @@ if __name__ == '__main__':
     print(" === Running MDD Tests === ")
     test_simple_construction(my_map, starts, goals)
     test_depth_d_bfs_tree(my_map, starts, goals)
+    test_bootstrap_bfs_tree(my_map, starts, goals)
     test_mdd_generation(my_map, starts, goals)
     test_mdd_level_i(my_map, starts, goals)
 
