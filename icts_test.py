@@ -75,7 +75,6 @@ def test_bfs_terminates_if_no_solution_exists():
     icts = ICTSSolver(my_map, starts, goals)
     solution_paths = icts.find_solution()
     assert solution_paths == [], "ICTS returns a solution when no solution exists"
-    #print("No Solution run took " + str((time2-time1)) + " s to complete")
 
 if __name__ == "__main__":
     test_find_most_optimal_paths()

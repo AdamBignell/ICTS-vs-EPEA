@@ -93,8 +93,8 @@ class ICTSSolver(object):
         for i in range(len(agent_path_costs)):
             agent_depth_key = (i, agent_path_costs[i])
             if agent_depth_key not in mdd_cache:
-                t1 = time.time()
                 agent_prev_depth_key = (i, agent_path_costs[i]-1)
+                t1 = time.time()
                 if agent_prev_depth_key in mdd_cache:
                     new_mdd = MDD(self.my_map, i, self.starts[i], self.goals[i], agent_path_costs[i], last_mdd = mdd_cache[agent_prev_depth_key])
                 else:
