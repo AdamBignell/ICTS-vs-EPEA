@@ -3,9 +3,10 @@
 from collections import deque
 from collections import defaultdict
 import itertools
+import time
 
 class MDD:
-    def __init__(self, my_map, agent, start, goal, depth, generate = True):
+    def __init__(self, my_map, agent, start, goal, depth, generate = True, last_mdd = None):
         """ Note that in order to save memory, we do not store the map on each
         MDD, but instead pass the map as an argument to the generation function"""
         self.agent = agent
@@ -13,68 +14,101 @@ class MDD:
         self.goal = goal
         self.depth = depth
         self.mdd = None
-        self.level = defaultdict(list)
+        self.level = defaultdict(set)
+        self.bfs_tree = {}
         if generate:
-            self.generate_mdd(my_map)
+            if last_mdd and last_mdd.depth < depth and last_mdd.agent == agent:
+                self.generate_mdd(my_map, last_mdd)  
+            else: 
+                self.generate_mdd(my_map)
+            
 
-    def generate_mdd(self, my_map):
-        bfs_tree = self.get_depth_d_bfs_tree(my_map, self.start, self.goal, self.depth)
-        mdd = self.bfs_to_mdd(bfs_tree, self.start, self.goal, self.depth)
+    def generate_mdd(self, my_map, last_mdd = None):
+        if last_mdd:
+            bfs_tree = self.bootstrap_depth_d_bfs_tree(my_map, self.start, self.depth, last_mdd.bfs_tree)
+        else:
+            bfs_tree = self.get_depth_d_bfs_tree(my_map, self.start, self.depth)
+        self.bfs_tree = bfs_tree
+        mdd = self.bfs_to_mdd(bfs_tree['tree'], self.start, self.goal, self.depth)
         self.mdd = mdd
         if mdd:
             self.populate_levels(self.mdd)
 
     def populate_levels(self, mdd):
-        self.level[0] = [self.start]
+        self.level[0] = {self.start}
         for adjacent in mdd.values():
             for node in adjacent:
-                self.level[node[1]].append(node[0])
+                self.level[node[1]].add(node[0])
 
     def get_level(self, i):
         if i > self.depth:
-            return self.level[self.depth]
+            return {self.goal}
         return self.level[i]
 
-    def get_depth_d_bfs_tree(self, my_map, start, goal, depth):
+    def get_depth_d_bfs_tree(self, my_map, start, depth):
         # Run BFS to depth 'depth' to find the solutions for this agent
         fringe = deque()
         fringe.append((start, 0))
-        prev_dict = defaultdict(list)
+        prev_dict = defaultdict(set)
         visited = set()
+        bfs_tree = self.main_bfs_loop(my_map, start, depth, fringe, prev_dict, visited)
+        return bfs_tree
+
+    def bootstrap_depth_d_bfs_tree(self, my_map, start, depth, old_tree):
+        fringe = deque()
+        old_fringe = list(old_tree['fringe'])
+        old_fringe.sort(key=lambda x :x[0][0]+x[0][1])
+        fringe.extend(old_fringe)
+        prev_dict = old_tree['tree']
+        for node in old_fringe:
+            node_prevs = old_tree['fringe_prevs'][node]
+            prev_dict[node].update(node_prevs)
+        visited = old_tree['visited']
+        new_bfs_tree = self.main_bfs_loop(my_map, start, depth, fringe, prev_dict, visited)
+        return new_bfs_tree
+
+    def main_bfs_loop(self, my_map, start, depth, fringe, prev_dict, visited):
+        depth_d_plus_one_fringe = set()
+        fringe_prevs = defaultdict(set)
         while fringe:
             curr = fringe.popleft()
             loc, d = curr
-            if curr in visited:
-                continue
             children = self.get_valid_children(my_map, loc, d)
             for c in children:
                 if c[1] <= depth:
-                    if curr not in prev_dict[c]:
-                        prev_dict[c].append(curr)
-                    fringe.append(c)
-        return prev_dict
+                    prev_dict[c].add(curr)
+                    if not c in visited:
+                        fringe.append(c)
+                        visited.add(c)
+                if c[1] == depth+1:
+                    depth_d_plus_one_fringe.add(c)
+                    fringe_prevs[c].add(curr)
+        return {'tree' : prev_dict, 'visited' : visited, 'depth' : depth, 'fringe' : depth_d_plus_one_fringe, 'fringe_prevs' : fringe_prevs}
 
     def bfs_to_mdd(self, bfs_tree, start, goal, depth):
         # Convert a complete bfs tree to an mdd
         goal_time = (goal, depth)
+        visited = set()
         if not bfs_tree[goal_time]:
             return None
-        mdd = defaultdict(list)
+        mdd = defaultdict(set)
         trace_list = deque()
         for parent in bfs_tree[goal_time]:
             trace_list.append((parent, goal_time))
+            visited.add((parent, goal_time))
         while trace_list:
             curr, child = trace_list.popleft()
-            if child not in mdd[curr]:
-                mdd[curr].append(child)
+            mdd[curr].add(child)
             for p in bfs_tree[curr]:
-                trace_list.append((p, curr))
+                if (p, curr) not in visited:
+                    visited.add((p, curr))
+                    trace_list.append((p, curr))
         return mdd
 
     def get_valid_children(self, my_map, loc, d):
         # Get all children that are on the map
         x, y = loc[0], loc[1]
-        all_children = [(x, y), (x+1, y), (x-1, y), (x, y+1), (x, y-1)]
+        all_children = [(x+1, y), (x-1, y), (x, y+1), (x, y-1), (x, y)]
         good_children = []
         for c in all_children:
             if not my_map[c[0]][c[1]]:
@@ -125,6 +159,7 @@ def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
         found_path, visited = joint_mdd_dfs(mdds_list, child, max_depth, visited)
         if found_path:
             return found_path, visited
+    
     return False, visited
 
 def joint_mdd_dfs_return_solution(mdds_list, curr, max_depth, visited):
@@ -136,7 +171,6 @@ def joint_mdd_dfs_return_solution(mdds_list, curr, max_depth, visited):
     visited.add(curr)
     if is_goal_state(mdds_list, curr_nodes, curr_depth):
         return [curr], visited
-    
     valid_children = get_valid_children(mdds_list, curr_nodes, curr_depth)
 
     # DFS below
@@ -144,10 +178,11 @@ def joint_mdd_dfs_return_solution(mdds_list, curr, max_depth, visited):
     for node in valid_children:
         child = (node, curr_depth+1)
         # Finding a solution
-        solution, visited = joint_mdd_dfs_return_solution(mdds_list, child, max_depth, visited)
-        if solution != []:
-            partial_solution.extend(solution)
-            return partial_solution, visited
+        if child not in visited:
+            solution, visited = joint_mdd_dfs_return_solution(mdds_list, child, max_depth, visited)
+            if solution != []:
+                partial_solution.extend(solution)
+                return partial_solution, visited
     return [], visited
     
 def is_goal_state(mdds_list, curr_nodes, curr_depth):
@@ -167,7 +202,7 @@ def get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth):
     all_indiv_children = []
     for i, node in enumerate(curr_nodes):
         this_mdd = mdds_list[i]
-        if this_mdd.goal == node and curr_depth == this_mdd.depth:
+        if this_mdd.goal == node and curr_depth >= this_mdd.depth:
             all_indiv_children.append([this_mdd.goal])
             continue
         i_children = this_mdd.mdd[(node, curr_depth)]
@@ -176,8 +211,6 @@ def get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth):
     return all_indiv_children
     
 def prune_joint_children(all_joint_nodes, curr_nodes):
-
-    # print("All Joint Child Nodes = ", all_joint_nodes)
     all_joint_child_nodes = []
     for node in all_joint_nodes:
         if len(set(node)) == len(node) and not has_edge_collisions(curr_nodes, node):

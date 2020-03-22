@@ -6,6 +6,7 @@ from epea import EPEASolver
 from visualize import Animation
 from single_agent_planner import get_sum_of_cost
 import map_utils as util
+import time
 
 SOLVER = "ICTS"
 
@@ -30,11 +31,17 @@ if __name__ == '__main__':
         if args.solver == "ICTS":
             print("***Run ICTS***")
             icts = ICTSSolver(my_map, starts, goals)
-            paths = icts.find_solution()
+            if not icts.ict:
+                paths = []
+            else:
+                t1 = time.time()
+                paths = icts.find_solution()
+                t2 = time.time()
+                print("Found solution in this many seconds = ", t2-t1)
         elif args.solver == "EPEA":
             print("***Run EPEA***")
             epea = EPEASolver(my_map, starts, goals)
-            paths = epea.find_solution()
+            #paths = epea.find_solution()
         else:
             raise RuntimeError("Unknown solver!")
 
