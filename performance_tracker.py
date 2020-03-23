@@ -1,4 +1,5 @@
 import time
+import json
 
 class PerformanceTracker(object):
     def __init__(self):
@@ -37,3 +38,6 @@ class PerformanceTracker(object):
 
     def add_stat(self, stat_name, initial_value):
         self.stats[stat_name] = initial_value
+
+    def print_stats(self):
+        print(json.dumps(self.stats, indent = 4))

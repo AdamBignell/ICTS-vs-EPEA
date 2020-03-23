@@ -61,8 +61,23 @@ def test_tracker_times_how_long_a_function_takes_to_run():
 
     all_stats = tracker.get_stats()
     time_taken = all_stats["wait"]
-    threshold = 0.001
+    threshold = 0.1
     assert (time_taken < (time_to_wait + threshold)) and (time_taken > (time_to_wait - threshold)), "Cannot accurately time function within a certain threshold"
+
+def test_print_stats_for_tracker():
+    def waiting(waiting_time):
+        time.sleep(waiting_time)
+
+    def empty_func():
+        pass
+
+    time_to_wait = 2
+    tracker = PerformanceTracker()
+    tracker.time("wait", lambda: waiting(time_to_wait))
+
+    for i in range(10):
+        tracker.count("empty", lambda: empty_func())
+    tracker.print_stats()
 
 if __name__ == "__main__":
     test_tracker_creates_a_stats_entry()
@@ -70,4 +85,5 @@ if __name__ == "__main__":
     test_tracker_counts_how_many_times_function_is_called()
     test_tracker_adds_stat_for_time()
     test_tracker_times_how_long_a_function_takes_to_run()
+    test_print_stats_for_tracker()
     print("ALL TEST PASSED")
