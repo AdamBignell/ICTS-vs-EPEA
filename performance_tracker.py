@@ -40,4 +40,5 @@ class PerformanceTracker(object):
         self.stats[stat_name] = initial_value
 
     def print_stats(self):
+        print("Performance Tracker Stats:")
         print(json.dumps(self.stats, indent = 4))
