@@ -14,6 +14,8 @@ class PerformanceTracker(object):
         else:
             self.add_stat(statName, 1)
 
+        return func()
+
     def stats_contain_stat(self, statName):
         return statName in self.stats
 
