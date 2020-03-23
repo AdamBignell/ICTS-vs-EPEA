@@ -1,3 +1,5 @@
+import time
+
 class PerformanceTracker(object):
     def __init__(self):
         self.stats = self.create_stats()
@@ -7,6 +9,17 @@ class PerformanceTracker(object):
 
     def get_stats(self):
         return self.stats
+
+    def time(self, statName, func):
+        start_time = time.time()
+        result = func()
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+
+        if not self.stats_contain_stat(statName):
+            self.add_stat(statName, elapsed_time)
+
+        return result
 
     def count(self, statName, func):
         if self.stats_contain_stat(statName):
