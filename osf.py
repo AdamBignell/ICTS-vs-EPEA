@@ -46,7 +46,7 @@ class OSF:
         
     def select_operators(self, agent_locs, big_F, h, g, get_min = False):
         small_f = h + g
-        ops_to_cross_prod = [self.indiv_ops for i in range(len(agent_locs))]
+        ops_to_cross_prod = self.get_on_map_ops(agent_locs, self.indiv_ops)
         all_possible_ops = list(itertools.product(*ops_to_cross_prod))
         op_table, min_delta_small_f = self.get_op_table_and_min_row(all_possible_ops, agent_locs, small_f, h, g)
         if not op_table:
@@ -58,6 +58,18 @@ class OSF:
             return None, math.inf
         delta_big_F_next = self.get_delta_big_F_next(list(op_table.keys()), requested_row)
         return op_table[requested_row]['operators'], small_f + delta_big_F_next
+
+    def get_on_map_ops(self, agent_locs, ops):
+        all_ops = []
+        for loc in agent_locs:
+            this_agent_ops = []
+            for op in ops:
+                new_x = loc[0] + op[0]
+                new_y = loc[1] + op[1]
+                if not self.map[new_x][new_y]:
+                    this_agent_ops.append(op)
+            all_ops.append(this_agent_ops)
+        return all_ops
 
     def get_op_table_and_min_row(self, all_possible_ops, agent_locs, small_f, h, g):
         op_table = dict()
@@ -109,17 +121,9 @@ class OSF:
         return delta_big_F_next
 
     def move_invalid(self, this_locs, next_locs):
-        if self.next_locs_off_map(next_locs):
-            return True
         vertex_collision = len(set(next_locs)) != len(next_locs)
         edge_collision = self.has_edge_collisions(this_locs, next_locs)
         return vertex_collision or edge_collision
-
-    def next_locs_off_map(self, next_locs):
-        for (x,y) in next_locs:
-            if self.map[x][y]:
-                return True
-        return False
 
     def has_edge_collisions(self, this_locs, next_locs):
         forward = [pair for pair in zip(this_locs, next_locs) if pair[0] != pair[1]]
