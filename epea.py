@@ -24,7 +24,7 @@ class EPEASolver(object):
         self.CPU_time = 0
 
         self.open_list = []
-        self.visited = []
+        self.visited = set()
 
         self.osf = OSF(my_map, goals)
 
@@ -42,7 +42,7 @@ class EPEASolver(object):
         goals = self.goals
         visited = self.visited
         num_agents = len(start_locs)
-
+        mycounter = 0       # counter that is used to break ties in the priority queue
         g = 0
         h = osf.list_of_locations_to_heuristic(start_locs)
 
@@ -50,29 +50,40 @@ class EPEASolver(object):
         #    h += osf.h[agent][starts[agent][0]][starts[agent][1]]
 
         start_node = {'agent_locs': start_locs, 'g': 0, 'h': h, 'small_f': g + h, 'big_F': g + h, 'parent': False}
-        heappush(open_list, start_node)
+        heappush(open_list, (start_node['big_F'], start_node))
+        mycounter+=1
         while(len(open_list) != 0):
-            current_node = heappop(open_list)
+            priority, current_node = heappop(open_list)
             if current_node['agent_locs'] == goals:
                 return self.find_paths(current_node)        # to be implemented: returning path etc.
             new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
-
             for child in new_child_nodes:
-                if any(child in node.values() for node in open_list):
+                if child in visited:
                     continue
+                #if any(child in node.values() for node in visited):
+                #    continue
                 h = osf.list_of_locations_to_heuristic(child)
                 g = current_node['g'] + num_agents
                 small_f = g + h
                 big_F = small_f
                 new_node = {'agent_locs': child, 'g': g, 'h': h, 'small_f': small_f, 'big_F': big_F}
-                heappush(open_list, new_node)
-            
+                heappush(open_list, (new_node['big_F'], mycounter, new_node))
+                mycounter+=1            
             if math.isinf(next_big_F):
-                heappush(visited, current_node)
+                visited.add(current_node['agent_locs'])
             else:
                 current_node['big_F'] = next_big_F
-                heappush(open_list, current_node)
-            return None
+                heappush(open_list, (current_node['big_F'], mycounter, current_node))
+                mycounter+=1
+        return []
         
     def find_paths(self, node):
-        return "success"
+        path = []
+        while (node['parent']):
+            path.insert(0, node['parent']['agent_locs'])
+            node = node['parent']
+        path = list(list(i) for i in zip(*path))
+        return path
+
+
+
