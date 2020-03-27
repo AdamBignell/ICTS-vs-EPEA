@@ -51,24 +51,23 @@ class EPEASolver(object):
         mycounter+=1
         while(len(open_list) != 0):
             priority, count, current_node = heappop(open_list)
-            if current_node['agent_locs'] == goals:
-                return self.find_paths(current_node)
-            print("calling OSF with:", current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
-            new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
+            if list(current_node['agent_locs']) == goals:
+                return self.find_paths(current_node, goals)
+            #print("calling OSF with:", current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
+            new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node)
             if new_child_nodes is None:
                 continue
             
-            print("OSF returned:", new_child_nodes, next_big_F)
-            
+            #print("OSF returned:", new_child_nodes, next_big_F)
             for child in new_child_nodes:
                 if child in visited:
                     continue
-                #print(child)
                 h = osf.list_of_locations_to_heuristic(child)
                 g = current_node['g'] + num_agents
                 small_f = g + h
                 big_F = small_f
                 new_node = {'agent_locs': child, 'g': g, 'h': h, 'small_f': small_f, 'big_F': big_F, 'parent': current_node}
+                visited.add(child)
                 heappush(open_list, (new_node['big_F'], mycounter, new_node))
                 mycounter+=1            
             if math.isinf(next_big_F):
@@ -79,11 +78,12 @@ class EPEASolver(object):
                 mycounter+=1
         return []
         
-    def find_paths(self, node):
-        path = []
+    def find_paths(self, node, goals):
+        path = [goals]
         while (node['parent']):
-            path.insert(0, node['parent']['agent_locs'])
+            path.append(node['parent']['agent_locs'])
             node = node['parent']
+        path.reverse()
         path = [list(t) for t in path]
         path = list(list(i) for i in zip(*path))
         return path
