@@ -1,6 +1,8 @@
 import time as timer
-import heapq
+from heapq import heappush
+from heapq import heappop
 import random
+from osf import OSF
 from single_agent_planner import compute_heuristics, a_star, get_location, get_sum_of_cost
 
 class EPEASolver(object):
@@ -28,25 +30,44 @@ class EPEASolver(object):
         for goal in self.goals:
             self.heuristics.append(compute_heuristics(my_map, goal))
 
+        self.osf = OSF(my_map, goals)
+
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
         """
         print("\nFinding EPEA* Solution...")
-        ######## Fill in the EPEA* Algorithm here #########
+        return self.epea_star()
 
-        start_node = starts
-        compute_heuristics(start_node)
-        self.open_list.append(start_node)
-        while(len(self.open_list) != 0):
-            current_node = get_lowest_stored_cost(open_list)
-            if current_node == goal_state:
-                return "success"
-            #set something to value of OSF? not sure what goes here
-            #(N, F_next(n)) = OSF(n)
-            for child in generate_children(current_node):
+    
+    def epea_star(self):
+        osf = self.osf
+        open_list = self.open_list
+        start_locs = self.starts
+        goals = self.goals
+
+        g = 0
+        h = osf.list_of_locations_to_heuristic(start_locs)
+
+        #for agent, loc in enumerate(starts):
+        #    h += osf.h[agent][starts[agent][0]][starts[agent][1]]
+
+        start_node = {'agent_locs': start_locs, 'g': 0, 'h': h, 'small_f': g + h, 'big_F': g + h}
+        heappush(open_list, start_node)
+        while(len(open_list) != 0):
+            current_node = heappop(open_list)
+            if current_node['agent_locs'] == goals:
+                return "success"        # to be implemented: returning path etc.
+            
+            #set something to value of OSF? not sure what goes here -> OSF returns list of all children locations, and the "next cost", F_Next
+            new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
+
+            for child in new_child_nodes:
+                h = osf.list_of_locations_to_heuristic(child)
+                
+
                 compute_heuristics(child)
                 compute_cost(child)
-                #not sure what the next few lines mean
+                #not sure what the next few lines mean (for PEA*, disregard)
                 #if f(n_c) != F(n):
                     #if f(n_c) > F(n):
                         #F_next(n) = min(F_next(n), f(n_c))
