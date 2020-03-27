@@ -40,7 +40,7 @@ class OSF:
     def get_children_and_next_F(self, node, get_min = False):
         operators, next_big_F = self.select_operators(node, get_min)
         if not operators:
-            return None, math.inf
+            return [], next_big_F
         new_child_nodes = self.get_new_children(node['agent_locs'], operators)
         return new_child_nodes, next_big_F
         
@@ -59,10 +59,11 @@ class OSF:
                 return None, math.inf
             if get_min:
                 requested_row = min_delta_small_f
-            if requested_row not in op_table:
-                return None, math.inf
         delta_big_F_next = self.get_delta_big_F_next(list(op_table.keys()), requested_row)
-        return op_table[requested_row]['operators'], small_f + delta_big_F_next
+        next_big_F = small_f + delta_big_F_next
+        if requested_row not in op_table:
+            return None, next_big_F
+        return op_table[requested_row]['operators'], next_big_F
 
     def get_op_table_and_min_row(self, all_possible_ops, agent_locs, small_f, h, g):
         op_table = dict()
@@ -109,6 +110,8 @@ class OSF:
 
     def get_delta_big_F_next(self, all_keys, requested_row):
         all_keys.sort()
+        if requested_row not in all_keys:
+            return min(all_keys)
         req_index = all_keys.index(requested_row)
         delta_big_F_next = all_keys[req_index + 1] if req_index + 1 < len(all_keys) else math.inf
         return delta_big_F_next

@@ -25,6 +25,7 @@ class EPEASolver(object):
 
         self.open_list = []
         self.visited = set()
+        self.visited_loc_Big_f = set()
 
         self.osf = OSF(my_map, goals)
 
@@ -40,41 +41,45 @@ class EPEASolver(object):
         open_list = self.open_list
         start_locs = tuple(self.starts)
         goals = self.goals
-        visited = self.visited
+        visited_locs = self.visited
+        visited_loc_Big_f = self.visited_loc_Big_f
         num_agents = len(start_locs)
         mycounter = 0       # counter that is used to break ties in the priority queue
         g = 0
         h = osf.list_of_locations_to_heuristic(start_locs)
 
         start_node = {'agent_locs': start_locs, 'g': 0, 'h': h, 'small_f': g + h, 'big_F': g + h, 'parent': False}
-        heappush(open_list, (start_node['big_F'], mycounter, start_node))
+        priority_tuple = (g + h, h, -g, mycounter)
+        heappush(open_list, (priority_tuple, start_node))
         mycounter+=1
         while(len(open_list) != 0):
-            priority, count, current_node = heappop(open_list)
+            priority_tuple, current_node = heappop(open_list)
+            if current_node['agent_locs'] in visited_loc_Big_f:
+                continue
             if list(current_node['agent_locs']) == goals:
                 return self.find_paths(current_node, goals)
-            #print("calling OSF with:", current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
+            #print(current_node['agent_locs'], priority_tuple)
             new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node)
-            if new_child_nodes is None:
-                continue
-            
-            #print("OSF returned:", new_child_nodes, next_big_F)
             for child in new_child_nodes:
-                if child in visited:
+                if child in visited_locs:
                     continue
                 h = osf.list_of_locations_to_heuristic(child)
                 g = current_node['g'] + num_agents
                 small_f = g + h
                 big_F = small_f
                 new_node = {'agent_locs': child, 'g': g, 'h': h, 'small_f': small_f, 'big_F': big_F, 'parent': current_node}
-                visited.add(child)
-                heappush(open_list, (new_node['big_F'], mycounter, new_node))
+                visited_locs.add(child)
+                visited_loc_Big_f.add((child, big_F))
+                priority_tuple = (big_F, h, -g, mycounter)
+                heappush(open_list, (priority_tuple, new_node))
                 mycounter+=1            
             if math.isinf(next_big_F):
-                visited.add(current_node['agent_locs'])
+                visited_locs.add(current_node['agent_locs'])
             else:
                 current_node['big_F'] = next_big_F
-                heappush(open_list, (current_node['big_F'], mycounter, current_node))
+                priority_tuple = (current_node['big_F'], current_node['h'], -current_node['g'], mycounter)
+                heappush(open_list, (priority_tuple, current_node))
+                visited_loc_Big_f.add((current_node['agent_locs'], next_big_F))
                 mycounter+=1
         return []
         
