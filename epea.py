@@ -46,9 +46,6 @@ class EPEASolver(object):
         g = 0
         h = osf.list_of_locations_to_heuristic(start_locs)
 
-        #for agent, loc in enumerate(starts):
-        #    h += osf.h[agent][starts[agent][0]][starts[agent][1]]
-
         start_node = {'agent_locs': start_locs, 'g': 0, 'h': h, 'small_f': g + h, 'big_F': g + h, 'parent': False}
         heappush(open_list, (start_node['big_F'], mycounter, start_node))
         mycounter+=1
@@ -62,16 +59,6 @@ class EPEASolver(object):
                 continue
             
             print("OSF returned:", new_child_nodes, next_big_F)
-            #new_child_nodes = [list(t) for t in new_child_nodes]
-            #print(new_child_nodes)
-            #new_child_nodes = [tuple(l) for l in new_child_nodes]
-            #print(new_child_nodes)
-
-            #for child in new_child_nodes:
-            #    child = list(child)
-            #    print(child)
-
-            #new_child_nodes = list(new_child_nodes[0])
             
             for child in new_child_nodes:
                 if child in visited:
