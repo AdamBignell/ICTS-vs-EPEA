@@ -47,16 +47,20 @@ class OSF:
     def select_operators(self, node, get_min = False):
         agent_locs, big_F, h, g = node['agent_locs'], node['big_F'], node['h'], node['g']
         small_f = h + g
-        ops_to_cross_prod = [self.indiv_ops for i in range(len(agent_locs))]
-        all_possible_ops = list(itertools.product(*ops_to_cross_prod))
-        op_table, min_delta_small_f = self.get_op_table_and_min_row(all_possible_ops, agent_locs, small_f, h, g)
-        if not op_table:
-            return None, math.inf
         requested_row = big_F - small_f
-        if get_min:
-            requested_row = min_delta_small_f
-        if requested_row not in op_table:
-            return None, math.inf
+        if agent_locs in self.osf_tables:
+            op_table = self.osf_tables[agent_locs]
+        else:
+            ops_to_cross_prod = [self.indiv_ops for i in range(len(agent_locs))]
+            all_possible_ops = list(itertools.product(*ops_to_cross_prod))
+            op_table, min_delta_small_f = self.get_op_table_and_min_row(all_possible_ops, agent_locs, small_f, h, g)
+            self.osf_tables[agent_locs] = op_table
+            if not op_table:
+                return None, math.inf
+            if get_min:
+                requested_row = min_delta_small_f
+            if requested_row not in op_table:
+                return None, math.inf
         delta_big_F_next = self.get_delta_big_F_next(list(op_table.keys()), requested_row)
         return op_table[requested_row]['operators'], small_f + delta_big_F_next
 
