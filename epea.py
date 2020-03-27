@@ -44,6 +44,7 @@ class EPEASolver(object):
         open_list = self.open_list
         start_locs = self.starts
         goals = self.goals
+        num_agents = len(start_locs)
 
         g = 0
         h = osf.list_of_locations_to_heuristic(start_locs)
@@ -63,7 +64,8 @@ class EPEASolver(object):
 
             for child in new_child_nodes:
                 h = osf.list_of_locations_to_heuristic(child)
-                
+                g = current_node['g'] + num_agents
+                small_f = 
 
                 compute_heuristics(child)
                 compute_cost(child)
