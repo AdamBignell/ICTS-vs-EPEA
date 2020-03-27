@@ -42,7 +42,7 @@ class EPEASolver(object):
         goals = self.goals
         visited = self.visited
         num_agents = len(start_locs)
-        mycounter = 0       # counter that is used to break ties in the priority queue
+        mycounter = 0       # counter used to break ties in the priority queue
         g = 0
         h = osf.list_of_locations_to_heuristic(start_locs)
 
@@ -53,17 +53,12 @@ class EPEASolver(object):
             priority, count, current_node = heappop(open_list)
             if current_node['agent_locs'] == goals:
                 return self.find_paths(current_node)
-            print("calling OSF with:", current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
             new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node['agent_locs'], current_node['big_F'], current_node['h'], current_node['g'])
             if new_child_nodes is None:
-                continue
-            
-            print("OSF returned:", new_child_nodes, next_big_F)
-            
+                continue            
             for child in new_child_nodes:
                 if child in visited:
                     continue
-                #print(child)
                 h = osf.list_of_locations_to_heuristic(child)
                 g = current_node['g'] + num_agents
                 small_f = g + h
