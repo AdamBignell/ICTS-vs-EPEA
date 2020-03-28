@@ -15,6 +15,8 @@ class OSF:
         self.h = self.get_heuristics(self.map, goals)
         self.visited = set()
         self.indiv_ops = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
+        num_agents = len(goals)
+        self.agent_osf = self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h)
         self.osf_tables = dict()
 
     def get_heuristics(self, my_map, goals):
@@ -33,6 +35,29 @@ class OSF:
                 new_h.append(this_row_h)
             all_h.append(new_h)
         return all_h
+
+    def populate_agent_osfs(self, my_map, num_agents, indiv_ops, h_table):
+        agent_osf = []
+        for agent in range(num_agents):
+            new_agent_osf = self.get_agent_osf(my_map, h_table[agent], indiv_ops)
+            agent_osf.append(new_agent_osf)
+        return agent_osf
+
+    def get_agent_osf(self, my_map, h_table, indiv_ops):
+        agent_osf = {}
+        for x, row in enumerate(my_map):
+            for y, cell in enumerate(row):
+                good_ops = []
+                if cell:
+                    agent_osf[(x,y)] = []
+                else:
+                    for op in indiv_ops:
+                        new_x = x + op[0]
+                        new_y = y + op[1]
+                        if not my_map[new_x][new_y]:
+                            good_ops.append((op, h_table[x][y] - h_table[new_x][new_y]))
+                agent_osf[(x,y)] = good_ops
+        return agent_osf
 
     def manhattan_distance(self, loc1, loc2):
         return abs(loc1[0] - loc2[0]) + abs(loc1[1] - loc2[1])
