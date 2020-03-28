@@ -73,14 +73,14 @@ class OSF:
         agent_locs, big_F, h, g = node['agent_locs'], node['big_F'], node['h'], node['g']
         small_f = h + g
         requested_row = big_F - small_f
-        if agent_locs in self.osf_tables:
-            op_table = self.osf_tables[agent_locs]
+        if tuple(agent_locs) in self.osf_tables:
+            op_table = self.osf_tables[tuple(agent_locs)]
         else:
             ops_to_cross_prod = [self.agent_osfs[i][(loc[0],loc[1])] for i, loc in enumerate(agent_locs)]
             all_possible_ops = list(itertools.product(*ops_to_cross_prod))
             op_table = self.get_op_table(all_possible_ops, agent_locs, small_f, h, g)
             if op_table:
-                self.osf_tables[agent_locs] = op_table
+                self.osf_tables[tuple(agent_locs)] = op_table
         delta_big_F_next = self.get_delta_big_F_next(op_table, requested_row)
         next_big_F = small_f + delta_big_F_next
         if not op_table[requested_row]:
@@ -106,7 +106,7 @@ class OSF:
         for op in all_possible_ops:
             new_op_table_row = dict()
             this_h = self.get_heuristics_from_op(op)
-            just_ops = [single_op[0] for single_op in op]
+            just_ops = tuple([single_op[0] for single_op in op])
             new_locs = self.get_new_locations(agent_locs, just_ops)
             if self.move_invalid(agent_locs, new_locs):
                 continue
