@@ -37,27 +37,33 @@ class OSF:
     def manhattan_distance(self, loc1, loc2):
         return abs(loc1[0] - loc2[0]) + abs(loc1[1] - loc2[1])
 
-    def get_children_and_next_F(self, agent_locs, big_F, h, g, get_min = False):
-        operators, next_big_F = self.select_operators(agent_locs, big_F, h, g, get_min)
+    def get_children_and_next_F(self, node, get_min = False):
+        operators, next_big_F = self.select_operators(node, get_min)
         if not operators:
-            return None, math.inf
-        new_child_nodes = self.get_new_children(agent_locs, operators)
+            return [], next_big_F
+        new_child_nodes = self.get_new_children(node['agent_locs'], operators)
         return new_child_nodes, next_big_F
         
-    def select_operators(self, agent_locs, big_F, h, g, get_min = False):
+    def select_operators(self, node, get_min = False):
+        agent_locs, big_F, h, g = node['agent_locs'], node['big_F'], node['h'], node['g']
         small_f = h + g
-        ops_to_cross_prod = [self.indiv_ops for i in range(len(agent_locs))]
-        all_possible_ops = list(itertools.product(*ops_to_cross_prod))
-        op_table, min_delta_small_f = self.get_op_table_and_min_row(all_possible_ops, agent_locs, small_f, h, g)
-        if not op_table:
-            return None, math.inf
         requested_row = big_F - small_f
-        if get_min:
-            requested_row = min_delta_small_f
-        if requested_row  not in op_table:
-            return None, math.inf
+        if agent_locs in self.osf_tables:
+            op_table = self.osf_tables[agent_locs]
+        else:
+            ops_to_cross_prod = [self.indiv_ops for i in range(len(agent_locs))]
+            all_possible_ops = list(itertools.product(*ops_to_cross_prod))
+            op_table, min_delta_small_f = self.get_op_table_and_min_row(all_possible_ops, agent_locs, small_f, h, g)
+            self.osf_tables[agent_locs] = op_table
+            if not op_table:
+                return None, math.inf
+            if get_min:
+                requested_row = min_delta_small_f
         delta_big_F_next = self.get_delta_big_F_next(list(op_table.keys()), requested_row)
-        return op_table[requested_row]['operators'], small_f + delta_big_F_next
+        next_big_F = small_f + delta_big_F_next
+        if requested_row not in op_table:
+            return None, next_big_F
+        return op_table[requested_row]['operators'], next_big_F
 
     def get_op_table_and_min_row(self, all_possible_ops, agent_locs, small_f, h, g):
         op_table = dict()
@@ -104,8 +110,10 @@ class OSF:
 
     def get_delta_big_F_next(self, all_keys, requested_row):
         all_keys.sort()
+        if requested_row not in all_keys:
+            return min(all_keys)
         req_index = all_keys.index(requested_row)
-        delta_big_F_next = all_keys[req_index + 1] if req_index + 1 <= len(all_keys) else math.inf
+        delta_big_F_next = all_keys[req_index + 1] if req_index + 1 < len(all_keys) else math.inf
         return delta_big_F_next
 
     def move_invalid(self, this_locs, next_locs):
