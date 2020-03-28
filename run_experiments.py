@@ -41,7 +41,7 @@ if __name__ == '__main__':
         elif args.solver == "EPEA":
             print("***Run EPEA***")
             epea = EPEASolver(my_map, starts, goals)
-            #paths = epea.find_solution()
+            paths = epea.find_solution()
         else:
             raise RuntimeError("Unknown solver!")
 
