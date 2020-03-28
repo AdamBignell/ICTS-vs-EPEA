@@ -16,7 +16,7 @@ class OSF:
         self.visited = set()
         self.indiv_ops = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
         num_agents = len(goals)
-        self.agent_osf = self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h)
+        self.agent_osfs = self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h)
         self.osf_tables = dict()
 
     def get_heuristics(self, my_map, goals):
@@ -37,13 +37,13 @@ class OSF:
         return all_h
 
     def populate_agent_osfs(self, my_map, num_agents, indiv_ops, h_table):
-        agent_osf = []
+        agent_osfs = []
         for agent in range(num_agents):
-            new_agent_osf = self.get_agent_osf(my_map, h_table[agent], indiv_ops)
-            agent_osf.append(new_agent_osf)
-        return agent_osf
+            new_agent_osf = self.populate_one_agent_osf(my_map, h_table[agent], indiv_ops)
+            agent_osfs.append(new_agent_osf)
+        return agent_osfs
 
-    def get_agent_osf(self, my_map, h_table, indiv_ops):
+    def populate_one_agent_osf(self, my_map, h_table, indiv_ops):
         agent_osf = {}
         for x, row in enumerate(my_map):
             for y, cell in enumerate(row):
@@ -55,39 +55,36 @@ class OSF:
                         new_x = x + op[0]
                         new_y = y + op[1]
                         if not my_map[new_x][new_y]:
-                            good_ops.append((op, h_table[x][y] - h_table[new_x][new_y]))
-                agent_osf[(x,y)] = good_ops
+                            good_ops.append((op, h_table[new_x][new_y]))
+                agent_osf[(x,y)] = good_ops[:]
         return agent_osf
 
     def manhattan_distance(self, loc1, loc2):
         return abs(loc1[0] - loc2[0]) + abs(loc1[1] - loc2[1])
 
-    def get_children_and_next_F(self, node, get_min = False):
-        operators, next_big_F = self.select_operators(node, get_min)
+    def get_children_and_next_F(self, node):
+        operators, next_big_F = self.select_operators(node)
         if not operators:
             return [], next_big_F
         new_child_nodes = self.get_new_children(node['agent_locs'], operators)
         return new_child_nodes, next_big_F
         
-    def select_operators(self, node, get_min = False):
+    def select_operators(self, node):
         agent_locs, big_F, h, g = node['agent_locs'], node['big_F'], node['h'], node['g']
         small_f = h + g
         requested_row = big_F - small_f
         if agent_locs in self.osf_tables:
             op_table = self.osf_tables[agent_locs]
         else:
-            ops_to_cross_prod = self.get_on_map_ops(agent_locs, self.indiv_ops)
+            ops_to_cross_prod = [self.agent_osfs[i][(loc[0],loc[1])] for i, loc in enumerate(agent_locs)]
             all_possible_ops = list(itertools.product(*ops_to_cross_prod))
-            op_table, min_delta_small_f = self.get_op_table_and_min_row(all_possible_ops, agent_locs, small_f, h, g)
-            self.osf_tables[agent_locs] = op_table
-            if not op_table:
-                return None, math.inf
-            if get_min:
-                requested_row = min_delta_small_f
-        delta_big_F_next = self.get_delta_big_F_next(list(op_table.keys()), requested_row)
+            op_table = self.get_op_table(all_possible_ops, agent_locs, small_f, h, g)
+            if op_table:
+                self.osf_tables[agent_locs] = op_table
+        delta_big_F_next = self.get_delta_big_F_next(op_table, requested_row)
         next_big_F = small_f + delta_big_F_next
-        if requested_row not in op_table:
-            return None, next_big_F
+        if not op_table[requested_row]:
+            return [], next_big_F
         return op_table[requested_row]['operators'], next_big_F
 
     def get_on_map_ops(self, agent_locs, ops):
@@ -102,27 +99,33 @@ class OSF:
             all_ops.append(this_agent_ops)
         return all_ops
 
-    def get_op_table_and_min_row(self, all_possible_ops, agent_locs, small_f, h, g):
-        op_table = dict()
+    def get_op_table(self, all_possible_ops, agent_locs, small_f, h, g):
         num_agents = len(agent_locs)
-        min_delta_small_f = math.inf
+        max_rows = 2*num_agents + 1
+        op_table = [None for i in range(max_rows)]
         for op in all_possible_ops:
             new_op_table_row = dict()
-            new_locs = self.get_new_locations(op, agent_locs)
+            this_h = self.get_heuristics_from_op(op)
+            just_ops = [single_op[0] for single_op in op]
+            new_locs = self.get_new_locations(agent_locs, just_ops)
             if self.move_invalid(agent_locs, new_locs):
                 continue
-            this_h = self.list_of_locations_to_heuristic(new_locs)
             this_g = g + num_agents # We make a decision for everyone simultaneously
             this_small_f = this_h + this_g
             delta_small_f = this_small_f - small_f
-            min_delta_small_f = min(min_delta_small_f, delta_small_f)
-            if delta_small_f not in op_table:
+            if not op_table[delta_small_f]:
                 new_op_table_row['delta_h'] = this_h - h
-                new_op_table_row['operators'] = [op]
+                new_op_table_row['operators'] = [just_ops]
                 op_table[delta_small_f] = new_op_table_row
             else:
-                op_table[delta_small_f]['operators'].append(op)
-        return op_table, min_delta_small_f
+                op_table[delta_small_f]['operators'].append(just_ops)
+        return op_table
+
+    def get_heuristics_from_op(self, indiv_ops):
+        h = 0
+        for op in indiv_ops:
+            h += op[1]
+        return h
 
     def list_of_locations_to_heuristic(self, locs):
         h = 0
@@ -145,12 +148,17 @@ class OSF:
             new_locs.append((new_x, new_y))
         return new_locs
 
-    def get_delta_big_F_next(self, all_keys, requested_row):
-        all_keys.sort()
-        if requested_row not in all_keys:
-            return min(all_keys)
-        req_index = all_keys.index(requested_row)
-        delta_big_F_next = all_keys[req_index + 1] if req_index + 1 < len(all_keys) else math.inf
+    def get_delta_big_F_next(self, op_table, requested_row):
+        if requested_row > len(op_table):
+            return math.inf
+        my_index = requested_row
+        if not op_table[requested_row]:
+            my_index = -1
+        next_start_index = my_index + 1
+        delta_big_F_next = math.inf
+        for i in range(next_start_index, len(op_table)):
+            if op_table[i]:
+                return i
         return delta_big_F_next
 
     def move_invalid(self, this_locs, next_locs):
