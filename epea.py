@@ -44,7 +44,7 @@ class EPEASolver(object):
         visited_locs = self.visited
         visited_loc_Big_f = self.visited_loc_Big_f
         num_agents = len(start_locs)
-        mycounter = 0       # counter that is used to break ties in the priority queue
+        mycounter = 0       # counter used to break ties in the priority queue
         g = 0
         h = osf.list_of_locations_to_heuristic(start_locs)
 
