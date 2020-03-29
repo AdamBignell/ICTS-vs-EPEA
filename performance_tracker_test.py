@@ -79,6 +79,22 @@ def test_print_stats_for_tracker():
         tracker.count("empty", lambda: empty_func())
     tracker.print_stats()
 
+def test_tracker_times_multiple_instances_of_same_key():
+    def waiting(waiting_time):
+        time.sleep(waiting_time)
+
+    time_to_wait = 1
+    expected_time = 2
+    tracker = PerformanceTracker()
+
+    for i in range(expected_time):
+        tracker.time("wait", lambda: waiting(time_to_wait))
+
+    all_stats = tracker.get_stats()
+    time_taken = all_stats["wait"]
+    threshold = 0.1
+    assert (time_taken < (expected_time + threshold)) and (time_taken > (expected_time - threshold)), "Cannot accurately add times of multiple function calls"
+
 if __name__ == "__main__":
     test_tracker_creates_a_stats_entry()
     test_tracker_creates_multiple_stats_entry()
@@ -86,4 +102,5 @@ if __name__ == "__main__":
     test_tracker_adds_stat_for_time()
     test_tracker_times_how_long_a_function_takes_to_run()
     test_print_stats_for_tracker()
+    test_tracker_times_multiple_instances_of_same_key()
     print("ALL TEST PASSED")

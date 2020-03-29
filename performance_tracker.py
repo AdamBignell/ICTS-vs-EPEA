@@ -19,8 +19,13 @@ class PerformanceTracker(object):
 
         if not self.stats_contain_stat(statName):
             self.add_stat(statName, elapsed_time)
+        else:
+            self.update_time(statName, elapsed_time)
 
         return result
+
+    def update_time(self, stat_name, new_time):
+        self.stats[stat_name] = self.stats[stat_name] + new_time
 
     def count(self, statName, func):
         if self.stats_contain_stat(statName):
