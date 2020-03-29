@@ -2,6 +2,8 @@ from single_agent_planner import compute_heuristics, a_star
 from ict import IncreasingCostTree
 from mdd import MDD, find_solution_in_joint_mdd
 from map_utils import find_number_of_open_spaces
+from performance_tracker import PerformanceTracker
+
 import time
 
 class ICTSSolver(object):
@@ -31,13 +33,16 @@ class ICTSSolver(object):
 
         self.ict = self.create_ict()
         self.upper_bound = self.calculate_upper_bound_cost()
+        self.stat_tracker = PerformanceTracker()
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
         """
         print("\nFinding ICTS Solution...")
         ######### Fill in the ICTS Algorithm here #########
-        return self.bfs()
+        result = self.stat_tracker.time("BFS Time", lambda: self.bfs())
+        self.stat_tracker.print_stats()
+        return result
         ###################################################
 
     def calculate_upper_bound_cost(self):
@@ -67,7 +72,7 @@ class ICTSSolver(object):
                     #print("Solving Joint MDDs took " + str(total_sol_time) + " s of the total")
                     return solution_paths
                 else:
-                    ict.expand_next_node()
+                    self.stat_tracker.count("Expanded Nodes", lambda: ict.expand_next_node())
 
             ict.pop_next_node_to_expand()
 
