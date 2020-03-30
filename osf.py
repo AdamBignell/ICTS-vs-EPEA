@@ -80,7 +80,7 @@ class OSF:
         else:
             ops_to_cross_prod = [self.agent_osfs[i][(loc[0],loc[1])] for i, loc in enumerate(agent_locs)]
             all_possible_ops = self.stat_tracker.time("dot_product", lambda: list(itertools.product(*ops_to_cross_prod)))
-            op_table = self.stat_tracker.time("get_op_table", lambda: self.get_op_table(all_possible_ops, agent_locs, small_f, h, g))
+            op_table = self.stat_tracker.count("get_op_table", lambda: self.get_op_table(all_possible_ops, agent_locs, small_f, h, g))
             if op_table:
                 self.osf_tables[tuple(agent_locs)] = op_table
         delta_big_F_next = self.stat_tracker.time("get_delta_big_F_next", lambda: self.get_delta_big_F_next(op_table, requested_row))
