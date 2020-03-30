@@ -5,6 +5,7 @@ import random
 from osf import OSF
 import math
 from single_agent_planner import compute_heuristics, a_star, get_location, get_sum_of_cost
+from performance_tracker import PerformanceTracker
 
 class EPEASolver(object):
     """A high-level EPEA* search."""
@@ -26,6 +27,7 @@ class EPEASolver(object):
         self.open_list = []
         self.visited = set()
         self.visited_loc_Big_f = set()
+        self.stat_tracker = PerformanceTracker()
 
         self.osf = OSF(my_map, goals)
 
@@ -33,7 +35,10 @@ class EPEASolver(object):
         """ Finds paths for all agents from their start locations to their goal locations
         """
         print("\nFinding EPEA* Solution...")
-        return self.epea_star()
+        result = self.stat_tracker.time("Entire EPEA", lambda: self.epea_star())
+        self.osf.stat_tracker.print_stats()
+        self.stat_tracker.print_stats()
+        return result
 
     
     def epea_star(self):

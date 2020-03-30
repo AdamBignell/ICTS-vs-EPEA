@@ -5,18 +5,20 @@ from collections import defaultdict
 import itertools
 import time
 import math
+from performance_tracker import PerformanceTracker
 
 class OSF:
     def __init__(self, my_map, goals):
         """OSF is a singleton that calculates the next operator for any given step."""
         self.map = my_map
+        self.stat_tracker = PerformanceTracker()
 
         # usage: h[agent][x][y]
-        self.h = self.get_heuristics(self.map, goals)
+        self.h = self.stat_tracker.time("get_heuristics", lambda: self.get_heuristics(self.map, goals))
         self.visited = set()
         self.indiv_ops = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
         num_agents = len(goals)
-        self.agent_osfs = self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h)
+        self.agent_osfs = self.stat_tracker.time("populate_agent_osfs", lambda: self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h))
         self.osf_tables = dict()
 
     def get_heuristics(self, my_map, goals):
@@ -63,10 +65,10 @@ class OSF:
         return abs(loc1[0] - loc2[0]) + abs(loc1[1] - loc2[1])
 
     def get_children_and_next_F(self, node):
-        operators, next_big_F = self.select_operators(node)
+        operators, next_big_F = self.stat_tracker.time("select_operators", lambda: self.select_operators(node))
         if not operators:
             return [], next_big_F
-        new_child_nodes = self.get_new_children(node['agent_locs'], operators)
+        new_child_nodes = self.stat_tracker.time("get_new_children", lambda: self.get_new_children(node['agent_locs'], operators))
         return new_child_nodes, next_big_F
         
     def select_operators(self, node):
@@ -77,11 +79,11 @@ class OSF:
             op_table = self.osf_tables[tuple(agent_locs)]
         else:
             ops_to_cross_prod = [self.agent_osfs[i][(loc[0],loc[1])] for i, loc in enumerate(agent_locs)]
-            all_possible_ops = list(itertools.product(*ops_to_cross_prod))
-            op_table = self.get_op_table(all_possible_ops, agent_locs, small_f, h, g)
+            all_possible_ops = self.stat_tracker.time("dot_product", lambda: list(itertools.product(*ops_to_cross_prod)))
+            op_table = self.stat_tracker.time("get_op_table", lambda: self.get_op_table(all_possible_ops, agent_locs, small_f, h, g))
             if op_table:
                 self.osf_tables[tuple(agent_locs)] = op_table
-        delta_big_F_next = self.get_delta_big_F_next(op_table, requested_row)
+        delta_big_F_next = self.stat_tracker.time("get_delta_big_F_next", lambda: self.get_delta_big_F_next(op_table, requested_row))
         next_big_F = small_f + delta_big_F_next
         if not op_table[requested_row]:
             return [], next_big_F
@@ -102,13 +104,13 @@ class OSF:
     def get_op_table(self, all_possible_ops, agent_locs, small_f, h, g):
         num_agents = len(agent_locs)
         max_rows = 2*num_agents + 1
-        op_table = [None for i in range(max_rows)]
+        op_table = self.create_op_table(max_rows)
         for op in all_possible_ops:
             new_op_table_row = dict()
-            this_h = self.get_heuristics_from_op(op)
-            just_ops = tuple([single_op[0] for single_op in op])
-            new_locs = self.get_new_locations(agent_locs, just_ops)
-            if self.move_invalid(agent_locs, new_locs):
+            this_h = self.stat_tracker.time("get_heuristics_from_op - get_op", lambda: self.get_heuristics_from_op(op))
+            just_ops = self.create_just_ops(op)
+            new_locs = self.stat_tracker.time("get_new_locations - get_op", lambda: self.get_new_locations(agent_locs, just_ops))
+            if self.stat_tracker.time("move_invalid - get_op", lambda: self.move_invalid(agent_locs, new_locs)):
                 continue
             this_g = g + num_agents # We make a decision for everyone simultaneously
             this_small_f = this_h + this_g
@@ -118,8 +120,14 @@ class OSF:
                 new_op_table_row['operators'] = [just_ops]
                 op_table[delta_small_f] = new_op_table_row
             else:
-                op_table[delta_small_f]['operators'].append(just_ops)
+                self.stat_tracker.time("append_just_ops - get_op", lambda: op_table[delta_small_f]['operators'].append(just_ops))
         return op_table
+
+    def create_op_table(self, rows):
+        return self.stat_tracker.time("create_op_table - get_op", lambda: [None for i in range(rows)])
+
+    def create_just_ops(self, op):
+        return self.stat_tracker.time("create_just_ops - get_op", lambda: tuple([single_op[0] for single_op in op]))
 
     def get_heuristics_from_op(self, indiv_ops):
         h = 0
