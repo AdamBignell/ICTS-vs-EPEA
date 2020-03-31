@@ -85,19 +85,12 @@ class OSF:
         next_big_F = small_f + delta_big_F_next
         if not op_table[requested_row]:
             return [], next_big_F
-        return op_table[requested_row]['operators'], next_big_F
-
-    def get_on_map_ops(self, agent_locs, ops):
-        all_ops = []
-        for loc in agent_locs:
-            this_agent_ops = []
-            for op in ops:
-                new_x = loc[0] + op[0]
-                new_y = loc[1] + op[1]
-                if not self.map[new_x][new_y]:
-                    this_agent_ops.append(op)
-            all_ops.append(this_agent_ops)
-        return all_ops
+        all_ops = op_table[requested_row]['operators']
+        good_ops = []
+        for ops in all_ops:
+            just_ops = tuple([single_op[0] for single_op in ops])
+            good_ops.append(just_ops)
+        return good_ops, next_big_F
 
     def get_op_table(self, all_possible_ops, agent_locs, small_f, h, g):
         num_agents = len(agent_locs)
@@ -106,16 +99,15 @@ class OSF:
         for op in all_possible_ops:
             new_op_table_row = dict()
             this_h = self.get_heuristics_from_op(op)
-            just_ops = tuple([single_op[0] for single_op in op])
             this_g = g + num_agents # We make a decision for everyone simultaneously
             this_small_f = this_h + this_g
             delta_small_f = this_small_f - small_f
             if not op_table[delta_small_f]:
                 new_op_table_row['delta_h'] = this_h - h
-                new_op_table_row['operators'] = [just_ops]
+                new_op_table_row['operators'] = [op]
                 op_table[delta_small_f] = new_op_table_row
             else:
-                op_table[delta_small_f]['operators'].append(just_ops)
+                op_table[delta_small_f]['operators'].append(op)
         return op_table
 
     def get_heuristics_from_op(self, indiv_ops):
