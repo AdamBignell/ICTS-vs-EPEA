@@ -107,9 +107,6 @@ class OSF:
             new_op_table_row = dict()
             this_h = self.get_heuristics_from_op(op)
             just_ops = tuple([single_op[0] for single_op in op])
-            new_locs = self.get_new_locations(agent_locs, just_ops)
-            if self.move_invalid(agent_locs, new_locs):
-                continue
             this_g = g + num_agents # We make a decision for everyone simultaneously
             this_small_f = this_h + this_g
             delta_small_f = this_small_f - small_f
@@ -136,8 +133,9 @@ class OSF:
     def get_new_children(self, locs, group_ops):
         children = []
         for op in group_ops:
-            new_child = tuple(self.get_new_locations(op, locs))
-            children.append(new_child)
+            new_locs = tuple(self.get_new_locations(op, locs))
+            if not self.move_invalid(locs, new_locs):
+                children.append(new_locs)
         return children
 
     def get_new_locations(self, ops, locs):
