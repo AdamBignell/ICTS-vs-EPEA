@@ -12,9 +12,9 @@ class OSF:
         self.map = my_map
 
         # usage: h[agent][x][y]
-        self.h = self.get_heuristics(self.map, goals)
         self.visited = set()
         self.indiv_ops = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
+        self.h = self.get_true_distance_heuristics(self.map, goals)
         num_agents = len(goals)
         self.agent_osfs = self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h)
         self.osf_tables = dict()
@@ -35,6 +35,32 @@ class OSF:
                 new_h.append(this_row_h)
             all_h.append(new_h)
         return all_h
+
+    def get_true_distance_heuristics(self, my_map, goals):
+        num_agents = len(goals)
+        all_h = []
+        for i in range(num_agents):
+            this_goal = goals[i]
+            new_h = self.true_distance_bfs(my_map, this_goal)
+            all_h.append(new_h)
+        return all_h
+
+    def true_distance_bfs(self, my_map, goal):
+        h = [[0 for i in range(len(my_map[0]))] for i in range(len(my_map))]
+        q = deque()
+        q.append((goal, 0))
+        visited = set()
+        while q:
+            (x,y), this_h = q.popleft()
+            h[x][y] = this_h
+            children = []
+            for op in self.indiv_ops:
+                new_child = (x+op[0], y+op[1])
+                if not my_map[new_child[0]][new_child[1]] and new_child not in visited:
+                    children.append((new_child, this_h+1))
+            q.extend(children)
+            visited.add((x,y))
+        return h
 
     def populate_agent_osfs(self, my_map, num_agents, indiv_ops, h_table):
         agent_osfs = []
