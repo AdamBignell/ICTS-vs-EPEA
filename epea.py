@@ -60,7 +60,7 @@ class EPEASolver(object):
                 return self.find_paths(current_node, goals)
             new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node)
             for child in new_child_nodes:
-                child_node = self.get_child_node(child, current_node, num_agents, osf)
+                child_node = self.get_child_node(child, current_node, osf)
                 if child not in visited_locs:
                     visited_locs.add(child)
                     priority_tuple = (child_node['big_F'], child_node['h'], -child_node['g'], mycounter)
@@ -90,7 +90,7 @@ class EPEASolver(object):
         elapsed = "{:.5f}".format(round(timer.time()-start_time, 5))
         print("\r[ time elapsed: " + elapsed + "s | Nodes expanded: " + str(num_expanded), end=" ]", flush=True)
 
-    def get_child_node(self, child, parent, num_agents, osf):
+    def get_child_node(self, child, parent, osf):
         h = osf.list_of_locations_to_heuristic(child)
         num_agents_not_at_goal = 0
         for i, loc in enumerate(child):
