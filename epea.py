@@ -56,9 +56,6 @@ class EPEASolver(object):
         while(len(open_list) != 0):
             self.print_sanity_track(start_time, nodes_expanded)
             priority_tuple, current_node = heappop(open_list)
-            #if nodes_expanded <= 1000:
-            #    print("Nodes expaned =", nodes_expanded)
-            #    print(priority_tuple[0], "Location = ", current_node['agent_locs'], flush=True)
             if current_node['agent_locs'] == goals:
                 return self.find_paths(current_node, goals)
             new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node)
