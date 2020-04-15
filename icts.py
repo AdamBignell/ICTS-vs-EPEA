@@ -47,11 +47,7 @@ class ICTSSolver(object):
 
     def calculate_upper_bound_cost(self):
         number_of_open_spaces = find_number_of_open_spaces(self.my_map)
-        upper_bound = 0
-
-        for i in range(self.num_of_agents):
-            upper_bound = upper_bound + ((i + 1) * (number_of_open_spaces))
-
+        upper_bound = (self.num_of_agents ** 2) * number_of_open_spaces
         return upper_bound
 
     def bfs (self):
