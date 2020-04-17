@@ -3,33 +3,30 @@ from ict import IncreasingCostTree
 from mdd import MDD, find_solution_in_joint_mdd
 from map_utils import find_number_of_open_spaces
 from performance_tracker import PerformanceTracker
+from map_utils import MapDetails
 
 import time
 
 class ICTSSolver(object):
     """A high-level ICTS search."""
 
-    def __init__(self, my_map, starts, goals):
+    def __init__(self, map_details):
         """my_map   - list of lists specifying obstacle positions
         starts      - [(x1, y1), (x2, y2), ...] list of start locations
         goals       - [(x1, y1), (x2, y2), ...] list of goal locations
         """
 
-        self.my_map = my_map
-        self.starts = starts
-        self.goals = goals
-        self.num_of_agents = len(goals)
-
-        self.num_of_generated = 0
-        self.num_of_expanded = 0
-        self.CPU_time = 0
+        self.my_map = map_details.map_instance
+        self.starts = map_details.starting_loc
+        self.goals = map_details.goal_loc
+        self.num_of_agents = len(map_details.goal_loc)
 
         self.open_list = []
 
         # compute heuristics for the low-level search
         self.heuristics = []
         for goal in self.goals:
-            self.heuristics.append(compute_heuristics(my_map, goal))
+            self.heuristics.append(compute_heuristics(self.my_map, goal))
 
         self.ict = self.create_ict()
         self.upper_bound = self.calculate_upper_bound_cost()
