@@ -1,7 +1,8 @@
 from pathlib import Path
 
 class MapDetails(object):
-    def __init__(self, map_name, map_instance, starting_locations, goal_locations):
+    def __init__(self, result_file_name, map_name, map_instance, starting_locations, goal_locations):
+        self.result_file_name = result_file_name
         self.name = map_name
         self.map_instance = map_instance
         self.starting_loc = starting_locations

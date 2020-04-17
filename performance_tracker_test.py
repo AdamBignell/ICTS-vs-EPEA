@@ -123,7 +123,7 @@ def test_tracker_can_write_single_entry_to_file():
     for i in range(10):
         tracker.count("empty", lambda: empty_func())
 
-    tracker.add_map_name("test_map")
+    tracker.set_map_name("test_map")
     tracker.write_stats_to_file(file_name_2)
     stats_file = open(file_name_2, "r")
 
@@ -149,8 +149,8 @@ def test_tracker_can_write_multiple_entries_to_file():
     for i in range(5):
         tracker2.count("empty", lambda: empty_func())
 
-    tracker1.add_map_name("test_map")
-    tracker2.add_map_name("test_2_map")
+    tracker1.set_map_name("test_map")
+    tracker2.set_map_name("test_2_map")
 
     tracker1.write_stats_to_file(file_name_3)
     tracker2.write_stats_to_file(file_name_3)
@@ -163,6 +163,7 @@ def test_tracker_can_write_multiple_entries_to_file():
 
     assert file_contents == expected_result, "Cannot write multiple performance tracker entry to file, each entry being on a different line"
     stats_file.close()
+    os.remove(file_name_3)
 
 if __name__ == "__main__":
     test_tracker_creates_a_stats_entry()

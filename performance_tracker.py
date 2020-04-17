@@ -5,6 +5,7 @@ import os.path
 class PerformanceTracker(object):
     def __init__(self):
         self.stats = self.create_stats()
+        self.res_file_name = "no_name"
 
     def create_stats(self):
         return dict()
@@ -51,6 +52,8 @@ class PerformanceTracker(object):
 
     def write_stats_to_file(self, file_name):
         stats_file = ""
+        file_name = file_name.replace("*", ".txt")
+
         if os.path.exists(file_name):
             stats_file = open(file_name, "a")
         else:
@@ -62,5 +65,11 @@ class PerformanceTracker(object):
         stats_file.write('\n')
         stats_file.close()
 
-    def add_map_name(self, map_name):
+    def set_map_name(self, map_name):
         self.stats["map_name"] = map_name
+
+    def set_results_file_name(self, file_name):
+        self.res_file_name = file_name
+
+    def get_results_file_name(self):
+        return self.res_file_name

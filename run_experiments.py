@@ -28,7 +28,7 @@ if __name__ == '__main__':
         my_map, starts, goals = util.import_mapf_instance(file)
         util.print_mapf_instance(my_map, starts, goals)
 
-        map_details = MapDetails(args.instance, my_map, starts, goals)
+        map_details = MapDetails(args.instance, file, my_map, starts, goals)
         
         paths = []
         if args.solver == "ICTS":

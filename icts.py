@@ -31,14 +31,16 @@ class ICTSSolver(object):
         self.ict = self.create_ict()
         self.upper_bound = self.calculate_upper_bound_cost()
         self.stat_tracker = PerformanceTracker()
+        self.stat_tracker.set_map_name(map_details.name)
+        self.stat_tracker.set_results_file_name(map_details.result_file_name)
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
         """
         print("\nFinding ICTS Solution...")
         ######### Fill in the ICTS Algorithm here #########
-        result = self.stat_tracker.time("BFS Time", lambda: self.bfs())
-        self.stat_tracker.print_stats()
+        result = self.stat_tracker.time("time", lambda: self.bfs())
+        self.stat_tracker.write_stats_to_file(self.stat_tracker.get_results_file_name())
         return result
         ###################################################
 
@@ -61,16 +63,11 @@ class ICTSSolver(object):
                 total_gen_time += new_gen_time
                 total_sol_time += new_sol_time
                 if(self.solution_exists(solution_paths)):
-                    #print("Generating MDDs took " + str(total_gen_time) + " s of the total")
-                    #print("Solving Joint MDDs took " + str(total_sol_time) + " s of the total")
                     return solution_paths
                 else:
                     self.stat_tracker.count("Expanded Nodes", lambda: ict.expand_next_node())
 
             ict.pop_next_node_to_expand()
-
-        #print("Generating MDDs took " + str(total_gen_time) + " s of the total")
-        #print("Solving Joint MDDs took " + str(total_sol_time) + " s of the total")
         return []
 
     def node_has_exceeded_upper_bound(self, node, upper_bound):
