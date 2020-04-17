@@ -43,7 +43,7 @@ class EPEASolver(object):
         goals = tuple(self.goals)
         visited_locs = self.visited
         num_agents = len(start_locs)
-        mycounter = 0       # counter used to break ties in the priority queue
+        mycounter = 0 # counter used to break ties in the priority queue
         g = 0
         h = osf.list_of_locations_to_heuristic(start_locs)
 
@@ -88,7 +88,7 @@ class EPEASolver(object):
 
     def print_sanity_track(self, start_time, num_expanded):
         elapsed = "{:.5f}".format(round(timer.time()-start_time, 5))
-        print("\r[ time elapsed: " + elapsed + "s | Nodes expanded: " + str(num_expanded), end=" ]", flush=True)
+        print("\r[ Time elapsed: " + elapsed + "s | Nodes expanded: " + str(num_expanded), end=" ]", flush=True)
 
     def get_child_node(self, child, parent, osf):
         h = osf.list_of_locations_to_heuristic(child)

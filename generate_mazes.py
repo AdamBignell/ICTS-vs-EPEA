@@ -4,10 +4,10 @@ from datetime import datetime as dt
 import os
 
 kGrowRate = 0.75
-kBridgeRate = 0
+kBridgeRate = 0.25
 random.seed(dt.now())
 kFilledRate = 0.25
-kMazeDirectory = "mazes/"
+kMazeDirectory = "mazes_experiments/"
 
 kNum10x10 = 100
 kNum20x20 = 100
@@ -107,7 +107,7 @@ def bridge_maze(maze, bridge_rate):
             if y == 0:
                 continue
             flip = random.uniform(0,1)
-            if cell == '@' and flip < bridge_rate and count_open_neighbours(maze, x, y) <= 3 and count_open_neighbours(maze, x, y, diag=True) > 1:
+            if cell == '@' and flip < bridge_rate and count_open_neighbours(maze, x, y) <= 3 and count_open_neighbours(maze, x, y) > 1:
                 maze[x][y] = '.'
     return maze
     

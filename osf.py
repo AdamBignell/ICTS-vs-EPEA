@@ -14,7 +14,10 @@ class OSF:
         # usage: h[agent][x][y]
         self.visited = set()
         self.indiv_ops = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
+        time1 = time.time()
         self.h = self.get_true_distance_heuristics(self.map, goals)
+        time2 = time.time()
+        print("Time to calculate True Distance Heuristics = ", time2-time1)
         num_agents = len(goals)
         self.agent_osfs = self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h)
         self.osf_tables = dict()
@@ -50,6 +53,7 @@ class OSF:
         q = deque()
         q.append((goal, 0))
         visited = set()
+        visited.add(goal)
         while q:
             (x,y), this_h = q.popleft()
             h[x][y] = this_h
@@ -57,9 +61,10 @@ class OSF:
             for op in self.indiv_ops:
                 new_child = (x+op[0], y+op[1])
                 if not my_map[new_child[0]][new_child[1]] and new_child not in visited:
+                    visited.add(new_child)
                     children.append((new_child, this_h+1))
-            q.extend(children)
-            visited.add((x,y))
+            if children:
+                q.extend(children)
         return h
 
     def populate_agent_osfs(self, my_map, num_agents, indiv_ops, h_table):

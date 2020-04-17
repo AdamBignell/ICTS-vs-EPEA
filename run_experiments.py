@@ -23,6 +23,7 @@ if __name__ == '__main__':
 
     for file in sorted(glob.glob(args.instance)):
 
+        print("Solving instance: " + file)
         print("***Import an instance***")
         my_map, starts, goals = util.import_mapf_instance(file)
         util.print_mapf_instance(my_map, starts, goals)
