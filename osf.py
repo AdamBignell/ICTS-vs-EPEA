@@ -12,9 +12,9 @@ class OSF:
         self.map = my_map
 
         # usage: h[agent][x][y]
-        self.h = self.get_heuristics(self.map, goals)
         self.visited = set()
         self.indiv_ops = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
+        self.h = self.get_true_distance_heuristics(self.map, goals)
         num_agents = len(goals)
         self.agent_osfs = self.populate_agent_osfs(my_map, num_agents, self.indiv_ops, self.h)
         self.osf_tables = dict()
@@ -35,6 +35,32 @@ class OSF:
                 new_h.append(this_row_h)
             all_h.append(new_h)
         return all_h
+
+    def get_true_distance_heuristics(self, my_map, goals):
+        num_agents = len(goals)
+        all_h = []
+        for i in range(num_agents):
+            this_goal = goals[i]
+            new_h = self.true_distance_bfs(my_map, this_goal)
+            all_h.append(new_h)
+        return all_h
+
+    def true_distance_bfs(self, my_map, goal):
+        h = [[0 for i in range(len(my_map[0]))] for i in range(len(my_map))]
+        q = deque()
+        q.append((goal, 0))
+        visited = set()
+        while q:
+            (x,y), this_h = q.popleft()
+            h[x][y] = this_h
+            children = []
+            for op in self.indiv_ops:
+                new_child = (x+op[0], y+op[1])
+                if not my_map[new_child[0]][new_child[1]] and new_child not in visited:
+                    children.append((new_child, this_h+1))
+            q.extend(children)
+            visited.add((x,y))
+        return h
 
     def populate_agent_osfs(self, my_map, num_agents, indiv_ops, h_table):
         agent_osfs = []
@@ -85,19 +111,12 @@ class OSF:
         next_big_F = small_f + delta_big_F_next
         if not op_table[requested_row]:
             return [], next_big_F
-        return op_table[requested_row]['operators'], next_big_F
-
-    def get_on_map_ops(self, agent_locs, ops):
-        all_ops = []
-        for loc in agent_locs:
-            this_agent_ops = []
-            for op in ops:
-                new_x = loc[0] + op[0]
-                new_y = loc[1] + op[1]
-                if not self.map[new_x][new_y]:
-                    this_agent_ops.append(op)
-            all_ops.append(this_agent_ops)
-        return all_ops
+        all_ops = op_table[requested_row]['operators']
+        good_ops = []
+        for ops in all_ops:
+            just_ops = tuple([single_op[0] for single_op in ops])
+            good_ops.append(just_ops)
+        return good_ops, next_big_F
 
     def get_op_table(self, all_possible_ops, agent_locs, small_f, h, g):
         num_agents = len(agent_locs)
@@ -106,19 +125,15 @@ class OSF:
         for op in all_possible_ops:
             new_op_table_row = dict()
             this_h = self.get_heuristics_from_op(op)
-            just_ops = tuple([single_op[0] for single_op in op])
-            new_locs = self.get_new_locations(agent_locs, just_ops)
-            if self.move_invalid(agent_locs, new_locs):
-                continue
             this_g = g + num_agents # We make a decision for everyone simultaneously
             this_small_f = this_h + this_g
             delta_small_f = this_small_f - small_f
             if not op_table[delta_small_f]:
                 new_op_table_row['delta_h'] = this_h - h
-                new_op_table_row['operators'] = [just_ops]
+                new_op_table_row['operators'] = [op]
                 op_table[delta_small_f] = new_op_table_row
             else:
-                op_table[delta_small_f]['operators'].append(just_ops)
+                op_table[delta_small_f]['operators'].append(op)
         return op_table
 
     def get_heuristics_from_op(self, indiv_ops):
@@ -136,8 +151,9 @@ class OSF:
     def get_new_children(self, locs, group_ops):
         children = []
         for op in group_ops:
-            new_child = tuple(self.get_new_locations(op, locs))
-            children.append(new_child)
+            new_locs = tuple(self.get_new_locations(op, locs))
+            if not self.move_invalid(locs, new_locs):
+                children.append(new_locs)
         return children
 
     def get_new_locations(self, ops, locs):

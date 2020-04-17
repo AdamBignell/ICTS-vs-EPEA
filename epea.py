@@ -40,7 +40,7 @@ class EPEASolver(object):
         osf = self.osf
         open_list = self.open_list
         start_locs = tuple(self.starts)
-        goals = self.goals
+        goals = tuple(self.goals)
         visited_locs = self.visited
         visited_loc_Big_f = self.visited_loc_Big_f
         num_agents = len(start_locs)
@@ -49,38 +49,44 @@ class EPEASolver(object):
         h = osf.list_of_locations_to_heuristic(start_locs)
 
         start_node = {'agent_locs': start_locs, 'g': 0, 'h': h, 'small_f': g + h, 'big_F': g + h, 'parent': False}
-        priority_tuple = (g + h, h, -g, mycounter)
+        visited_loc_Big_f.add((start_locs, g+h))
+        priority_tuple = (g + h, -g, h, mycounter)
         heappush(open_list, (priority_tuple, start_node))
         mycounter+=1
+        last_big_F = 0
+        start_time = timer.time()
+        nodes_expanded = 0
         while(len(open_list) != 0):
+            self.print_sanity_track(start_time, nodes_expanded)
             priority_tuple, current_node = heappop(open_list)
-            if current_node['agent_locs'] in visited_loc_Big_f:
-                continue
-            if list(current_node['agent_locs']) == goals:
+            if current_node['agent_locs'] == goals:
                 return self.find_paths(current_node, goals)
-            #print(current_node['agent_locs'], priority_tuple)
+            big_F = priority_tuple[0]
+            if big_F != last_big_F:
+                last_big_F = big_F
+                #print(current_node['agent_locs'], big_F, mycounter)
             new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node)
             for child in new_child_nodes:
-                if child in visited_locs:
-                    continue
                 h = osf.list_of_locations_to_heuristic(child)
                 g = current_node['g'] + num_agents
                 small_f = g + h
                 big_F = small_f
                 new_node = {'agent_locs': child, 'g': g, 'h': h, 'small_f': small_f, 'big_F': big_F, 'parent': current_node}
-                visited_locs.add(child)
-                visited_loc_Big_f.add((child, big_F))
-                priority_tuple = (big_F, h, -g, mycounter)
-                heappush(open_list, (priority_tuple, new_node))
-                mycounter+=1            
+                if child not in visited_locs:
+                    visited_locs.add(child)
+                    priority_tuple = (small_f, -g, h, mycounter)
+                    heappush(open_list, (priority_tuple, new_node))
+                    mycounter+=1            
             if math.isinf(next_big_F):
                 visited_locs.add(current_node['agent_locs'])
             else:
                 current_node['big_F'] = next_big_F
-                priority_tuple = (current_node['big_F'], current_node['h'], -current_node['g'], mycounter)
-                heappush(open_list, (priority_tuple, current_node))
-                visited_loc_Big_f.add((current_node['agent_locs'], next_big_F))
-                mycounter+=1
+                if (current_node['agent_locs'], next_big_F) not in visited_loc_Big_f:
+                    priority_tuple = (current_node['big_F'], -current_node['g'], current_node['h'], mycounter)
+                    heappush(open_list, (priority_tuple, current_node))
+                    visited_loc_Big_f.add((current_node['agent_locs'], next_big_F))
+                    mycounter+=1
+            nodes_expanded += 1
         return []
         
     def find_paths(self, node, goals):
@@ -93,5 +99,7 @@ class EPEASolver(object):
         path = list(list(i) for i in zip(*path))
         return path
 
-
+    def print_sanity_track(self, start_time, num_expanded):
+        elapsed = "{:.5f}".format(round(timer.time()-start_time, 5))
+        print("\r[ time elapsed: " + elapsed + "s | Nodes expanded: " + str(num_expanded), end=" ]", flush=True)
 
