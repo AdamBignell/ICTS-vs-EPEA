@@ -1,5 +1,6 @@
 import time
 import json
+import os.path
 
 class PerformanceTracker(object):
     def __init__(self):
@@ -47,3 +48,19 @@ class PerformanceTracker(object):
     def print_stats(self):
         print("Performance Tracker Stats:")
         print(json.dumps(self.stats, indent = 4))
+
+    def write_stats_to_file(self, file_name):
+        stats_file = ""
+        if os.path.exists(file_name):
+            stats_file = open(file_name, "a")
+        else:
+            stats_file = open(file_name, "x")
+
+        if stats_file != "":
+            json.dump(self.stats, stats_file)
+
+        stats_file.write('\n')
+        stats_file.close()
+
+    def add_map_name(self, map_name):
+        self.stats["map_name"] = map_name
