@@ -1,5 +1,13 @@
 from pathlib import Path
 
+class MapDetails(object):
+    def __init__(self, result_file_name, map_name, map_instance, starting_locations, goal_locations):
+        self.result_file_name = result_file_name
+        self.name = map_name
+        self.map_instance = map_instance
+        self.starting_loc = starting_locations
+        self.goal_loc = goal_locations
+
 def print_mapf_instance(my_map, starts, goals):
     print('Start locations')
     print_locations(my_map, starts)

@@ -3,38 +3,42 @@ from heapq import heappush
 from heapq import heappop
 import random
 from osf import OSF
+from map_utils import MapDetails
+from performance_tracker import PerformanceTracker
 import math
-from single_agent_planner import compute_heuristics, a_star, get_location, get_sum_of_cost
 
 class EPEASolver(object):
     """A high-level EPEA* search."""
 
-    def __init__(self, my_map, starts, goals):
+    def __init__(self, map_details):
         """my_map   - list of lists specifying obstacle positions
         starts      - [(x1, y1), (x2, y2), ...] list of start locations
         goals       - [(x1, y1), (x2, y2), ...] list of goal locations
         """
+        self.my_map = map_details.map_instance
+        self.starts = map_details.starting_loc
+        self.goals = map_details.goal_loc
+        self.num_of_agents = len(map_details.goal_loc)
 
-        self.my_map = my_map
-        self.starts = starts
-        self.goals = goals
-        self.num_of_agents = len(goals)
-        self.num_of_generated = 0
-        self.num_of_expanded = 0
-        self.CPU_time = 0
+        self.num_of_agents = len(self.goals)
 
         self.open_list = []
         self.visited = set()
         self.visited_loc_Big_f = set()
 
-        self.osf = OSF(my_map, goals)
+        self.osf = OSF(self.my_map, self.goals)
+
+        self.stat_tracker = PerformanceTracker()
+        self.stat_tracker.set_map_name(map_details.name)
+        self.stat_tracker.set_results_file_name(map_details.result_file_name)
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
         """
         print("\nFinding EPEA* Solution...")
-        return self.epea_star()
-
+        result = self.stat_tracker.time("time", lambda: self.epea_star())
+        self.stat_tracker.write_stats_to_file(self.stat_tracker.get_results_file_name())
+        return result
     
     def epea_star(self):
         osf = self.osf

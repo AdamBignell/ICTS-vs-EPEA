@@ -1,6 +1,11 @@
 import time
+import os.path
 
 from performance_tracker import PerformanceTracker
+
+file_name_1 = "test_file1.txt"
+file_name_2 = "test_file2.txt"
+file_name_3 = "test_file3.txt"
 
 def test_tracker_creates_a_stats_entry():
     def simple_print(message):
@@ -95,6 +100,71 @@ def test_tracker_times_multiple_instances_of_same_key():
     threshold = 0.1
     assert (time_taken < (expected_time + threshold)) and (time_taken > (expected_time - threshold)), "Cannot accurately add times of multiple function calls"
 
+def test_tracker_can_write_file():
+    def empty_func():
+        pass
+
+    tracker = PerformanceTracker()
+
+    for i in range(10):
+        tracker.count("empty", lambda: empty_func())
+
+    tracker.write_stats_to_file(file_name_1)
+    assert os.path.exists(file_name_1), "Cannot create file for performance tracker"
+    os.remove(file_name_1)
+
+def test_tracker_can_write_single_entry_to_file():
+    def empty_func():
+        pass
+
+    tracker = PerformanceTracker()
+    expected_result = "{\"empty\": 10, \"map_name\": \"test_map\"}\n"
+
+    for i in range(10):
+        tracker.count("empty", lambda: empty_func())
+
+    tracker.set_map_name("test_map")
+    tracker.write_stats_to_file(file_name_2)
+    stats_file = open(file_name_2, "r")
+
+    file_contents = ""
+    if stats_file.mode == "r":
+        file_contents = stats_file.read()
+
+    assert file_contents == expected_result, "Cannot write single performance tracker entry to file"
+    stats_file.close()
+    os.remove(file_name_2)
+
+def test_tracker_can_write_multiple_entries_to_file():
+    def empty_func():
+        pass
+
+    tracker1 = PerformanceTracker()
+    tracker2 = PerformanceTracker()
+    expected_result = '{"empty": 10, "map_name": "test_map"}\n{"empty": 5, "map_name": "test_2_map"}\n'
+
+    for i in range(10):
+        tracker1.count("empty", lambda: empty_func())
+
+    for i in range(5):
+        tracker2.count("empty", lambda: empty_func())
+
+    tracker1.set_map_name("test_map")
+    tracker2.set_map_name("test_2_map")
+
+    tracker1.write_stats_to_file(file_name_3)
+    tracker2.write_stats_to_file(file_name_3)
+
+    stats_file = open(file_name_3, "r")
+
+    file_contents = ""
+    if stats_file.mode == "r":
+        file_contents = stats_file.read()
+
+    assert file_contents == expected_result, "Cannot write multiple performance tracker entry to file, each entry being on a different line"
+    stats_file.close()
+    os.remove(file_name_3)
+
 if __name__ == "__main__":
     test_tracker_creates_a_stats_entry()
     test_tracker_creates_multiple_stats_entry()
@@ -103,4 +173,7 @@ if __name__ == "__main__":
     test_tracker_times_how_long_a_function_takes_to_run()
     test_print_stats_for_tracker()
     test_tracker_times_multiple_instances_of_same_key()
+    test_tracker_can_write_file()
+    test_tracker_can_write_single_entry_to_file()
+    test_tracker_can_write_multiple_entries_to_file()
     print("ALL TEST PASSED")
