@@ -4,6 +4,7 @@ from mdd import MDD, find_solution_in_joint_mdd
 from map_utils import find_number_of_open_spaces
 from performance_tracker import PerformanceTracker
 from map_utils import MapDetails
+import collections
 
 import time
 
@@ -36,7 +37,27 @@ class ICTSSolver(object):
 
     def calculate_heuristics(self):
         for goal in self.goals:
-            self.heuristics.append(compute_heuristics(self.my_map, goal))
+            self.heuristics.append(self.true_distance_bfs(self.my_map, goal))
+
+    def true_distance_bfs(self, my_map, goal):
+        h = dict()
+        q = collections.deque()
+        indiv_ops = [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)]
+        q.append((goal, 0))
+        visited = set()
+        visited.add(goal)
+        while q:
+            (x,y), this_h = q.popleft()
+            h[(x,y)] = this_h
+            children = []
+            for op in indiv_ops:
+                new_child = (x+op[0], y+op[1])
+                if not my_map[new_child[0]][new_child[1]] and new_child not in visited:
+                    visited.add(new_child)
+                    children.append((new_child, this_h+1))
+            if children:
+                q.extend(children)
+        return h
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations

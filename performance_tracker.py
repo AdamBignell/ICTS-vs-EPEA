@@ -52,7 +52,11 @@ class PerformanceTracker(object):
 
     def write_stats_to_file(self, file_name):
         stats_file = ""
-        file_name = file_name.replace("*", ".txt")
+        print("File Name = ", file_name)
+        directories = file_name.split('/')
+        directories[0] = 'results'
+        file_name = '/'.join(directories)
+        file_name = file_name.replace("*", "results.txt")
 
         if os.path.exists(file_name):
             stats_file = open(file_name, "a")
