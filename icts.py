@@ -21,18 +21,22 @@ class ICTSSolver(object):
         self.goals = map_details.goal_loc
         self.num_of_agents = len(map_details.goal_loc)
 
+        self.stat_tracker = PerformanceTracker()
+        self.stat_tracker.set_map_name(map_details.name)
+        self.stat_tracker.set_results_file_name(map_details.result_file_name)
+
         self.open_list = []
 
         # compute heuristics for the low-level search
         self.heuristics = []
-        for goal in self.goals:
-            self.heuristics.append(compute_heuristics(self.my_map, goal))
+        self.stat_tracker.time("heuristic_time", lambda: self.calculate_heuristics())
 
         self.ict = self.create_ict()
         self.upper_bound = self.calculate_upper_bound_cost()
-        self.stat_tracker = PerformanceTracker()
-        self.stat_tracker.set_map_name(map_details.name)
-        self.stat_tracker.set_results_file_name(map_details.result_file_name)
+
+    def calculate_heuristics(self):
+        for goal in self.goals:
+            self.heuristics.append(compute_heuristics(self.my_map, goal))
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
