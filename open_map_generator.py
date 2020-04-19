@@ -131,6 +131,8 @@ def generate_random_obstacles(logical_map, probability_of_switching_to_obstacle)
 
     return logical_map
 
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create a randomly generated open map')
     parser.add_argument('--output', type=str, default=None,
@@ -139,25 +141,31 @@ if __name__ == '__main__':
                         help="The dimension of the map")
     parser.add_argument('--agents', type=int,
                         help="The number of agents")
+    parser.add_argument('--startnum', type=int,
+                        help="The starting number for the naming convention")
+    parser.add_argument('--nummaps', type=int,
+                        help="The number of maps to generate")
+    parser.add_argument('--probability', type=float,
+                        help="The probability a location will become an obstacle")
 
     args = parser.parse_args()
     seed(dt.now())
 
-    rows = args.dim[0]
-    cols = args.dim[1]
-    random_open_map = create_initial_map(rows, cols)
-    map_without_border = [[0] * (cols - 2) for x in range(rows - 2)]
+    for map_number in range(args.startnum, args.startnum + args.nummaps):
+        rows = args.dim[0]
+        cols = args.dim[1]
+        random_open_map = create_initial_map(rows, cols)
+        map_without_border = [[0] * (cols - 2) for x in range(rows - 2)]
 
-    start_and_goal_loc = generate_starting_and_goal_locations(map_without_border, 3)
-    random_open_map = mark_start_and_goal_locations(start_and_goal_loc, random_open_map)
-    random_open_map = generate_random_obstacles(random_open_map, PROBABILITY_OF_BECOMING_OBSTACLE)
+        start_and_goal_loc = generate_starting_and_goal_locations(map_without_border, 3)
+        random_open_map = mark_start_and_goal_locations(start_and_goal_loc, random_open_map)
+        random_open_map = generate_random_obstacles(random_open_map, args.probability)
 
-    map_number = 1
-    file_name = 'open_maps/open{0}x{1}_{2}_{3}.txt'.format(args.dim[0], args.dim[1], args.agents, map_number)
-    f = open(file_name, 'w')
-    string_to_write_to_file = '{0} {1}\n'.format(args.dim[0], args.dim[1])
-    string_to_write_to_file = string_to_write_to_file + convert_logical_map_to_string(random_open_map)
-    string_to_write_to_file = string_to_write_to_file + '{0}\n'.format(args.agents)
-    string_to_write_to_file = string_to_write_to_file + format_all_start_and_goal_locations(start_and_goal_loc)
-    f.write(string_to_write_to_file)
-    f.close()
+        file_name = 'open_maps/open{0}x{1}_{2}_{3}.txt'.format(args.dim[0], args.dim[1], args.agents, map_number)
+        f = open(file_name, 'w')
+        string_to_write_to_file = '{0} {1}\n'.format(args.dim[0], args.dim[1])
+        string_to_write_to_file = string_to_write_to_file + convert_logical_map_to_string(random_open_map)
+        string_to_write_to_file = string_to_write_to_file + '{0}\n'.format(args.agents)
+        string_to_write_to_file = string_to_write_to_file + format_all_start_and_goal_locations(start_and_goal_loc)
+        f.write(string_to_write_to_file)
+        f.close()
