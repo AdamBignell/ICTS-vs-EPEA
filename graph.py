@@ -77,7 +77,6 @@ def save_expansion_graph(results, labels, output_file):
     median_expansions = get_medians(results, 'expansions')
     save_beautiful_graph_medians(median_expansions, [], labels, output_file)
 
-
 def get_medians(results, stat):
     result_nums = results_to_nums(results, stat)
     medians = []
