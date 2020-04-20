@@ -11,8 +11,6 @@ RIGHTMOST_BORDER_FORMAT = '@\n'
 OPEN_SPACE_FORMAT = '. '
 OBSTACLE_SPACE_FORMAT = '@ '
 
-PROBABILITY_OF_BECOMING_OBSTACLE = 0.1
-
 def create_initial_map(rows, cols):
     new_map = [[OPEN_SPACE] * cols for x in range(rows)]
     new_map = create_border_for_map(new_map)
@@ -128,10 +126,27 @@ def generate_random_obstacles(used_locations, logical_map, probability_of_switch
     for row in range(1, num_rows):
         for col in range(1, num_cols):
             current_position = (row, col)
-            if (not current_position in all_used_locations) and random() < probability_of_switching_to_obstacle:
+            if position_should_become_obstacle(current_position, all_used_locations, probability_of_switching_to_obstacle, logical_map):
+            # if (not current_position in all_used_locations) and random() < probability_of_switching_to_obstacle:
                 logical_map[row][col] = OBSTACLE
 
     return logical_map
+
+def position_should_become_obstacle(location, starts_and_goals, p, map_instance):
+    position_is_valid = not location in starts_and_goals
+    num_of_adjacent_obstacles = count_adjacent_obstacles(location, map_instance)
+    p = p + (num_of_adjacent_obstacles * PROBABILITY_DECREASE_OF_ADJACENT_OBSTACLE)
+    return position_is_valid and random() <p
+
+def count_adjacent_obstacles(location, map_instance):
+    neighbours = get_neighbours(location)
+    adjacent_obstacles = 0
+
+    for neighbour in neighbours:
+        if location_is_valid(location, map_instance) and map_instance[neighbour[0]][neighbour[1]] == 1:
+            adjacent_obstacles = adjacent_obstacles + 1
+
+    return adjacent_obstacles
 
 def solution_is_possible(starts, goals, map):
     for i in range(len(starts)):
@@ -145,8 +160,6 @@ def locations_are_connected(start, goal, map_instance):
     open = []
     closed = set()
     open.append(start)
-    rows = len(map_instance)
-    cols = len(map_instance[0])
 
     while len(open):
         current_node = open.pop()
@@ -189,9 +202,12 @@ if __name__ == '__main__':
                         help="The number of maps to generate")
     parser.add_argument('--probability', type=float,
                         help="The probability a location will become an obstacle")
+    parser.add_argument('--adjacentprobability', type=float,
+                        help="The probability a location will become an obstacle")
 
     args = parser.parse_args()
     seed(dt.now())
+    PROBABILITY_DECREASE_OF_ADJACENT_OBSTACLE = args.adjacentprobability
 
     for map_number in range(args.startnum, args.startnum + args.nummaps):
         rows = args.dim[0]
