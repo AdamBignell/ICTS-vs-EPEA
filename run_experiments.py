@@ -53,7 +53,8 @@ if __name__ == '__main__':
             raise RuntimeError("Unknown solver!")
 
         if not paths:
-            raise RuntimeError("No Solution!")
+            print("No Solution!")
+            continue
 
         cost = get_sum_of_cost(paths)
         result_file = open("results_" + "args.solver" + ".csv", "w", buffering=1)

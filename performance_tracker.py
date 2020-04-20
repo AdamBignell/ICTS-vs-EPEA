@@ -3,8 +3,9 @@ import json
 import os.path
 
 class PerformanceTracker(object):
-    def __init__(self):
+    def __init__(self, algorithm_name):
         self.stats = self.create_stats()
+        self.stats['algorithm'] = algorithm_name
         self.res_file_name = "no_name"
 
     def create_stats(self):
@@ -52,11 +53,10 @@ class PerformanceTracker(object):
 
     def write_stats_to_file(self, file_name):
         stats_file = ""
-        print("File Name = ", file_name)
         directories = file_name.split('/')
         directories[0] = 'results'
         file_name = '/'.join(directories)
-        file_name = file_name.replace("*", "results.txt")
+        file_name = file_name.replace("*", self.stats['algorithm'] + "_results.txt")
 
         if os.path.exists(file_name):
             stats_file = open(file_name, "a")

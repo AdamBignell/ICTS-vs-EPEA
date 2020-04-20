@@ -7,12 +7,12 @@ kGrowRate = 0.75
 kBridgeRate = 0.25
 random.seed(dt.now())
 kFilledRate = 0.25
-kMazeDirectory = "mazes_experiments/"
+kMazeDirectory = "mazes/"
 
-kNum10x10 = 100
-kNum20x20 = 100
-kNum50x50 = 100
-kNum100x100 = 100
+kNum10x10 = 200
+kNum20x20 = 200
+kNum50x50 = 200
+kNum100x100 = 200
 
 def generate_maze_to_file(x, y, num_agents, file_name):
     maze, open_cells = get_maze(x, y, num_agents, kFilledRate)
@@ -26,7 +26,7 @@ def get_maze(x, y, num_agents, filled_rate):
         open_cells = set()
         maze, seeds = seed_maze_root(maze)
         maze = grow_maze(maze, seeds, kGrowRate)
-        maze = bridge_maze(maze, kBridgeRate)
+        #maze = bridge_maze(maze, kBridgeRate)
         open_cells = get_open(maze)
     return maze, open_cells
         
@@ -146,12 +146,12 @@ def print_maze(maze, file):
 
 if __name__ == '__main__':
     for i in range(kNum10x10):
-        name_string = "maze10x10_3_" + str(i) + ".txt"
-        generate_maze_to_file(10, 10, 3, name_string)
+        name_string = "maze12x12_3_" + str(i) + ".txt"
+        generate_maze_to_file(12, 12, 3, name_string)
         
     for i in range(kNum20x20):
-        name_string = "maze20x20_3_" + str(i) + ".txt"
-        generate_maze_to_file(20, 20, 3, name_string)
+        name_string = "maze25x25_3_" + str(i) + ".txt"
+        generate_maze_to_file(25, 25, 3, name_string)
 
     for i in range(kNum50x50):
         name_string = "maze50x50_3_" + str(i) + ".txt"
