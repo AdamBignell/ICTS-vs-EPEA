@@ -135,8 +135,9 @@ def generate_random_obstacles(used_locations, logical_map, probability_of_switch
 
 def solution_is_possible(starts, goals, map):
     for i in range(len(starts)):
-        if not locations_are_connected(starts[i], goals[i], map):
-            return False
+        for j in range(len(goals)):
+            if not locations_are_connected(starts[i], goals[j], map):
+                return False
 
     return True
 
