@@ -32,6 +32,20 @@ def save_graphs():
     maze_expansion_icts_labels = get_node_expansion_labels('ICTS', 'Maze')
     save_expansion_graph(icts_results, maze_expansion_icts_labels, 'maze_icts_expansions.pdf')
 
+    # Generate Open Graphs
+    epea_open_batch_names = get_file_names('EPEA', 'open')
+    icts_open_batch_names = get_file_names('ICTS', 'open')
+    epea_open_results = get_all_results(epea_open_batch_names)
+    icts_open_results = get_all_results(icts_open_batch_names)
+    open_runtime_labels = get_runtime_labels('Open')
+    save_runtime_graph(epea_open_results, icts_open_results, open_runtime_labels, 'open_runtime_medians.pdf')
+
+    open_expansion_epea_labels = get_node_expansion_labels('EPEA*', 'Open')
+    save_expansion_graph(epea_open_results, open_expansion_epea_labels, 'open_epea_expansions.pdf')
+
+    open_expansion_icts_labels = get_node_expansion_labels('ICTS', 'Open')
+    save_expansion_graph(icts_open_results, open_expansion_icts_labels, 'open_icts_expansions.pdf')
+
 def get_file_names(algorithm, prefix):
     batch_prefix_names = [prefix + '12x12', prefix + '25x25', prefix + '50x50', prefix + '100x100']
     batch_names = [batch + '_3_' + algorithm + '_results.txt' for batch in batch_prefix_names]
