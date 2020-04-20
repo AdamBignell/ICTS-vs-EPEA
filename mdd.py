@@ -133,7 +133,7 @@ def is_solution_in_joint_mdd(mdds_list, return_solution = False):
         found_path, visited = joint_mdd_dfs(mdds_list, (roots_key, 0), max(depths), visited)
         return found_path
     # else == return_solution
-    solution, visited = joint_mdd_dfs_return_solution(mdds_list, (roots_key, 0), max(depths), visited)
+    solution, visited = joint_mdd_dfs_return_solution(mdds_list, None, (roots_key, 0), max(depths), visited)
     return solution
 
 def find_solution_in_joint_mdd(mdds_list):
@@ -162,24 +162,26 @@ def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
     
     return False, visited
 
-def joint_mdd_dfs_return_solution(mdds_list, curr, max_depth, visited):
+def joint_mdd_dfs_return_solution(mdds_list, prev, curr, max_depth, visited):
     curr_nodes = curr[0]
     curr_depth = curr[1]
+    if prev and is_invalid_move(prev, curr_nodes):
+        return [], visited
     if curr in visited or curr_depth > max_depth:
         return [], visited
 
     visited.add(curr)
     if is_goal_state(mdds_list, curr_nodes, curr_depth):
         return [curr], visited
-    valid_children = get_valid_children(mdds_list, curr_nodes, curr_depth)
+    children = get_children(mdds_list, curr_nodes, curr_depth)
 
     # DFS below
     partial_solution = [curr]
-    for node in valid_children:
+    for node in children:
         child = (node, curr_depth+1)
         # Finding a solution
         if child not in visited:
-            solution, visited = joint_mdd_dfs_return_solution(mdds_list, child, max_depth, visited)
+            solution, visited = joint_mdd_dfs_return_solution(mdds_list, curr_nodes, child, max_depth, visited)
             if solution != []:
                 partial_solution.extend(solution)
                 return partial_solution, visited
@@ -191,6 +193,11 @@ def is_goal_state(mdds_list, curr_nodes, curr_depth):
         if curr_depth < this_mdd.depth or this_mdd.goal != node:
             return False
     return True
+
+def get_children(mdds_list, curr_nodes, curr_depth):
+    all_indiv_children = get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth)
+    all_joint_child_nodes = list(itertools.product(*all_indiv_children))
+    return all_joint_child_nodes
 
 def get_valid_children(mdds_list, curr_nodes, curr_depth):
     all_indiv_children = get_children_for_cross_prod(mdds_list, curr_nodes, curr_depth)
@@ -216,6 +223,9 @@ def prune_joint_children(all_joint_nodes, curr_nodes):
         if len(set(node)) == len(node) and not has_edge_collisions(curr_nodes, node):
             all_joint_child_nodes.append(node)
     return all_joint_child_nodes
+
+def is_invalid_move(curr_locs, next_locs):
+    return len(set(curr_locs)) != len(curr_locs) or has_edge_collisions(curr_locs, next_locs)
 
 def has_edge_collisions(curr_nodes, next_nodes):
     forward = [pair for pair in zip(curr_nodes, next_nodes) if pair[0] != pair[1]]
