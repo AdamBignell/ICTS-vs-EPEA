@@ -34,18 +34,18 @@ if __name__ == '__main__':
         paths = []
         if args.solver == "ICTS":
             print("***Run ICTS***")
+            t1 = time.time()
             icts = ICTSSolver(map_details)
             if not icts.ict:
                 paths = []
             else:
-                t1 = time.time()
                 paths = icts.find_solution()
                 t2 = time.time()
                 print("\nFound solution in this many seconds = ", t2-t1)
         elif args.solver == "EPEA":
             print("***Run EPEA***")
-            epea = EPEASolver(map_details)
             t1 = time.time()
+            epea = EPEASolver(map_details)
             paths = epea.find_solution()
             t2 = time.time()
             print("\nFound solution in this many seconds = ", t2-t1)
@@ -53,7 +53,8 @@ if __name__ == '__main__':
             raise RuntimeError("Unknown solver!")
 
         if not paths:
-            raise RuntimeError("No Solution!")
+            print("No Solution!")
+            continue
 
         cost = get_sum_of_cost(paths)
         result_file = open("results_" + "args.solver" + ".csv", "w", buffering=1)

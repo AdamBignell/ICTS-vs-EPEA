@@ -1,4 +1,5 @@
 import copy
+import collections
 
 class IncreasingCostTree:
     def __init__(self, my_map, starts, goals, initial_cost):
@@ -14,7 +15,8 @@ class IncreasingCostTree:
         self.num_of_agents = len(goals)
         self.root = TreeNode(self.initial_cost)
 
-        self.open_list = [self.root]
+        self.open_list = collections.deque() 
+        self.open_list.append(self.root)
         self.closed_list = set(initial_cost)
 
     def get_open_list(self):
@@ -24,7 +26,7 @@ class IncreasingCostTree:
         return self.open_list[0]
 
     def pop_next_node_to_expand(self):
-        return self.open_list.pop(0)
+        return self.open_list.popleft()
 
     def add_node_to_open_list(self, node):
         self.open_list.append(node)

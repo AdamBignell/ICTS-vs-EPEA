@@ -26,11 +26,11 @@ class EPEASolver(object):
         self.visited = set()
         self.visited_loc_Big_f = set()
 
-        self.osf = OSF(self.my_map, self.goals)
-
-        self.stat_tracker = PerformanceTracker()
+        self.stat_tracker = PerformanceTracker("EPEA")
         self.stat_tracker.set_map_name(map_details.name)
         self.stat_tracker.set_results_file_name(map_details.result_file_name)
+
+        self.osf = self.stat_tracker.time("osf time", lambda: OSF(self.my_map, self.goals))
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
@@ -62,7 +62,7 @@ class EPEASolver(object):
             priority_tuple, current_node = heappop(open_list)
             if current_node['agent_locs'] == goals:
                 return self.find_paths(current_node, goals)
-            new_child_nodes, next_big_F = osf.get_children_and_next_F(current_node)
+            new_child_nodes, next_big_F = self.stat_tracker.count("expanded nodes", lambda: osf.get_children_and_next_F(current_node))
             for child in new_child_nodes:
                 child_node = self.get_child_node(child, current_node, osf)
                 if child not in visited_locs:
