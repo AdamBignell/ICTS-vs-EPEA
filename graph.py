@@ -98,7 +98,7 @@ def get_runtime_labels(instance_type):
     labels = {}
     labels['x_title'] = instance_type + ' Instance Size'
     labels['x_labels'] = ['12x12', '25x25', '50x50', '100x100']
-    labels['y_title'] = 'Runtime in Seconds'
+    labels['y_title'] = 'Median Runtime in Seconds'
     labels['title'] = 'Comparison of Median ICTS and EPEA* runtimes for increasingly large\n' + instance_type + ' Instances, using 3 agents'
     labels['colors'] = colors
     labels['legend'] = ['EPEA*', 'ICTS']
@@ -109,10 +109,10 @@ def get_node_expansion_labels(algorithm, instance_type):
     labels['x_title'] = instance_type + ' Instance Size'
     labels['x_labels'] = ['12x12', '25x25', '50x50', '100x100']
     if algorithm == 'ICTS':
-        labels['y_title'] = 'Number of High Level Node Expansions'
+        labels['y_title'] = 'Median Number of\nHigh Level Node Expansions'
         labels['colors'] = [colors[4]]
     elif algorithm == 'EPEA*':
-        labels['y_title'] = 'Number of Node Expansions'
+        labels['y_title'] = 'Median Number of Node Expansions'
         labels['colors'] = [colors[0]]
     labels['title'] = 'Median ' + algorithm + ' Node Expansions for increasingly large\n' + instance_type + ' Instances, using 3 agents'
     labels['legend'] = [algorithm]
