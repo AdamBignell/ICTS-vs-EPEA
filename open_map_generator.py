@@ -120,18 +120,59 @@ def convert_single_logical_value_to_single_string_format(logical_value, column, 
 
     return equivalent_string_format
 
-def generate_random_obstacles(logical_map, probability_of_switching_to_obstacle):
+def generate_random_obstacles(used_locations, logical_map, probability_of_switching_to_obstacle):
     num_rows = len(logical_map)
     num_cols = len(logical_map[0])
+    all_used_locations = used_locations['start_loc'] + used_locations['goal_loc']
 
     for row in range(1, num_rows):
         for col in range(1, num_cols):
-            if random() < probability_of_switching_to_obstacle:
+            current_position = (row, col)
+            if (not current_position in all_used_locations) and random() < probability_of_switching_to_obstacle:
                 logical_map[row][col] = OBSTACLE
 
     return logical_map
 
+def solution_is_possible(starts, goals, map):
+    for i in range(len(starts)):
+        if not locations_are_connected(starts[i], goals[i], map):
+            return False
 
+    return True
+
+def locations_are_connected(start, goal, map_instance):
+    open = []
+    closed = set()
+    open.append(start)
+    rows = len(map_instance)
+    cols = len(map_instance[0])
+
+    while len(open):
+        current_node = open.pop()
+        closed.add(current_node)
+
+        if current_node == goal:
+            return True
+        else:
+            neighbours = get_neighbours(current_node)
+            for neighbour in neighbours:
+                if location_is_valid(neighbour, map_instance) and not neighbour in closed:
+                    open.append(neighbour)
+
+    return False
+
+def get_neighbours(location):
+    return [(location[0] - 1, location[1]),
+            (location[0] + 1, location[1]),
+            (location[0], location[1] - 1),
+            (location[0], location[1] + 1)]
+
+def location_is_valid(location, map_instance):
+    row = location[0]
+    col = location[1]
+    max_row = len(map_instance)
+    max_col = len(map_instance[0])
+    return row > 0 and col > 0 and max_row > row and max_col > col and map_instance[row][col] != 1
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create a randomly generated open map')
@@ -159,7 +200,11 @@ if __name__ == '__main__':
 
         start_and_goal_loc = generate_starting_and_goal_locations(map_without_border, 3)
         random_open_map = mark_start_and_goal_locations(start_and_goal_loc, random_open_map)
-        random_open_map = generate_random_obstacles(random_open_map, args.probability)
+        solution_is_found = False
+        while not solution_is_found:
+            temp_map = generate_random_obstacles(start_and_goal_loc, copy.deepcopy(random_open_map), args.probability)
+            solution_is_found = solution_is_possible(start_and_goal_loc['start_loc'], start_and_goal_loc['goal_loc'], temp_map)
+        random_open_map = temp_map
 
         file_name = 'open_maps/open{0}x{1}_{2}_{3}.txt'.format(args.dim[0], args.dim[1], args.agents, map_number)
         f = open(file_name, 'w')
