@@ -185,6 +185,27 @@ def test_tracker_can_track_the_size_of_list():
 
     assert list_size == len(test_list), "Cannot correctly record size of list upon call to record the length of the list"
 
+def test_tracker_can_track_the_max_length_of_a_list():
+    tracker = PerformanceTracker(algorithm_name)
+
+    list_name = "test_list"
+    test_list = []
+    size_of_list = 5
+    elements_to_remove = 3
+
+    for i in range(size_of_list):
+        tracker.record_max(list_name, test_list, lambda: test_list.append(0))
+
+    for j in range(elements_to_remove):
+        test_list.pop()
+
+    tracker.update_all_list_lengths()
+
+    stats = tracker.get_stats()
+    list_size = stats[list_name]
+
+    assert list_size == size_of_list, "Cannot correctly record size of list at its larger size"
+
 if __name__ == "__main__":
     test_tracker_creates_a_stats_entry()
     test_tracker_creates_multiple_stats_entry()
@@ -197,4 +218,5 @@ if __name__ == "__main__":
     test_tracker_can_write_single_entry_to_file()
     test_tracker_can_write_multiple_entries_to_file()
     test_tracker_can_track_the_size_of_list()
+    test_tracker_can_track_the_max_length_of_a_list()
     print("ALL TEST PASSED")
