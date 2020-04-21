@@ -7,6 +7,7 @@ class PerformanceTracker(object):
         self.stats = self.create_stats()
         self.stats['algorithm'] = algorithm_name
         self.res_file_name = "no_name"
+        self.lists = dict()
 
     def create_stats(self):
         return dict()
@@ -77,3 +78,11 @@ class PerformanceTracker(object):
 
     def get_results_file_name(self):
         return self.res_file_name
+
+    def add_list_to_record(self, list_name, list_reference):
+        self.lists[list_name] = list_reference
+
+    def update_all_list_lengths(self):
+
+        for key in self.lists:
+            self.add_stat(key, len(self.lists[key]))
