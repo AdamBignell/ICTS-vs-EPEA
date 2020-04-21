@@ -39,14 +39,11 @@ class PerformanceTracker(object):
 
         return func()
 
-    def record_max(self, stat_name, list_reference, append_func):
-        append_func()
-        size_of_list = len(list_reference)
-
+    def record_max(self, stat_name, list_length):
         if self.stats_contain_stat(stat_name):
-            self.stats[stat_name] = max(self.stats[stat_name], size_of_list)
+            self.stats[stat_name] = max(self.stats[stat_name], list_length)
         else:
-            self.stats[stat_name] = max(0, size_of_list)
+            self.stats[stat_name] = max(0, list_length)
 
     def stats_contain_stat(self, stat_name):
         return stat_name in self.stats
