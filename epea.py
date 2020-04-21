@@ -69,6 +69,7 @@ class EPEASolver(object):
                     visited_locs.add(child)
                     priority_tuple = (child_node['big_F'], child_node['h'], -child_node['g'], mycounter)
                     heappush(open_list, (priority_tuple, child_node))
+                    self.stat_tracker.record_max('max_open_list_length', len(open_list))
                     mycounter+=1
             if math.isinf(next_big_F):
                 visited_locs.add(current_node['agent_locs'])
@@ -76,7 +77,8 @@ class EPEASolver(object):
                 current_node['big_F'] = next_big_F
                 priority_tuple = (current_node['big_F'], current_node['h'], -current_node['g'], mycounter)
                 heappush(open_list, (priority_tuple, current_node))
-                mycounter+=1
+                self.stat_tracker.record_max('max_open_list_length', len(open_list))
+                mycounter +=1
             nodes_expanded += 1
         return []
         
