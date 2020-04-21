@@ -2,7 +2,6 @@ import map_utils
 from map_utils import MapDetails
 from ict import IncreasingCostTree, TreeNode
 from icts import ICTSSolver
-import time
 
 file_name = "instances/exp2_1.txt"
 my_map, starts, goals = map_utils.import_mapf_instance(file_name)

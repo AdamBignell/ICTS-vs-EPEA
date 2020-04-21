@@ -93,6 +93,7 @@ class ICTSSolver(object):
                     return solution_paths
                 else:
                     self.stat_tracker.count('expanded nodes', lambda: ict.expand_next_node())
+                    self.stat_tracker.record_max('max_open_list_length', len(open_list))
                     nodes_expanded += 1
             ict.pop_next_node_to_expand()
         return []
@@ -123,7 +124,7 @@ class ICTSSolver(object):
                 new_mdd = mdd_cache[agent_depth_key]
             mdds.append(new_mdd)
         t1 = timer.time()
-        solution_path = find_solution_in_joint_mdd(mdds)
+        solution_path = find_solution_in_joint_mdd(mdds, self.stat_tracker)
         t2 = timer.time()
         return solution_path 
 
