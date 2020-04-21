@@ -1,200 +1,200 @@
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_0.txt", "osf time": 0.030918121337890625, "expanded nodes": 112, "time": 0.008975028991699219}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_1.txt", "osf time": 0.051896095275878906, "expanded nodes": 33, "time": 0.005986213684082031}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_10.txt", "osf time": 0.03490281105041504, "expanded nodes": 104, "time": 0.011968135833740234}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_100.txt", "osf time": 0.03087902069091797, "expanded nodes": 31, "time": 0.005984067916870117}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_101.txt", "osf time": 0.03989386558532715, "expanded nodes": 146, "time": 0.01396322250366211}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_102.txt", "osf time": 0.03191995620727539, "expanded nodes": 78, "time": 0.0069468021392822266}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_103.txt", "osf time": 0.04189181327819824, "expanded nodes": 85, "time": 0.008975982666015625}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_104.txt", "osf time": 0.03091263771057129, "expanded nodes": 64, "time": 0.005949735641479492}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_105.txt", "osf time": 0.04587292671203613, "expanded nodes": 142, "time": 0.012930154800415039}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_106.txt", "osf time": 0.029921770095825195, "expanded nodes": 114, "time": 0.010937690734863281}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_107.txt", "osf time": 0.04581713676452637, "expanded nodes": 91, "time": 0.0059833526611328125}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_108.txt", "osf time": 0.031911611557006836, "expanded nodes": 138, "time": 0.011932849884033203}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_109.txt", "osf time": 0.032912254333496094, "expanded nodes": 58, "time": 0.004986286163330078}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_11.txt", "osf time": 0.0418858528137207, "expanded nodes": 83, "time": 0.008966207504272461}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_110.txt", "osf time": 0.029957294464111328, "expanded nodes": 115, "time": 0.00993204116821289}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_111.txt", "osf time": 0.04587721824645996, "expanded nodes": 82, "time": 0.00794076919555664}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_112.txt", "osf time": 0.03291177749633789, "expanded nodes": 54, "time": 0.005982637405395508}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_113.txt", "osf time": 0.0468747615814209, "expanded nodes": 80, "time": 0.007978200912475586}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_114.txt", "osf time": 0.030937910079956055, "expanded nodes": 62, "time": 0.006915092468261719}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_115.txt", "osf time": 0.03191375732421875, "expanded nodes": 163, "time": 0.034857749938964844}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_116.txt", "osf time": 0.03092050552368164, "expanded nodes": 116, "time": 0.009937286376953125}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_117.txt", "osf time": 0.04392123222351074, "expanded nodes": 80, "time": 0.008949041366577148}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_118.txt", "osf time": 0.043912649154663086, "expanded nodes": 47, "time": 0.004952430725097656}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_119.txt", "osf time": 0.03091716766357422, "expanded nodes": 92, "time": 0.008977174758911133}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_12.txt", "osf time": 0.04391884803771973, "expanded nodes": 71, "time": 0.008944034576416016}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_120.txt", "osf time": 0.03092169761657715, "expanded nodes": 76, "time": 0.005944967269897461}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_121.txt", "osf time": 0.04487133026123047, "expanded nodes": 142, "time": 0.011966705322265625}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_122.txt", "osf time": 0.032872915267944336, "expanded nodes": 77, "time": 0.010914802551269531}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_123.txt", "osf time": 0.03482818603515625, "expanded nodes": 86, "time": 0.008949041366577148}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_124.txt", "osf time": 0.04884839057922363, "expanded nodes": 129, "time": 0.010940313339233398}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_125.txt", "osf time": 0.03693222999572754, "expanded nodes": 82, "time": 0.007943391799926758}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_126.txt", "osf time": 0.04886913299560547, "expanded nodes": 85, "time": 0.009972810745239258}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_127.txt", "osf time": 0.036932945251464844, "expanded nodes": 163, "time": 0.0199429988861084}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_128.txt", "osf time": 0.046843528747558594, "expanded nodes": 72, "time": 0.009974002838134766}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_129.txt", "osf time": 0.035902976989746094, "expanded nodes": 59, "time": 0.006982326507568359}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_13.txt", "osf time": 0.04990220069885254, "expanded nodes": 127, "time": 0.015921354293823242}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_130.txt", "osf time": 0.03687715530395508, "expanded nodes": 100, "time": 0.008927345275878906}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_131.txt", "osf time": 0.038930654525756836, "expanded nodes": 57, "time": 0.01891613006591797}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_132.txt", "osf time": 0.03789830207824707, "expanded nodes": 93, "time": 0.011967658996582031}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_133.txt", "osf time": 0.03590989112854004, "expanded nodes": 94, "time": 0.01295614242553711}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_134.txt", "osf time": 0.049901723861694336, "expanded nodes": 84, "time": 0.011928081512451172}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_135.txt", "osf time": 0.03693842887878418, "expanded nodes": 125, "time": 0.015922069549560547}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_136.txt", "osf time": 0.050864219665527344, "expanded nodes": 102, "time": 0.010970830917358398}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_137.txt", "osf time": 0.035918235778808594, "expanded nodes": 89, "time": 0.013912439346313477}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_138.txt", "osf time": 0.05182766914367676, "expanded nodes": 129, "time": 0.015958309173583984}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_139.txt", "osf time": 0.034908294677734375, "expanded nodes": 96, "time": 0.010936260223388672}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_14.txt", "osf time": 0.04786968231201172, "expanded nodes": 16, "time": 0.0019598007202148438}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_140.txt", "osf time": 0.036901235580444336, "expanded nodes": 100, "time": 0.010970592498779297}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_141.txt", "osf time": 0.03490614891052246, "expanded nodes": 136, "time": 0.010971546173095703}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_142.txt", "osf time": 0.04786849021911621, "expanded nodes": 72, "time": 0.00797891616821289}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_143.txt", "osf time": 0.036934614181518555, "expanded nodes": 50, "time": 0.004958629608154297}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_144.txt", "osf time": 0.049866676330566406, "expanded nodes": 71, "time": 0.007971525192260742}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_145.txt", "osf time": 0.0359349250793457, "expanded nodes": 156, "time": 0.013934135437011719}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_146.txt", "osf time": 0.047872066497802734, "expanded nodes": 71, "time": 0.007944583892822266}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_147.txt", "osf time": 0.0359039306640625, "expanded nodes": 59, "time": 0.006948947906494141}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_148.txt", "osf time": 0.03492140769958496, "expanded nodes": 101, "time": 0.010949850082397461}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_149.txt", "osf time": 0.05186009407043457, "expanded nodes": 69, "time": 0.0069811344146728516}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_15.txt", "osf time": 0.03688979148864746, "expanded nodes": 132, "time": 0.014925956726074219}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_150.txt", "osf time": 0.05086779594421387, "expanded nodes": 89, "time": 0.010920286178588867}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_151.txt", "osf time": 0.03689765930175781, "expanded nodes": 114, "time": 0.013959646224975586}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_152.txt", "osf time": 0.050861358642578125, "expanded nodes": 119, "time": 0.012930631637573242}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_153.txt", "osf time": 0.0359039306640625, "expanded nodes": 154, "time": 0.017989397048950195}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_154.txt", "osf time": 0.0518641471862793, "expanded nodes": 48, "time": 0.005964994430541992}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_155.txt", "osf time": 0.037893056869506836, "expanded nodes": 125, "time": 0.014925718307495117}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_156.txt", "osf time": 0.05482172966003418, "expanded nodes": 77, "time": 0.008975505828857422}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_157.txt", "osf time": 0.03689885139465332, "expanded nodes": 79, "time": 0.007937908172607422}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_158.txt", "osf time": 0.03586912155151367, "expanded nodes": 117, "time": 0.01592707633972168}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_159.txt", "osf time": 0.05784010887145996, "expanded nodes": 88, "time": 0.011942148208618164}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_16.txt", "osf time": 0.043847084045410156, "expanded nodes": 123, "time": 0.021891355514526367}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_160.txt", "osf time": 0.06285834312438965, "expanded nodes": 57, "time": 0.009975671768188477}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_161.txt", "osf time": 0.03490591049194336, "expanded nodes": 89, "time": 0.008939981460571289}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_162.txt", "osf time": 0.05390620231628418, "expanded nodes": 74, "time": 0.008926630020141602}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_163.txt", "osf time": 0.03690958023071289, "expanded nodes": 121, "time": 0.01595902442932129}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_164.txt", "osf time": 0.05186128616333008, "expanded nodes": 123, "time": 0.013962507247924805}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_165.txt", "osf time": 0.03591513633728027, "expanded nodes": 119, "time": 0.015908479690551758}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_166.txt", "osf time": 0.03786444664001465, "expanded nodes": 61, "time": 0.0199434757232666}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_167.txt", "osf time": 0.034909725189208984, "expanded nodes": 47, "time": 0.008941888809204102}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_168.txt", "osf time": 0.03690338134765625, "expanded nodes": 81, "time": 0.009973526000976562}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_169.txt", "osf time": 0.05287361145019531, "expanded nodes": 89, "time": 0.00991964340209961}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_17.txt", "osf time": 0.036888837814331055, "expanded nodes": 62, "time": 0.008942842483520508}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_170.txt", "osf time": 0.048886775970458984, "expanded nodes": 108, "time": 0.008958816528320312}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_171.txt", "osf time": 0.03590273857116699, "expanded nodes": 74, "time": 0.008951663970947266}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_172.txt", "osf time": 0.036902427673339844, "expanded nodes": 85, "time": 0.018948793411254883}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_173.txt", "osf time": 0.03692007064819336, "expanded nodes": 63, "time": 0.008920907974243164}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_174.txt", "osf time": 0.034911155700683594, "expanded nodes": 97, "time": 0.011934041976928711}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_175.txt", "osf time": 0.05589914321899414, "expanded nodes": 41, "time": 0.006929636001586914}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_176.txt", "osf time": 0.036867618560791016, "expanded nodes": 70, "time": 0.008941411972045898}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_177.txt", "osf time": 0.04886937141418457, "expanded nodes": 153, "time": 0.012925863265991211}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_178.txt", "osf time": 0.037932634353637695, "expanded nodes": 134, "time": 0.013927221298217773}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_179.txt", "osf time": 0.05185675621032715, "expanded nodes": 74, "time": 0.009937286376953125}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_18.txt", "osf time": 0.03586935997009277, "expanded nodes": 38, "time": 0.005982637405395508}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_180.txt", "osf time": 0.036901235580444336, "expanded nodes": 82, "time": 0.010971546173095703}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_181.txt", "osf time": 0.05285835266113281, "expanded nodes": 77, "time": 0.00797891616821289}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_182.txt", "osf time": 0.034906864166259766, "expanded nodes": 92, "time": 0.012917518615722656}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_183.txt", "osf time": 0.05689740180969238, "expanded nodes": 85, "time": 0.010921001434326172}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_184.txt", "osf time": 0.03390908241271973, "expanded nodes": 74, "time": 0.009939432144165039}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_185.txt", "osf time": 0.05090618133544922, "expanded nodes": 72, "time": 0.008974790573120117}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_186.txt", "osf time": 0.04587435722351074, "expanded nodes": 62, "time": 0.008975744247436523}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_187.txt", "osf time": 0.035932064056396484, "expanded nodes": 103, "time": 0.022969484329223633}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_188.txt", "osf time": 0.03789854049682617, "expanded nodes": 73, "time": 0.011967658996582031}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_189.txt", "osf time": 0.04587745666503906, "expanded nodes": 80, "time": 0.009972810745239258}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_19.txt", "osf time": 0.04886460304260254, "expanded nodes": 96, "time": 0.011007547378540039}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_190.txt", "osf time": 0.03590679168701172, "expanded nodes": 90, "time": 0.010970115661621094}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_191.txt", "osf time": 0.0498661994934082, "expanded nodes": 86, "time": 0.01096963882446289}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_192.txt", "osf time": 0.0359044075012207, "expanded nodes": 24, "time": 0.0029921531677246094}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_193.txt", "osf time": 0.051857948303222656, "expanded nodes": 39, "time": 0.005985260009765625}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_194.txt", "osf time": 0.038895606994628906, "expanded nodes": 95, "time": 0.008973836898803711}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_195.txt", "osf time": 0.03689908981323242, "expanded nodes": 173, "time": 0.037909507751464844}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_196.txt", "osf time": 0.03690028190612793, "expanded nodes": 74, "time": 0.010970354080200195}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_197.txt", "osf time": 0.03593778610229492, "expanded nodes": 94, "time": 0.008940696716308594}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_198.txt", "osf time": 0.046875, "expanded nodes": 62, "time": 0.006981849670410156}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_199.txt", "osf time": 0.038902997970581055, "expanded nodes": 92, "time": 0.01091766357421875}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_2.txt", "osf time": 0.054842472076416016, "expanded nodes": 102, "time": 0.010971546173095703}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_20.txt", "osf time": 0.03892874717712402, "expanded nodes": 79, "time": 0.007953405380249023}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_21.txt", "osf time": 0.049866437911987305, "expanded nodes": 101, "time": 0.010933399200439453}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_22.txt", "osf time": 0.036960601806640625, "expanded nodes": 77, "time": 0.008942604064941406}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_23.txt", "osf time": 0.03789973258972168, "expanded nodes": 76, "time": 0.01000666618347168}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_24.txt", "osf time": 0.0478665828704834, "expanded nodes": 86, "time": 0.008968114852905273}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_25.txt", "osf time": 0.03490781784057617, "expanded nodes": 95, "time": 0.008934259414672852}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_26.txt", "osf time": 0.04784059524536133, "expanded nodes": 65, "time": 0.006984233856201172}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_27.txt", "osf time": 0.03992033004760742, "expanded nodes": 95, "time": 0.00994110107421875}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_28.txt", "osf time": 0.053853750228881836, "expanded nodes": 69, "time": 0.007978677749633789}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_29.txt", "osf time": 0.03689312934875488, "expanded nodes": 73, "time": 0.008926630020141602}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_3.txt", "osf time": 0.03789710998535156, "expanded nodes": 75, "time": 0.010008573532104492}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_30.txt", "osf time": 0.05282306671142578, "expanded nodes": 70, "time": 0.007978677749633789}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_31.txt", "osf time": 0.034897565841674805, "expanded nodes": 88, "time": 0.011997222900390625}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_32.txt", "osf time": 0.04782414436340332, "expanded nodes": 97, "time": 0.010973453521728516}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_33.txt", "osf time": 0.03689765930175781, "expanded nodes": 86, "time": 0.008976221084594727}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_34.txt", "osf time": 0.050897836685180664, "expanded nodes": 74, "time": 0.009940147399902344}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_35.txt", "osf time": 0.03590250015258789, "expanded nodes": 88, "time": 0.011968374252319336}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_36.txt", "osf time": 0.049870967864990234, "expanded nodes": 43, "time": 0.004972696304321289}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_37.txt", "osf time": 0.036900997161865234, "expanded nodes": 116, "time": 0.011967897415161133}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_38.txt", "osf time": 0.03591275215148926, "expanded nodes": 51, "time": 0.007924318313598633}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_39.txt", "osf time": 0.04487967491149902, "expanded nodes": 128, "time": 0.012926340103149414}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_4.txt", "osf time": 0.03490638732910156, "expanded nodes": 103, "time": 0.01695704460144043}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_40.txt", "osf time": 0.049880027770996094, "expanded nodes": 84, "time": 0.010920524597167969}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_41.txt", "osf time": 0.03590869903564453, "expanded nodes": 86, "time": 0.01196599006652832}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_42.txt", "osf time": 0.060888051986694336, "expanded nodes": 99, "time": 0.010953187942504883}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_43.txt", "osf time": 0.04292178153991699, "expanded nodes": 80, "time": 0.01196908950805664}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_44.txt", "osf time": 0.045839786529541016, "expanded nodes": 57, "time": 0.00698089599609375}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_45.txt", "osf time": 0.04883265495300293, "expanded nodes": 74, "time": 0.009974002838134766}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_46.txt", "osf time": 0.03696155548095703, "expanded nodes": 82, "time": 0.009941577911376953}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_47.txt", "osf time": 0.05488896369934082, "expanded nodes": 62, "time": 0.008940696716308594}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_48.txt", "osf time": 0.0359339714050293, "expanded nodes": 86, "time": 0.021971940994262695}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_49.txt", "osf time": 0.04890131950378418, "expanded nodes": 71, "time": 0.007979393005371094}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_5.txt", "osf time": 0.034873008728027344, "expanded nodes": 57, "time": 0.007944583892822266}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_50.txt", "osf time": 0.04887032508850098, "expanded nodes": 82, "time": 0.00798177719116211}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_51.txt", "osf time": 0.03693199157714844, "expanded nodes": 120, "time": 0.013930082321166992}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_52.txt", "osf time": 0.04192495346069336, "expanded nodes": 61, "time": 0.007933616638183594}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_53.txt", "osf time": 0.04886937141418457, "expanded nodes": 84, "time": 0.008975028991699219}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_54.txt", "osf time": 0.033905982971191406, "expanded nodes": 104, "time": 0.011968374252319336}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_55.txt", "osf time": 0.04986381530761719, "expanded nodes": 72, "time": 0.007943868637084961}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_56.txt", "osf time": 0.03490400314331055, "expanded nodes": 100, "time": 0.011937141418457031}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_57.txt", "osf time": 0.04986763000488281, "expanded nodes": 94, "time": 0.010969877243041992}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_58.txt", "osf time": 0.03590083122253418, "expanded nodes": 37, "time": 0.004952907562255859}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_59.txt", "osf time": 0.03890705108642578, "expanded nodes": 272, "time": 0.03884768486022949}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_6.txt", "osf time": 0.03789925575256348, "expanded nodes": 65, "time": 0.007982254028320312}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_60.txt", "osf time": 0.03689908981323242, "expanded nodes": 98, "time": 0.011934518814086914}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_61.txt", "osf time": 0.05289316177368164, "expanded nodes": 142, "time": 0.012931585311889648}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_62.txt", "osf time": 0.0368955135345459, "expanded nodes": 44, "time": 0.005987405776977539}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_63.txt", "osf time": 0.05288839340209961, "expanded nodes": 70, "time": 0.008941650390625}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_64.txt", "osf time": 0.035868167877197266, "expanded nodes": 97, "time": 0.011935949325561523}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_65.txt", "osf time": 0.05086398124694824, "expanded nodes": 119, "time": 0.017941713333129883}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_66.txt", "osf time": 0.036900997161865234, "expanded nodes": 48, "time": 0.005984306335449219}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_67.txt", "osf time": 0.03690075874328613, "expanded nodes": 84, "time": 0.024933576583862305}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_68.txt", "osf time": 0.0379030704498291, "expanded nodes": 105, "time": 0.011931419372558594}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_69.txt", "osf time": 0.0359041690826416, "expanded nodes": 90, "time": 0.007944345474243164}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_7.txt", "osf time": 0.04687380790710449, "expanded nodes": 109, "time": 0.010936260223388672}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_70.txt", "osf time": 0.03690052032470703, "expanded nodes": 36, "time": 0.0069811344146728516}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_71.txt", "osf time": 0.053852081298828125, "expanded nodes": 49, "time": 0.005983591079711914}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_72.txt", "osf time": 0.035935401916503906, "expanded nodes": 53, "time": 0.008944511413574219}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_73.txt", "osf time": 0.05086660385131836, "expanded nodes": 103, "time": 0.0109710693359375}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_74.txt", "osf time": 0.03590583801269531, "expanded nodes": 68, "time": 0.007948637008666992}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_75.txt", "osf time": 0.036911725997924805, "expanded nodes": 91, "time": 0.01096963882446289}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_76.txt", "osf time": 0.0498652458190918, "expanded nodes": 144, "time": 0.014925479888916016}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_77.txt", "osf time": 0.03490924835205078, "expanded nodes": 30, "time": 0.004945039749145508}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_78.txt", "osf time": 0.050882577896118164, "expanded nodes": 134, "time": 0.015908479690551758}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_79.txt", "osf time": 0.03693199157714844, "expanded nodes": 76, "time": 0.00994110107421875}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_8.txt", "osf time": 0.050859689712524414, "expanded nodes": 78, "time": 0.006981611251831055}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_80.txt", "osf time": 0.03990626335144043, "expanded nodes": 99, "time": 0.010917901992797852}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_81.txt", "osf time": 0.05087900161743164, "expanded nodes": 115, "time": 0.012939691543579102}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_82.txt", "osf time": 0.034867286682128906, "expanded nodes": 102, "time": 0.008924722671508789}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_83.txt", "osf time": 0.03686404228210449, "expanded nodes": 65, "time": 0.007974386215209961}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_84.txt", "osf time": 0.05287742614746094, "expanded nodes": 72, "time": 0.007927417755126953}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_85.txt", "osf time": 0.03690075874328613, "expanded nodes": 74, "time": 0.0069806575775146484}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_86.txt", "osf time": 0.049835205078125, "expanded nodes": 36, "time": 0.003988504409790039}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_87.txt", "osf time": 0.03889608383178711, "expanded nodes": 25, "time": 0.002994537353515625}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_88.txt", "osf time": 0.03690457344055176, "expanded nodes": 72, "time": 0.021941184997558594}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_89.txt", "osf time": 0.03789377212524414, "expanded nodes": 110, "time": 0.010974884033203125}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_9.txt", "osf time": 0.03690147399902344, "expanded nodes": 94, "time": 0.009979009628295898}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_90.txt", "osf time": 0.05584907531738281, "expanded nodes": 106, "time": 0.009972333908081055}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_91.txt", "osf time": 0.04085731506347656, "expanded nodes": 61, "time": 0.008968114852905273}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_92.txt", "osf time": 0.049897193908691406, "expanded nodes": 93, "time": 0.009963035583496094}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_93.txt", "osf time": 0.03686642646789551, "expanded nodes": 120, "time": 0.011967658996582031}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_94.txt", "osf time": 0.05782341957092285, "expanded nodes": 109, "time": 0.011967658996582031}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_95.txt", "osf time": 0.03890061378479004, "expanded nodes": 138, "time": 0.016940832138061523}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_96.txt", "osf time": 0.038895606994628906, "expanded nodes": 54, "time": 0.006979227066040039}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_97.txt", "osf time": 0.0518646240234375, "expanded nodes": 127, "time": 0.01595926284790039}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_98.txt", "osf time": 0.03689932823181152, "expanded nodes": 94, "time": 0.010940074920654297}
-{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_99.txt", "osf time": 0.0578768253326416, "expanded nodes": 53, "time": 0.005949735641479492}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_0.txt", "osf time": 0.02399587631225586, "expanded nodes": 112, "max_open_list_length": 73, "time": 0.006997346878051758}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_1.txt", "osf time": 0.03898429870605469, "expanded nodes": 33, "max_open_list_length": 105, "time": 0.004990816116333008}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_10.txt", "osf time": 0.022992849349975586, "expanded nodes": 104, "max_open_list_length": 77, "time": 0.008011102676391602}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_100.txt", "osf time": 0.023991823196411133, "expanded nodes": 31, "max_open_list_length": 40, "time": 0.0029981136322021484}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_101.txt", "osf time": 0.041838645935058594, "expanded nodes": 146, "max_open_list_length": 120, "time": 0.013995170593261719}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_102.txt", "osf time": 0.025981426239013672, "expanded nodes": 78, "max_open_list_length": 87, "time": 0.00800180435180664}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_103.txt", "osf time": 0.04897141456604004, "expanded nodes": 85, "max_open_list_length": 97, "time": 0.007997512817382812}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_104.txt", "osf time": 0.024991512298583984, "expanded nodes": 64, "max_open_list_length": 82, "time": 0.004998207092285156}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_105.txt", "osf time": 0.04298567771911621, "expanded nodes": 142, "max_open_list_length": 119, "time": 0.011995792388916016}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_106.txt", "osf time": 0.025991439819335938, "expanded nodes": 114, "max_open_list_length": 153, "time": 0.012889862060546875}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_107.txt", "osf time": 0.04998350143432617, "expanded nodes": 91, "max_open_list_length": 60, "time": 0.008996725082397461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_108.txt", "osf time": 0.027996063232421875, "expanded nodes": 138, "max_open_list_length": 126, "time": 0.011994361877441406}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_109.txt", "osf time": 0.02699112892150879, "expanded nodes": 58, "max_open_list_length": 51, "time": 0.00599980354309082}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_11.txt", "osf time": 0.042050838470458984, "expanded nodes": 83, "max_open_list_length": 81, "time": 0.006997346878051758}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_110.txt", "osf time": 0.0249941349029541, "expanded nodes": 115, "max_open_list_length": 143, "time": 0.008996009826660156}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_111.txt", "osf time": 0.038008928298950195, "expanded nodes": 82, "max_open_list_length": 99, "time": 0.006998777389526367}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_112.txt", "osf time": 0.023995637893676758, "expanded nodes": 54, "max_open_list_length": 91, "time": 0.0049932003021240234}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_113.txt", "osf time": 0.04897260665893555, "expanded nodes": 80, "max_open_list_length": 81, "time": 0.006996631622314453}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_114.txt", "osf time": 0.024991273880004883, "expanded nodes": 62, "max_open_list_length": 80, "time": 0.004997968673706055}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_115.txt", "osf time": 0.023987531661987305, "expanded nodes": 163, "max_open_list_length": 189, "time": 0.03705477714538574}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_116.txt", "osf time": 0.024004459381103516, "expanded nodes": 116, "max_open_list_length": 105, "time": 0.007996797561645508}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_117.txt", "osf time": 0.02501392364501953, "expanded nodes": 80, "max_open_list_length": 81, "time": 0.006992340087890625}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_118.txt", "osf time": 0.04099082946777344, "expanded nodes": 47, "max_open_list_length": 55, "time": 0.003981828689575195}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_119.txt", "osf time": 0.025049209594726562, "expanded nodes": 92, "max_open_list_length": 86, "time": 0.007015228271484375}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_12.txt", "osf time": 0.03899049758911133, "expanded nodes": 71, "max_open_list_length": 116, "time": 0.0069980621337890625}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_120.txt", "osf time": 0.023990154266357422, "expanded nodes": 76, "max_open_list_length": 57, "time": 0.005980014801025391}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_121.txt", "osf time": 0.04397249221801758, "expanded nodes": 142, "max_open_list_length": 97, "time": 0.010978221893310547}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_122.txt", "osf time": 0.024999380111694336, "expanded nodes": 77, "max_open_list_length": 78, "time": 0.006002664566040039}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_123.txt", "osf time": 0.023980379104614258, "expanded nodes": 86, "max_open_list_length": 108, "time": 0.007002353668212891}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_124.txt", "osf time": 0.037992238998413086, "expanded nodes": 129, "max_open_list_length": 130, "time": 0.01001882553100586}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_125.txt", "osf time": 0.023992300033569336, "expanded nodes": 82, "max_open_list_length": 81, "time": 0.0069963932037353516}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_126.txt", "osf time": 0.042999982833862305, "expanded nodes": 85, "max_open_list_length": 120, "time": 0.00799107551574707}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_127.txt", "osf time": 0.023990869522094727, "expanded nodes": 163, "max_open_list_length": 110, "time": 0.011996746063232422}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_128.txt", "osf time": 0.037987709045410156, "expanded nodes": 72, "max_open_list_length": 116, "time": 0.005998373031616211}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_129.txt", "osf time": 0.023998737335205078, "expanded nodes": 59, "max_open_list_length": 66, "time": 0.004981040954589844}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_13.txt", "osf time": 0.04499077796936035, "expanded nodes": 127, "max_open_list_length": 95, "time": 0.01200103759765625}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_130.txt", "osf time": 0.02399730682373047, "expanded nodes": 100, "max_open_list_length": 71, "time": 0.00797891616821289}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_131.txt", "osf time": 0.023988008499145508, "expanded nodes": 57, "max_open_list_length": 79, "time": 0.019010066986083984}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_132.txt", "osf time": 0.025008440017700195, "expanded nodes": 93, "max_open_list_length": 116, "time": 0.009990930557250977}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_133.txt", "osf time": 0.02598118782043457, "expanded nodes": 94, "max_open_list_length": 104, "time": 0.009996414184570312}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_134.txt", "osf time": 0.03997397422790527, "expanded nodes": 84, "max_open_list_length": 157, "time": 0.007998466491699219}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_135.txt", "osf time": 0.023995161056518555, "expanded nodes": 125, "max_open_list_length": 129, "time": 0.012001276016235352}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_136.txt", "osf time": 0.04297304153442383, "expanded nodes": 102, "max_open_list_length": 109, "time": 0.008997917175292969}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_137.txt", "osf time": 0.024997234344482422, "expanded nodes": 89, "max_open_list_length": 176, "time": 0.009991645812988281}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_138.txt", "osf time": 0.03948831558227539, "expanded nodes": 129, "max_open_list_length": 152, "time": 0.010992050170898438}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_139.txt", "osf time": 0.02299356460571289, "expanded nodes": 96, "max_open_list_length": 72, "time": 0.007010221481323242}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_14.txt", "osf time": 0.041986703872680664, "expanded nodes": 16, "max_open_list_length": 25, "time": 0.0010030269622802734}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_140.txt", "osf time": 0.025005102157592773, "expanded nodes": 100, "max_open_list_length": 130, "time": 0.009996175765991211}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_141.txt", "osf time": 0.025978803634643555, "expanded nodes": 136, "max_open_list_length": 79, "time": 0.007002353668212891}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_142.txt", "osf time": 0.03798675537109375, "expanded nodes": 72, "max_open_list_length": 95, "time": 0.007002830505371094}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_143.txt", "osf time": 0.02399158477783203, "expanded nodes": 50, "max_open_list_length": 56, "time": 0.003998517990112305}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_144.txt", "osf time": 0.03998374938964844, "expanded nodes": 71, "max_open_list_length": 72, "time": 0.006002664566040039}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_145.txt", "osf time": 0.02599167823791504, "expanded nodes": 156, "max_open_list_length": 103, "time": 0.011995077133178711}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_146.txt", "osf time": 0.04198741912841797, "expanded nodes": 71, "max_open_list_length": 74, "time": 0.0060024261474609375}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_147.txt", "osf time": 0.022983074188232422, "expanded nodes": 59, "max_open_list_length": 74, "time": 0.005011081695556641}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_148.txt", "osf time": 0.024976730346679688, "expanded nodes": 101, "max_open_list_length": 89, "time": 0.006985187530517578}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_149.txt", "osf time": 0.0419917106628418, "expanded nodes": 69, "max_open_list_length": 56, "time": 0.005000114440917969}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_15.txt", "osf time": 0.025004863739013672, "expanded nodes": 132, "max_open_list_length": 102, "time": 0.009984016418457031}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_150.txt", "osf time": 0.040975332260131836, "expanded nodes": 89, "max_open_list_length": 102, "time": 0.00799703598022461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_151.txt", "osf time": 0.02299785614013672, "expanded nodes": 114, "max_open_list_length": 125, "time": 0.010991096496582031}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_152.txt", "osf time": 0.043454647064208984, "expanded nodes": 119, "max_open_list_length": 138, "time": 0.009996414184570312}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_153.txt", "osf time": 0.025990724563598633, "expanded nodes": 154, "max_open_list_length": 155, "time": 0.014000177383422852}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_154.txt", "osf time": 0.03998708724975586, "expanded nodes": 48, "max_open_list_length": 51, "time": 0.003985404968261719}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_155.txt", "osf time": 0.022997617721557617, "expanded nodes": 125, "max_open_list_length": 102, "time": 0.011004924774169922}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_156.txt", "osf time": 0.04296517372131348, "expanded nodes": 77, "max_open_list_length": 72, "time": 0.00701594352722168}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_157.txt", "osf time": 0.024976730346679688, "expanded nodes": 79, "max_open_list_length": 56, "time": 0.00699305534362793}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_158.txt", "osf time": 0.02400946617126465, "expanded nodes": 117, "max_open_list_length": 110, "time": 0.008996725082397461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_159.txt", "osf time": 0.036972999572753906, "expanded nodes": 88, "max_open_list_length": 77, "time": 0.006996870040893555}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_16.txt", "osf time": 0.023984670639038086, "expanded nodes": 123, "max_open_list_length": 174, "time": 0.011978864669799805}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_160.txt", "osf time": 0.04398322105407715, "expanded nodes": 57, "max_open_list_length": 76, "time": 0.005999565124511719}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_161.txt", "osf time": 0.024988889694213867, "expanded nodes": 89, "max_open_list_length": 78, "time": 0.005997180938720703}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_162.txt", "osf time": 0.03998374938964844, "expanded nodes": 74, "max_open_list_length": 66, "time": 0.005998373031616211}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_163.txt", "osf time": 0.023988723754882812, "expanded nodes": 121, "max_open_list_length": 149, "time": 0.011000633239746094}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_164.txt", "osf time": 0.04297351837158203, "expanded nodes": 123, "max_open_list_length": 133, "time": 0.010996580123901367}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_165.txt", "osf time": 0.02499246597290039, "expanded nodes": 119, "max_open_list_length": 172, "time": 0.012995719909667969}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_166.txt", "osf time": 0.023003578186035156, "expanded nodes": 61, "max_open_list_length": 89, "time": 0.019988059997558594}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_167.txt", "osf time": 0.02398967742919922, "expanded nodes": 47, "max_open_list_length": 144, "time": 0.005985736846923828}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_168.txt", "osf time": 0.0269777774810791, "expanded nodes": 81, "max_open_list_length": 68, "time": 0.008995771408081055}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_169.txt", "osf time": 0.04598498344421387, "expanded nodes": 89, "max_open_list_length": 88, "time": 0.007995128631591797}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_17.txt", "osf time": 0.02399134635925293, "expanded nodes": 62, "max_open_list_length": 56, "time": 0.005997419357299805}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_170.txt", "osf time": 0.04098701477050781, "expanded nodes": 108, "max_open_list_length": 75, "time": 0.007012605667114258}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_171.txt", "osf time": 0.023992061614990234, "expanded nodes": 74, "max_open_list_length": 85, "time": 0.00701451301574707}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_172.txt", "osf time": 0.02699136734008789, "expanded nodes": 85, "max_open_list_length": 87, "time": 0.023991107940673828}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_173.txt", "osf time": 0.023010730743408203, "expanded nodes": 63, "max_open_list_length": 62, "time": 0.004998445510864258}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_174.txt", "osf time": 0.02399134635925293, "expanded nodes": 97, "max_open_list_length": 122, "time": 0.007996797561645508}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_175.txt", "osf time": 0.04498577117919922, "expanded nodes": 41, "max_open_list_length": 53, "time": 0.00397944450378418}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_176.txt", "osf time": 0.02498626708984375, "expanded nodes": 70, "max_open_list_length": 89, "time": 0.007002353668212891}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_177.txt", "osf time": 0.04298567771911621, "expanded nodes": 153, "max_open_list_length": 106, "time": 0.008997201919555664}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_178.txt", "osf time": 0.023976564407348633, "expanded nodes": 134, "max_open_list_length": 107, "time": 0.010015249252319336}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_179.txt", "osf time": 0.042990684509277344, "expanded nodes": 74, "max_open_list_length": 120, "time": 0.009010076522827148}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_18.txt", "osf time": 0.025996923446655273, "expanded nodes": 38, "max_open_list_length": 100, "time": 0.004998683929443359}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_180.txt", "osf time": 0.025997161865234375, "expanded nodes": 82, "max_open_list_length": 86, "time": 0.006998300552368164}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_181.txt", "osf time": 0.0389707088470459, "expanded nodes": 77, "max_open_list_length": 74, "time": 0.007015228271484375}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_182.txt", "osf time": 0.02301025390625, "expanded nodes": 92, "max_open_list_length": 98, "time": 0.007992267608642578}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_183.txt", "osf time": 0.0419917106628418, "expanded nodes": 85, "max_open_list_length": 132, "time": 0.008978843688964844}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_184.txt", "osf time": 0.024983882904052734, "expanded nodes": 74, "max_open_list_length": 120, "time": 0.006997823715209961}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_185.txt", "osf time": 0.041974544525146484, "expanded nodes": 72, "max_open_list_length": 76, "time": 0.007002115249633789}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_186.txt", "osf time": 0.023991823196411133, "expanded nodes": 62, "max_open_list_length": 154, "time": 0.006997823715209961}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_187.txt", "osf time": 0.024979114532470703, "expanded nodes": 103, "max_open_list_length": 73, "time": 0.020991802215576172}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_188.txt", "osf time": 0.024984359741210938, "expanded nodes": 73, "max_open_list_length": 85, "time": 0.007003068923950195}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_189.txt", "osf time": 0.024979352951049805, "expanded nodes": 80, "max_open_list_length": 127, "time": 0.006997346878051758}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_19.txt", "osf time": 0.04299330711364746, "expanded nodes": 96, "max_open_list_length": 131, "time": 0.009001493453979492}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_190.txt", "osf time": 0.023997068405151367, "expanded nodes": 90, "max_open_list_length": 102, "time": 0.00901031494140625}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_191.txt", "osf time": 0.04099225997924805, "expanded nodes": 86, "max_open_list_length": 144, "time": 0.009002447128295898}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_192.txt", "osf time": 0.026996612548828125, "expanded nodes": 24, "max_open_list_length": 36, "time": 0.0019872188568115234}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_193.txt", "osf time": 0.0449986457824707, "expanded nodes": 39, "max_open_list_length": 69, "time": 0.004998445510864258}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_194.txt", "osf time": 0.02398085594177246, "expanded nodes": 95, "max_open_list_length": 85, "time": 0.0060160160064697266}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_195.txt", "osf time": 0.023995399475097656, "expanded nodes": 173, "max_open_list_length": 209, "time": 0.034983158111572266}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_196.txt", "osf time": 0.024997711181640625, "expanded nodes": 74, "max_open_list_length": 144, "time": 0.007996559143066406}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_197.txt", "osf time": 0.02799701690673828, "expanded nodes": 94, "max_open_list_length": 124, "time": 0.008008480072021484}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_198.txt", "osf time": 0.03897428512573242, "expanded nodes": 62, "max_open_list_length": 69, "time": 0.005997419357299805}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_199.txt", "osf time": 0.02399277687072754, "expanded nodes": 92, "max_open_list_length": 94, "time": 0.007997512817382812}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_2.txt", "osf time": 0.04398608207702637, "expanded nodes": 102, "max_open_list_length": 79, "time": 0.011995553970336914}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_20.txt", "osf time": 0.026992321014404297, "expanded nodes": 79, "max_open_list_length": 57, "time": 0.0059969425201416016}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_21.txt", "osf time": 0.04098701477050781, "expanded nodes": 101, "max_open_list_length": 105, "time": 0.007996797561645508}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_22.txt", "osf time": 0.02499246597290039, "expanded nodes": 77, "max_open_list_length": 52, "time": 0.006997108459472656}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_23.txt", "osf time": 0.02799367904663086, "expanded nodes": 76, "max_open_list_length": 163, "time": 0.009995698928833008}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_24.txt", "osf time": 0.04898405075073242, "expanded nodes": 86, "max_open_list_length": 96, "time": 0.008996009826660156}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_25.txt", "osf time": 0.023992300033569336, "expanded nodes": 95, "max_open_list_length": 72, "time": 0.0059969425201416016}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_26.txt", "osf time": 0.0389866828918457, "expanded nodes": 65, "max_open_list_length": 89, "time": 0.004998207092285156}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_27.txt", "osf time": 0.024992704391479492, "expanded nodes": 95, "max_open_list_length": 72, "time": 0.006995677947998047}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_28.txt", "osf time": 0.04499363899230957, "expanded nodes": 69, "max_open_list_length": 72, "time": 0.005997419357299805}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_29.txt", "osf time": 0.023991823196411133, "expanded nodes": 73, "max_open_list_length": 77, "time": 0.0059969425201416016}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_3.txt", "osf time": 0.023992300033569336, "expanded nodes": 75, "max_open_list_length": 83, "time": 0.00701451301574707}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_30.txt", "osf time": 0.04197430610656738, "expanded nodes": 70, "max_open_list_length": 68, "time": 0.005011796951293945}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_31.txt", "osf time": 0.025000810623168945, "expanded nodes": 88, "max_open_list_length": 173, "time": 0.010006427764892578}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_32.txt", "osf time": 0.04000520706176758, "expanded nodes": 97, "max_open_list_length": 86, "time": 0.008996725082397461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_33.txt", "osf time": 0.023991107940673828, "expanded nodes": 86, "max_open_list_length": 94, "time": 0.006992816925048828}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_34.txt", "osf time": 0.04598569869995117, "expanded nodes": 74, "max_open_list_length": 108, "time": 0.006997108459472656}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_35.txt", "osf time": 0.024977922439575195, "expanded nodes": 88, "max_open_list_length": 106, "time": 0.008992910385131836}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_36.txt", "osf time": 0.040987253189086914, "expanded nodes": 43, "max_open_list_length": 46, "time": 0.003998517990112305}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_37.txt", "osf time": 0.0240328311920166, "expanded nodes": 116, "max_open_list_length": 152, "time": 0.008984565734863281}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_38.txt", "osf time": 0.027994871139526367, "expanded nodes": 51, "max_open_list_length": 81, "time": 0.004998922348022461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_39.txt", "osf time": 0.044133901596069336, "expanded nodes": 128, "max_open_list_length": 96, "time": 0.010978460311889648}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_4.txt", "osf time": 0.024991750717163086, "expanded nodes": 103, "max_open_list_length": 120, "time": 0.008996963500976562}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_40.txt", "osf time": 0.04017496109008789, "expanded nodes": 84, "max_open_list_length": 116, "time": 0.009001493453979492}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_41.txt", "osf time": 0.025004863739013672, "expanded nodes": 86, "max_open_list_length": 86, "time": 0.007985353469848633}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_42.txt", "osf time": 0.04498910903930664, "expanded nodes": 99, "max_open_list_length": 73, "time": 0.005997180938720703}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_43.txt", "osf time": 0.02500772476196289, "expanded nodes": 80, "max_open_list_length": 102, "time": 0.007979154586791992}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_44.txt", "osf time": 0.02303147315979004, "expanded nodes": 57, "max_open_list_length": 53, "time": 0.004993438720703125}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_45.txt", "osf time": 0.03798818588256836, "expanded nodes": 74, "max_open_list_length": 112, "time": 0.006997585296630859}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_46.txt", "osf time": 0.027005910873413086, "expanded nodes": 82, "max_open_list_length": 131, "time": 0.012996196746826172}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_47.txt", "osf time": 0.04898524284362793, "expanded nodes": 62, "max_open_list_length": 160, "time": 0.007996559143066406}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_48.txt", "osf time": 0.02499222755432129, "expanded nodes": 86, "max_open_list_length": 98, "time": 0.008996725082397461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_49.txt", "osf time": 0.04298663139343262, "expanded nodes": 71, "max_open_list_length": 106, "time": 0.006996631622314453}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_5.txt", "osf time": 0.024991512298583984, "expanded nodes": 57, "max_open_list_length": 79, "time": 0.005980491638183594}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_50.txt", "osf time": 0.04596734046936035, "expanded nodes": 82, "max_open_list_length": 57, "time": 0.005997180938720703}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_51.txt", "osf time": 0.025003910064697266, "expanded nodes": 120, "max_open_list_length": 148, "time": 0.0110015869140625}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_52.txt", "osf time": 0.023996829986572266, "expanded nodes": 61, "max_open_list_length": 120, "time": 0.0059986114501953125}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_53.txt", "osf time": 0.042986392974853516, "expanded nodes": 84, "max_open_list_length": 69, "time": 0.0069980621337890625}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_54.txt", "osf time": 0.02499222755432129, "expanded nodes": 104, "max_open_list_length": 103, "time": 0.009001970291137695}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_55.txt", "osf time": 0.04098653793334961, "expanded nodes": 72, "max_open_list_length": 75, "time": 0.006997585296630859}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_56.txt", "osf time": 0.023989200592041016, "expanded nodes": 100, "max_open_list_length": 102, "time": 0.007997751235961914}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_57.txt", "osf time": 0.046968936920166016, "expanded nodes": 94, "max_open_list_length": 90, "time": 0.009996652603149414}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_58.txt", "osf time": 0.02599191665649414, "expanded nodes": 37, "max_open_list_length": 40, "time": 0.0030112266540527344}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_59.txt", "osf time": 0.023997783660888672, "expanded nodes": 272, "max_open_list_length": 182, "time": 0.032989501953125}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_6.txt", "osf time": 0.025003910064697266, "expanded nodes": 65, "max_open_list_length": 56, "time": 0.0049932003021240234}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_60.txt", "osf time": 0.025996685028076172, "expanded nodes": 98, "max_open_list_length": 127, "time": 0.00899648666381836}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_61.txt", "osf time": 0.040990352630615234, "expanded nodes": 142, "max_open_list_length": 114, "time": 0.008997201919555664}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_62.txt", "osf time": 0.02398848533630371, "expanded nodes": 44, "max_open_list_length": 49, "time": 0.003998756408691406}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_63.txt", "osf time": 0.0419766902923584, "expanded nodes": 70, "max_open_list_length": 87, "time": 0.006998300552368164}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_64.txt", "osf time": 0.025988101959228516, "expanded nodes": 97, "max_open_list_length": 87, "time": 0.008984804153442383}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_65.txt", "osf time": 0.044002532958984375, "expanded nodes": 119, "max_open_list_length": 163, "time": 0.01299595832824707}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_66.txt", "osf time": 0.02397751808166504, "expanded nodes": 48, "max_open_list_length": 102, "time": 0.004997730255126953}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_67.txt", "osf time": 0.02499222755432129, "expanded nodes": 84, "max_open_list_length": 111, "time": 0.02397918701171875}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_68.txt", "osf time": 0.025991201400756836, "expanded nodes": 105, "max_open_list_length": 83, "time": 0.009998559951782227}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_69.txt", "osf time": 0.025979995727539062, "expanded nodes": 90, "max_open_list_length": 63, "time": 0.006997346878051758}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_7.txt", "osf time": 0.03800535202026367, "expanded nodes": 109, "max_open_list_length": 129, "time": 0.007992982864379883}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_70.txt", "osf time": 0.02398204803466797, "expanded nodes": 36, "max_open_list_length": 49, "time": 0.003998994827270508}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_71.txt", "osf time": 0.043972015380859375, "expanded nodes": 49, "max_open_list_length": 54, "time": 0.004998922348022461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_72.txt", "osf time": 0.025057554244995117, "expanded nodes": 53, "max_open_list_length": 126, "time": 0.006003379821777344}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_73.txt", "osf time": 0.04099154472351074, "expanded nodes": 103, "max_open_list_length": 157, "time": 0.008996725082397461}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_74.txt", "osf time": 0.024990320205688477, "expanded nodes": 68, "max_open_list_length": 42, "time": 0.004997968673706055}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_75.txt", "osf time": 0.025995731353759766, "expanded nodes": 91, "max_open_list_length": 108, "time": 0.009002208709716797}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_76.txt", "osf time": 0.04386305809020996, "expanded nodes": 144, "max_open_list_length": 142, "time": 0.011995792388916016}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_77.txt", "osf time": 0.023992061614990234, "expanded nodes": 30, "max_open_list_length": 47, "time": 0.0029964447021484375}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_78.txt", "osf time": 0.042144775390625, "expanded nodes": 134, "max_open_list_length": 119, "time": 0.01198267936706543}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_79.txt", "osf time": 0.027987957000732422, "expanded nodes": 76, "max_open_list_length": 71, "time": 0.007996797561645508}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_8.txt", "osf time": 0.04497218132019043, "expanded nodes": 78, "max_open_list_length": 64, "time": 0.0069980621337890625}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_80.txt", "osf time": 0.02399158477783203, "expanded nodes": 99, "max_open_list_length": 106, "time": 0.008997440338134766}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_81.txt", "osf time": 0.04109454154968262, "expanded nodes": 115, "max_open_list_length": 137, "time": 0.010010719299316406}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_82.txt", "osf time": 0.026981592178344727, "expanded nodes": 102, "max_open_list_length": 94, "time": 0.007997274398803711}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_83.txt", "osf time": 0.02600407600402832, "expanded nodes": 65, "max_open_list_length": 80, "time": 0.006009817123413086}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_84.txt", "osf time": 0.03800153732299805, "expanded nodes": 72, "max_open_list_length": 64, "time": 0.004997730255126953}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_85.txt", "osf time": 0.02299189567565918, "expanded nodes": 74, "max_open_list_length": 69, "time": 0.004984617233276367}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_86.txt", "osf time": 0.04400038719177246, "expanded nodes": 36, "max_open_list_length": 32, "time": 0.0039937496185302734}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_87.txt", "osf time": 0.02499222755432129, "expanded nodes": 25, "max_open_list_length": 42, "time": 0.0029981136322021484}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_88.txt", "osf time": 0.02599167823791504, "expanded nodes": 72, "max_open_list_length": 103, "time": 0.022992610931396484}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_89.txt", "osf time": 0.024143457412719727, "expanded nodes": 110, "max_open_list_length": 98, "time": 0.008009672164916992}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_9.txt", "osf time": 0.02498912811279297, "expanded nodes": 94, "max_open_list_length": 110, "time": 0.007009744644165039}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_90.txt", "osf time": 0.04298853874206543, "expanded nodes": 106, "max_open_list_length": 94, "time": 0.007996559143066406}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_91.txt", "osf time": 0.025991439819335938, "expanded nodes": 61, "max_open_list_length": 87, "time": 0.004984855651855469}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_92.txt", "osf time": 0.03999185562133789, "expanded nodes": 93, "max_open_list_length": 88, "time": 0.007997274398803711}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_93.txt", "osf time": 0.02498030662536621, "expanded nodes": 120, "max_open_list_length": 144, "time": 0.011013507843017578}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_94.txt", "osf time": 0.04497337341308594, "expanded nodes": 109, "max_open_list_length": 94, "time": 0.010014057159423828}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_95.txt", "osf time": 0.0260009765625, "expanded nodes": 138, "max_open_list_length": 124, "time": 0.008992671966552734}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_96.txt", "osf time": 0.023994922637939453, "expanded nodes": 54, "max_open_list_length": 67, "time": 0.005003213882446289}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_97.txt", "osf time": 0.037987709045410156, "expanded nodes": 127, "max_open_list_length": 117, "time": 0.013996362686157227}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_98.txt", "osf time": 0.02649855613708496, "expanded nodes": 94, "max_open_list_length": 94, "time": 0.00800776481628418}
+{"algorithm": "EPEA", "map_name": "open_maps\\open50x50_3_99.txt", "osf time": 0.04299664497375488, "expanded nodes": 53, "max_open_list_length": 59, "time": 0.0049860477447509766}
