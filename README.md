@@ -11,8 +11,9 @@ Our solution is built on top of the skeleton code provided in the assignment *Mo
 
 [Final Report Link](https://www.overleaf.com/4142651994vxvckbxqfnwv)
 
-PREREQUISITE:
-Note: I am running these commands on a windows machine using powershell. If you are not, please use the appropriate slash (\ or /) for your terminal
+#### PREREQUISITE
+
+Note: I am running these commands on a windows machine using powershell. If you are not, please use the appropriate slash (\ or /) for your terminal.
 It is a requirement you have python (at least 3.7 or higher), pip, and git already installed on your machine
 
 ## Setting up the environment
