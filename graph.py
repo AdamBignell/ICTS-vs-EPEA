@@ -35,6 +35,17 @@ def save_graphs():
     maze_ratio_labels = get_ratio_labels('Maze')
     save_ratio_graph(epea_results, icts_results, maze_ratio_labels, 'maze_ratio_means.pdf')
 
+    maze_open_list_labels = get_open_list_labels('EPEA*', 'Maze')
+    save_open_list_graph(epea_results, maze_open_list_labels, 'maze_epea_open_list.pdf', 'EPEA')
+
+    maze_open_list_labels = get_open_list_labels('ICTS', 'Maze')
+    save_open_list_graph(icts_results, maze_open_list_labels, 'maze_icts_open_list.pdf', 'ICTS')
+
+    maze_joint_mdd_labels = get_joint_mdd_labels('Maze', 'Mean')
+    save_joint_mdd_graph_means(icts_results, maze_joint_mdd_labels, 'maze_icts_joint_mdd_means.pdf', 'ICTS')
+    open_joint_mdd_labels = get_joint_mdd_labels('Open', 'Median')
+    save_joint_mdd_graph_medians(icts_results, maze_joint_mdd_labels, 'maze_icts_joint_mdd_medians.pdf', 'ICTS')
+
     # Generate Open Graphs
     epea_open_batch_names = get_file_names('EPEA', 'open')
     icts_open_batch_names = get_file_names('ICTS', 'open')
@@ -51,6 +62,18 @@ def save_graphs():
 
     open_ratio_labels = get_ratio_labels('Open')
     save_ratio_graph(epea_open_results, icts_open_results, open_ratio_labels, 'open_ratio_means.pdf')
+
+    open_open_list_labels = get_open_list_labels('EPEA*', 'Open')
+    save_open_list_graph(epea_open_results, open_open_list_labels, 'open_epea_open_list.pdf', 'EPEA')
+
+    open_open_list_labels = get_open_list_labels('ICTS', 'Open')
+    save_open_list_graph(icts_open_results, open_open_list_labels, 'open_icts_open_list.pdf', 'ICTS')
+
+    open_joint_mdd_labels = get_joint_mdd_labels('Open', 'Mean')
+    save_joint_mdd_graph_means(icts_open_results, open_joint_mdd_labels, 'open_icts_joint_mdd_means.pdf', 'Open')
+    open_joint_mdd_labels = get_joint_mdd_labels('Open', 'Median')
+    save_joint_mdd_graph_medians(icts_open_results, open_joint_mdd_labels, 'open_icts_joint_mdd_medians.pdf', 'Open')
+
 
 def get_file_names(algorithm, prefix):
     batch_prefix_names = [prefix + '12x12', prefix + '25x25', prefix + '50x50', prefix + '100x100']
@@ -86,21 +109,45 @@ def get_results(filename):
 def save_runtime_graph(epea_results, icts_results, labels, output_file):
     epea_median_times = get_medians(epea_results, 'time')
     icts_median_times = get_medians(icts_results, 'time')
-    save_beautiful_graph_medians(epea_median_times, icts_median_times, labels, output_file)
-
+    y_lim = [0.2, 3]
+    save_beautiful_graph_medians(epea_median_times, icts_median_times, labels, output_file, y_lim)
+    
 def save_runtime_graph_means(epea_results, icts_results, labels, output_file):
     epea_means, epea_stddevs = get_means_and_stddevs(epea_results, 'time')
     icts_means, icts_stddevs = get_means_and_stddevs(icts_results, 'time')
-    save_beautiful_graph_means(epea_means, epea_stddevs, icts_means, icts_stddevs, labels, output_file)
+    save_beautiful_graph_means(epea_means, epea_stddevs, icts_means, icts_stddevs, labels, output_file, [])
 
 def save_expansion_graph(results, labels, output_file, algorithm):
     median_expansions = get_medians(results, 'expansions')
-    save_beautiful_graph_medians(median_expansions, [], labels, output_file, algorithm=algorithm)
+    if algorithm == 'ICTS':
+        y_lim = [-0.5, 11]
+    elif algorithm == 'EPEA':
+        y_lim = [-0.5, 370]
+    save_beautiful_graph_medians(median_expansions, [], labels, output_file, y_lim, algorithm=algorithm)
 
 def save_ratio_graph(epea_results, icts_results, labels, output_file):
     epea_means, epea_stddevs = get_means_and_stddevs(epea_results, 'ratio')
     icts_means, icts_stddevs = get_means_and_stddevs(icts_results, 'ratio')
-    save_beautiful_graph_means(epea_means, epea_stddevs, icts_means, icts_stddevs, labels, output_file)
+    y_lim = [-0.1, 1.0]
+    save_beautiful_graph_means(epea_means, epea_stddevs, icts_means, icts_stddevs, labels, output_file, y_lim)
+
+def save_open_list_graph(results, labels, output_file, algorithm):
+    median_expansions = get_medians(results, 'max_open_list_length')
+    if algorithm == 'ICTS':
+        y_lim = [0, 13]
+    if algorithm == 'EPEA':
+        y_lim = [0, 200]
+    save_beautiful_graph_medians(median_expansions, [], labels, output_file, y_lim, algorithm=algorithm)
+
+def save_joint_mdd_graph_medians(results, labels, output_file, algorithm):
+    median_expansions = get_medians(results, 'max_joint_mdd_visited')
+    y_lim = [0, 250]
+    save_beautiful_graph_medians(median_expansions, [], labels, output_file, y_lim, algorithm=algorithm)
+
+def save_joint_mdd_graph_means(results, labels, output_file, algorithm):
+    mean_expansions, stddev_expansions = get_means_and_stddevs(results, 'max_joint_mdd_visited')
+    y_lim = []
+    save_beautiful_graph_means(mean_expansions, stddev_expansions, [], [], labels, output_file, y_lim, algorithm=algorithm)
 
 def get_medians(results, stat):
     result_nums = results_to_nums(results, stat)
@@ -113,7 +160,7 @@ def get_means_and_stddevs(results, stat):
     result_nums = []
     if stat == 'ratio':
         result_nums = results_to_ratios(results)
-    elif stat == 'time':
+    else:
         result_nums = results_to_nums(results, stat)
     means = []
     stddevs = []
@@ -156,16 +203,36 @@ def get_ratio_labels(instance_type):
     labels['legend'] = ['EPEA*', 'ICTS']
     return labels
 
-def save_beautiful_graph_medians(first_medians, second_medians, labels, filename, algorithm=None):
+def get_open_list_labels(algorithm, instance_type):
+    labels = {}
+    labels['x_title'] = instance_type + ' Instance Size'
+    labels['x_labels'] = ['12x12', '25x25', '50x50', '100x100']
+    labels['y_title'] = 'Median Max Size of Open List'
+    if algorithm == 'ICTS':
+        labels['colors'] = [colors[4]]
+    elif algorithm == 'EPEA*':
+        labels['colors'] = [colors[0]]
+    labels['title'] = 'Median Maximum Size of Open List\n for ' + algorithm + ' for increasingly large\n' + instance_type + ' Instances, using 3 agents'
+    labels['legend'] = [algorithm]
+    return labels
+
+def get_joint_mdd_labels(instance_type, metric):
+    labels = {}
+    labels['x_title'] = instance_type + ' Instance Size'
+    labels['x_labels'] = ['12x12', '25x25', '50x50', '100x100']
+    labels['y_title'] = metric +' Number of Joint-MDD Nodes Expanded'
+    labels['colors'] = colors
+    labels['title'] = metric + ' Joint-MDD Nodes Expanded by ICTS for increasingly large\n' + instance_type + ' Instances, using 3 agents'
+    labels['legend'] = ['ICTS']
+    return labels
+
+def save_beautiful_graph_medians(first_medians, second_medians, labels, filename, y_lim, algorithm=None):
     fig, ax = plt.subplots(1, 1)
     plt.plot(first_medians, c=labels['colors'][0])
+    if y_lim != []:
+        ax.set_ylim(y_lim)
     if second_medians != []:
         plt.plot(second_medians, c=labels['colors'][4])
-        ax.set_ylim([-0.2, 3.5])
-    elif algorithm == 'ICTS':
-        ax.set_ylim([-0.5, 11])
-    elif algorithm == 'EPEA':
-        ax.set_ylim([-0.5, 370])
     ticks = list(range(len(first_medians)))
     ax.set_xticks(ticks)
     ax.set_xticklabels(labels['x_labels'], minor=False)
@@ -176,33 +243,33 @@ def save_beautiful_graph_medians(first_medians, second_medians, labels, filename
     ax.legend(labels['legend'], facecolor='white', loc='upper left')
     plt.savefig(filename, bbox_inches='tight')
 
-def save_beautiful_graph_means(first_means, first_stddevs, second_means, second_stddevs, labels, filename, algorithm=None):
+def save_beautiful_graph_means(first_means, first_stddevs, second_means, second_stddevs, labels, filename, y_lim, algorithm=None):
     fig, ax = plt.subplots(1, 1)
     plt.plot(first_means, c=colors[0])
-    if second_means != []:
-        plt.plot(second_means, c=labels['colors'][4])
-        ax.set_ylim([-0.1, 1.0])
-    elif algorithm == 'ICTS':
-        ax.set_ylim([-0.5, 11])
-    elif algorithm == 'EPEA':
-        ax.set_ylim([-0.5, 370])
     ticks = list(range(len(first_means)))
     ax.set_xticks(ticks)
     ax.set_xticklabels(labels['x_labels'], minor=False)
+    if y_lim != []:
+        ax.set_ylim(y_lim)
 
     # Fill
     first_plus = []
     first_minus = []
-    second_plus = []
-    second_minus = []
     for i in range(len(first_stddevs)):
         first_plus.append(first_means[i] + first_stddevs[i])
         first_minus.append(first_means[i] - first_stddevs[i])
-        second_plus.append(second_means[i]+ second_stddevs[i])
-        second_minus.append(second_means[i] - second_stddevs[i])
     
     ax.fill_between(ticks, first_plus, first_minus, alpha=0.25, facecolor=colors[0])
-    ax.fill_between(ticks, second_plus, second_minus, alpha=0.25, facecolor=colors[4])
+
+    second_plus = []
+    second_minus = []
+    if second_means != []:
+        plt.plot(second_means, c=labels['colors'][4])
+        for i in range(len(second_stddevs)):
+            second_plus.append(second_means[i]+ second_stddevs[i])
+            second_minus.append(second_means[i] - second_stddevs[i])
+        ax.fill_between(ticks, second_plus, second_minus, alpha=0.25, facecolor=colors[4])
+    
     plt.xlabel(labels['x_title'])
     plt.ylabel(labels['y_title'])
     plt.title(labels['title'])
@@ -220,7 +287,9 @@ def results_to_ratios(results):
         these_results = results[i]
         nums = []
         for result in these_results:
-            ratio = result[setup_time]/(result['time']+result[setup_time])
+            ratio = 0
+            if result['time']+result[setup_time] > 0:
+                ratio = result[setup_time]/(result['time']+result[setup_time])
             nums.append(ratio)
         results_by_size.append(nums)
     return results_by_size
@@ -244,6 +313,14 @@ def results_to_nums(results, stat):
                     nums.append(0)
                 else:
                     nums.append(result['expanded nodes'])
+            elif stat == 'max_open_list_length':
+                this_max = 1
+                if stat in result:
+                    this_max = result[stat]
+                nums.append(this_max)
+            elif stat == 'joint_mdd_node_expansions':
+                this_expansions = result[stat]
+                nums.append(this_expansions)
         results_by_size.append(nums)
     return results_by_size
 
