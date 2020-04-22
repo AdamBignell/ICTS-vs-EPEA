@@ -53,9 +53,15 @@ class PerformanceTracker(object):
 
     def write_stats_to_file(self, file_name):
         stats_file = ""
-        directories = file_name.split('/')
-        directories[0] = 'results'
-        file_name = '/'.join(directories)
+
+        if '\\' in file_name:
+            directories = file_name.split('\\')
+            directories[0] = 'results'
+            file_name = '\\'.join(directories)
+        else:
+            directories = file_name.split('/')
+            directories[0] = 'results'
+            file_name = '/'.join(directories)
         file_name = file_name.replace("*", self.stats['algorithm'] + "_results.txt")
 
         if os.path.exists(file_name):
