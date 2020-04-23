@@ -43,7 +43,7 @@ def save_graphs():
 
     maze_joint_mdd_labels = get_joint_mdd_labels('Maze', 'Mean')
     save_joint_mdd_graph_means(icts_results, maze_joint_mdd_labels, 'maze_icts_joint_mdd_means.pdf', 'ICTS')
-    open_joint_mdd_labels = get_joint_mdd_labels('Open', 'Median')
+    maze_joint_mdd_labels = get_joint_mdd_labels('Maze', 'Median')
     save_joint_mdd_graph_medians(icts_results, maze_joint_mdd_labels, 'maze_icts_joint_mdd_medians.pdf', 'ICTS')
 
     # Generate Open Graphs
@@ -109,7 +109,7 @@ def get_results(filename):
 def save_runtime_graph(epea_results, icts_results, labels, output_file):
     epea_median_times = get_medians(epea_results, 'time')
     icts_median_times = get_medians(icts_results, 'time')
-    y_lim = [0.2, 3]
+    y_lim = [-0.2, 3]
     save_beautiful_graph_medians(epea_median_times, icts_median_times, labels, output_file, y_lim)
     
 def save_runtime_graph_means(epea_results, icts_results, labels, output_file):
@@ -136,7 +136,7 @@ def save_open_list_graph(results, labels, output_file, algorithm):
     if algorithm == 'ICTS':
         y_lim = [0, 13]
     if algorithm == 'EPEA':
-        y_lim = [0, 200]
+        y_lim = [0, 250]
     save_beautiful_graph_medians(median_expansions, [], labels, output_file, y_lim, algorithm=algorithm)
 
 def save_joint_mdd_graph_medians(results, labels, output_file, algorithm):
@@ -220,9 +220,9 @@ def get_joint_mdd_labels(instance_type, metric):
     labels = {}
     labels['x_title'] = instance_type + ' Instance Size'
     labels['x_labels'] = ['12x12', '25x25', '50x50', '100x100']
-    labels['y_title'] = metric +' Number of Joint-MDD Nodes Expanded'
-    labels['colors'] = colors
-    labels['title'] = metric + ' Joint-MDD Nodes Expanded by ICTS for increasingly large\n' + instance_type + ' Instances, using 3 agents'
+    labels['y_title'] = metric +' Max Size of Visited List'
+    labels['colors'] = [colors[4]]
+    labels['title'] = metric + ' Max Size of Visited List in \n Joint-MDD Exploration for increasingly large\n' + instance_type + ' Instances, using 3 agents'
     labels['legend'] = ['ICTS']
     return labels
 
@@ -251,7 +251,6 @@ def save_beautiful_graph_means(first_means, first_stddevs, second_means, second_
     ax.set_xticklabels(labels['x_labels'], minor=False)
     if y_lim != []:
         ax.set_ylim(y_lim)
-
     # Fill
     first_plus = []
     first_minus = []
@@ -318,7 +317,7 @@ def results_to_nums(results, stat):
                 if stat in result:
                     this_max = result[stat]
                 nums.append(this_max)
-            elif stat == 'joint_mdd_node_expansions':
+            elif stat == 'max_joint_mdd_visited':
                 this_expansions = result[stat]
                 nums.append(this_expansions)
         results_by_size.append(nums)

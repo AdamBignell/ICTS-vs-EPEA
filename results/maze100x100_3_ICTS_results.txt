@@ -1,195 +1,195 @@
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_0.txt", "heuristic_time": 0.029976367950439453, "time": 3.071843147277832, "joint_mdd_node_expansions": 149}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_1.txt", "heuristic_time": 0.043985605239868164, "time": 7.737748146057129, "joint_mdd_node_expansions": 232}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_10.txt", "heuristic_time": 0.03299069404602051, "time": 1.2226667404174805, "joint_mdd_node_expansions": 146}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_100.txt", "heuristic_time": 0.030984163284301758, "time": 1.2320775985717773, "joint_mdd_node_expansions": 142}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_101.txt", "heuristic_time": 0.03202223777770996, "time": 0.09496927261352539, "joint_mdd_node_expansions": 72}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_102.txt", "heuristic_time": 0.03297138214111328, "time": 1.975268840789795, "joint_mdd_node_expansions": 205}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_103.txt", "heuristic_time": 0.03398919105529785, "time": 1.6747372150421143, "joint_mdd_node_expansions": 176}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_104.txt", "heuristic_time": 0.032972097396850586, "time": 4.162843227386475, "joint_mdd_node_expansions": 229}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_105.txt", "heuristic_time": 0.03300786018371582, "time": 3.7585387229919434, "joint_mdd_node_expansions": 176}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_106.txt", "heuristic_time": 0.033983469009399414, "time": 1.9509966373443604, "joint_mdd_node_expansions": 177}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_107.txt", "heuristic_time": 0.0349879264831543, "time": 3.1177492141723633, "joint_mdd_node_expansions": 182}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_108.txt", "heuristic_time": 0.031636714935302734, "time": 1.2945811748504639, "joint_mdd_node_expansions": 163}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_109.txt", "heuristic_time": 0.0329897403717041, "time": 3.260753870010376, "joint_mdd_node_expansions": 3432, "expanded nodes": 16, "max_open_list_length": 15}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_11.txt", "heuristic_time": 0.03100275993347168, "time": 1.9482090473175049, "joint_mdd_node_expansions": 129}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_110.txt", "heuristic_time": 0.03298354148864746, "time": 2.131051540374756, "joint_mdd_node_expansions": 164}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_112.txt", "heuristic_time": 0.031973838806152344, "time": 4.270788192749023, "joint_mdd_node_expansions": 63034, "expanded nodes": 86, "max_open_list_length": 40}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_113.txt", "heuristic_time": 0.03297090530395508, "time": 1.2803936004638672, "joint_mdd_node_expansions": 123}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_114.txt", "heuristic_time": 0.029990434646606445, "time": 3.313415050506592, "joint_mdd_node_expansions": 204}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_115.txt", "heuristic_time": 0.03200340270996094, "time": 2.2119359970092773, "joint_mdd_node_expansions": 185}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_116.txt", "heuristic_time": 0.03198981285095215, "time": 1.3300676345825195, "joint_mdd_node_expansions": 163}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_117.txt", "heuristic_time": 0.03199005126953125, "time": 1.241905689239502, "joint_mdd_node_expansions": 145}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_118.txt", "heuristic_time": 0.0310208797454834, "time": 5.704392671585083, "joint_mdd_node_expansions": 230}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_119.txt", "heuristic_time": 0.032972097396850586, "time": 0.21097326278686523, "joint_mdd_node_expansions": 56}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_12.txt", "heuristic_time": 0.03497624397277832, "time": 1.623575210571289, "joint_mdd_node_expansions": 719, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_120.txt", "heuristic_time": 0.03199028968811035, "time": 2.915242910385132, "joint_mdd_node_expansions": 298, "expanded nodes": 2, "max_open_list_length": 6}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_121.txt", "heuristic_time": 0.03400278091430664, "time": 3.047696828842163, "joint_mdd_node_expansions": 206}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_122.txt", "heuristic_time": 0.031003952026367188, "time": 5.1791465282440186, "joint_mdd_node_expansions": 1003, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_123.txt", "heuristic_time": 0.032991647720336914, "time": 0.773918867111206, "joint_mdd_node_expansions": 90}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_124.txt", "heuristic_time": 0.0329890251159668, "time": 3.3561832904815674, "joint_mdd_node_expansions": 137}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_125.txt", "heuristic_time": 0.030992984771728516, "time": 1.3377444744110107, "joint_mdd_node_expansions": 172}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_126.txt", "heuristic_time": 0.030971527099609375, "time": 1.136031150817871, "joint_mdd_node_expansions": 153, "expanded nodes": 1, "max_open_list_length": 4}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_127.txt", "heuristic_time": 0.031989336013793945, "time": 0.15395069122314453, "joint_mdd_node_expansions": 108}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_129.txt", "heuristic_time": 0.03200221061706543, "time": 2.6397526264190674, "joint_mdd_node_expansions": 180}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_13.txt", "heuristic_time": 0.030989885330200195, "time": 0.9762651920318604, "joint_mdd_node_expansions": 133}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_130.txt", "heuristic_time": 0.032003164291381836, "time": 5.584869384765625, "joint_mdd_node_expansions": 10661, "expanded nodes": 20, "max_open_list_length": 16}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_131.txt", "heuristic_time": 0.033002614974975586, "time": 1.2059741020202637, "joint_mdd_node_expansions": 149}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_132.txt", "heuristic_time": 0.031970977783203125, "time": 3.478952169418335, "joint_mdd_node_expansions": 30178, "expanded nodes": 44, "max_open_list_length": 27}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_133.txt", "heuristic_time": 0.033989667892456055, "time": 2.636995792388916, "joint_mdd_node_expansions": 833, "expanded nodes": 9, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_134.txt", "heuristic_time": 0.03200817108154297, "time": 3.966144323348999, "joint_mdd_node_expansions": 237}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_135.txt", "heuristic_time": 0.031006813049316406, "time": 2.888256311416626, "joint_mdd_node_expansions": 665, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_136.txt", "heuristic_time": 0.03299689292907715, "time": 5.7521514892578125, "joint_mdd_node_expansions": 4684, "expanded nodes": 12, "max_open_list_length": 14}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_137.txt", "heuristic_time": 0.03189587593078613, "time": 2.3960559368133545, "joint_mdd_node_expansions": 225}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_138.txt", "heuristic_time": 0.030003786087036133, "time": 2.8813092708587646, "joint_mdd_node_expansions": 147}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_139.txt", "heuristic_time": 0.03300762176513672, "time": 2.1069529056549072, "joint_mdd_node_expansions": 203}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_14.txt", "heuristic_time": 0.03400230407714844, "time": 1.6760618686676025, "joint_mdd_node_expansions": 1727, "expanded nodes": 7, "max_open_list_length": 10}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_140.txt", "heuristic_time": 0.0329892635345459, "time": 1.278747320175171, "joint_mdd_node_expansions": 983, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_141.txt", "heuristic_time": 0.030973196029663086, "time": 2.191333770751953, "joint_mdd_node_expansions": 206}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_142.txt", "heuristic_time": 0.031990766525268555, "time": 0.7793002128601074, "joint_mdd_node_expansions": 123}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_143.txt", "heuristic_time": 0.0329892635345459, "time": 1.0509545803070068, "joint_mdd_node_expansions": 107}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_144.txt", "heuristic_time": 0.032989501953125, "time": 3.5684738159179688, "joint_mdd_node_expansions": 202}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_145.txt", "heuristic_time": 0.03200173377990723, "time": 1.6545865535736084, "joint_mdd_node_expansions": 138}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_146.txt", "heuristic_time": 0.030990123748779297, "time": 4.378178834915161, "joint_mdd_node_expansions": 269}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_147.txt", "heuristic_time": 0.0329897403717041, "time": 2.497973680496216, "joint_mdd_node_expansions": 1041, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_148.txt", "heuristic_time": 0.031007766723632812, "time": 2.4369699954986572, "joint_mdd_node_expansions": 235}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_149.txt", "heuristic_time": 0.032007694244384766, "time": 2.0954809188842773, "joint_mdd_node_expansions": 243, "expanded nodes": 2, "max_open_list_length": 6}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_15.txt", "heuristic_time": 0.033217668533325195, "time": 3.400803565979004, "joint_mdd_node_expansions": 3841, "expanded nodes": 16, "max_open_list_length": 15}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_150.txt", "heuristic_time": 0.029003381729125977, "time": 2.177097797393799, "joint_mdd_node_expansions": 5318, "expanded nodes": 16, "max_open_list_length": 15}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_151.txt", "heuristic_time": 0.0320281982421875, "time": 4.538394927978516, "joint_mdd_node_expansions": 49498, "expanded nodes": 84, "max_open_list_length": 37}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_152.txt", "heuristic_time": 0.031004667282104492, "time": 7.476646184921265, "joint_mdd_node_expansions": 55894, "expanded nodes": 74, "max_open_list_length": 36}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_153.txt", "heuristic_time": 0.03298330307006836, "time": 0.9999861717224121, "joint_mdd_node_expansions": 117}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_154.txt", "heuristic_time": 0.02997136116027832, "time": 3.057886838912964, "joint_mdd_node_expansions": 169}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_155.txt", "heuristic_time": 0.036981821060180664, "time": 2.7789745330810547, "joint_mdd_node_expansions": 1776, "expanded nodes": 7, "max_open_list_length": 10}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_156.txt", "heuristic_time": 0.03204989433288574, "time": 1.3911116123199463, "joint_mdd_node_expansions": 151}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_157.txt", "heuristic_time": 0.0309903621673584, "time": 2.600792407989502, "joint_mdd_node_expansions": 188}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_158.txt", "heuristic_time": 0.032006263732910156, "time": 3.8879241943359375, "joint_mdd_node_expansions": 2717, "expanded nodes": 11, "max_open_list_length": 13}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_159.txt", "heuristic_time": 0.03199028968811035, "time": 5.337371349334717, "joint_mdd_node_expansions": 17154, "expanded nodes": 38, "max_open_list_length": 25}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_16.txt", "heuristic_time": 0.03198981285095215, "time": 2.9852733612060547, "joint_mdd_node_expansions": 199}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_160.txt", "heuristic_time": 0.03100275993347168, "time": 3.1450302600860596, "joint_mdd_node_expansions": 1560, "expanded nodes": 7, "max_open_list_length": 10}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_161.txt", "heuristic_time": 0.032989501953125, "time": 3.7779388427734375, "joint_mdd_node_expansions": 221}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_162.txt", "heuristic_time": 0.03199052810668945, "time": 4.884365558624268, "joint_mdd_node_expansions": 2319, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_163.txt", "heuristic_time": 0.028985977172851562, "time": 2.577847957611084, "joint_mdd_node_expansions": 181}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_164.txt", "heuristic_time": 0.03300285339355469, "time": 1.8200592994689941, "joint_mdd_node_expansions": 160}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_166.txt", "heuristic_time": 0.030980587005615234, "time": 1.5250442028045654, "joint_mdd_node_expansions": 688, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_167.txt", "heuristic_time": 0.032990217208862305, "time": 1.7617154121398926, "joint_mdd_node_expansions": 1079, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_168.txt", "heuristic_time": 0.0309906005859375, "time": 0.40326380729675293, "joint_mdd_node_expansions": 128}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_169.txt", "heuristic_time": 0.04297280311584473, "time": 3.964920997619629, "joint_mdd_node_expansions": 44014, "expanded nodes": 50, "max_open_list_length": 28}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_17.txt", "heuristic_time": 0.030990123748779297, "time": 3.2911365032196045, "joint_mdd_node_expansions": 35915, "expanded nodes": 44, "max_open_list_length": 27}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_170.txt", "heuristic_time": 0.03300309181213379, "time": 4.155049085617065, "joint_mdd_node_expansions": 17095, "expanded nodes": 44, "max_open_list_length": 27}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_171.txt", "heuristic_time": 0.030990123748779297, "time": 1.4539225101470947, "joint_mdd_node_expansions": 121}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_172.txt", "heuristic_time": 0.030987977981567383, "time": 1.6035361289978027, "joint_mdd_node_expansions": 131}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_173.txt", "heuristic_time": 0.03199028968811035, "time": 0.3289620876312256, "joint_mdd_node_expansions": 82}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_174.txt", "heuristic_time": 0.04197335243225098, "time": 1.2450668811798096, "joint_mdd_node_expansions": 161}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_175.txt", "heuristic_time": 0.034001827239990234, "time": 0.04498553276062012, "joint_mdd_node_expansions": 56}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_176.txt", "heuristic_time": 0.030974864959716797, "time": 1.6204969882965088, "joint_mdd_node_expansions": 2749, "expanded nodes": 16, "max_open_list_length": 15}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_177.txt", "heuristic_time": 0.03193235397338867, "time": 3.457958936691284, "joint_mdd_node_expansions": 208}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_178.txt", "heuristic_time": 0.030990123748779297, "time": 5.529284715652466, "joint_mdd_node_expansions": 843, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_179.txt", "heuristic_time": 0.030985355377197266, "time": 2.749035358428955, "joint_mdd_node_expansions": 1964, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_18.txt", "heuristic_time": 0.031991004943847656, "time": 1.6990246772766113, "joint_mdd_node_expansions": 199}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_180.txt", "heuristic_time": 0.03099346160888672, "time": 4.325815439224243, "joint_mdd_node_expansions": 2481, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_181.txt", "heuristic_time": 0.03199005126953125, "time": 5.642987966537476, "joint_mdd_node_expansions": 2906, "expanded nodes": 7, "max_open_list_length": 10}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_182.txt", "heuristic_time": 0.03280758857727051, "time": 1.758042812347412, "joint_mdd_node_expansions": 127}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_183.txt", "heuristic_time": 0.03198957443237305, "time": 3.8081321716308594, "joint_mdd_node_expansions": 187}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_184.txt", "heuristic_time": 0.0329740047454834, "time": 1.0589773654937744, "joint_mdd_node_expansions": 6813, "expanded nodes": 19, "max_open_list_length": 16}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_185.txt", "heuristic_time": 0.032990455627441406, "time": 3.2419722080230713, "joint_mdd_node_expansions": 18878, "expanded nodes": 35, "max_open_list_length": 22}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_186.txt", "heuristic_time": 0.0329892635345459, "time": 6.975011110305786, "joint_mdd_node_expansions": 237}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_187.txt", "heuristic_time": 0.03299212455749512, "time": 2.4549636840820312, "joint_mdd_node_expansions": 176}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_188.txt", "heuristic_time": 0.032989501953125, "time": 3.494072437286377, "joint_mdd_node_expansions": 828, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_189.txt", "heuristic_time": 0.03300166130065918, "time": 1.7487456798553467, "joint_mdd_node_expansions": 143}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_19.txt", "heuristic_time": 0.029990196228027344, "time": 2.1259472370147705, "joint_mdd_node_expansions": 176}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_190.txt", "heuristic_time": 0.03198981285095215, "time": 2.310068368911743, "joint_mdd_node_expansions": 11911, "expanded nodes": 55, "max_open_list_length": 29}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_191.txt", "heuristic_time": 0.030990123748779297, "time": 1.6058902740478516, "joint_mdd_node_expansions": 153}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_192.txt", "heuristic_time": 0.03398847579956055, "time": 5.266166925430298, "joint_mdd_node_expansions": 23187, "expanded nodes": 44, "max_open_list_length": 27}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_193.txt", "heuristic_time": 0.03200268745422363, "time": 1.3982622623443604, "joint_mdd_node_expansions": 1685, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_194.txt", "heuristic_time": 0.03398394584655762, "time": 4.102013111114502, "joint_mdd_node_expansions": 188}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_195.txt", "heuristic_time": 0.03124690055847168, "time": 2.722980499267578, "joint_mdd_node_expansions": 197}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_196.txt", "heuristic_time": 0.031003952026367188, "time": 0.8699610233306885, "joint_mdd_node_expansions": 128}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_197.txt", "heuristic_time": 0.02750563621520996, "time": 3.18096923828125, "joint_mdd_node_expansions": 227}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_198.txt", "heuristic_time": 0.031003236770629883, "time": 3.2917046546936035, "joint_mdd_node_expansions": 194}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_199.txt", "heuristic_time": 0.032989501953125, "time": 1.9338762760162354, "joint_mdd_node_expansions": 181}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_2.txt", "heuristic_time": 0.03197598457336426, "time": 2.609057903289795, "joint_mdd_node_expansions": 176}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_20.txt", "heuristic_time": 0.030009031295776367, "time": 1.4450602531433105, "joint_mdd_node_expansions": 1272, "expanded nodes": 7, "max_open_list_length": 10}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_21.txt", "heuristic_time": 0.032975196838378906, "time": 5.985984563827515, "joint_mdd_node_expansions": 397705, "expanded nodes": 165, "max_open_list_length": 56}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_22.txt", "heuristic_time": 0.03298830986022949, "time": 2.4434654712677, "joint_mdd_node_expansions": 171}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_23.txt", "heuristic_time": 0.03198504447937012, "time": 1.0388307571411133, "joint_mdd_node_expansions": 132}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_24.txt", "heuristic_time": 0.032002925872802734, "time": 0.5961170196533203, "joint_mdd_node_expansions": 115}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_25.txt", "heuristic_time": 0.030987262725830078, "time": 1.4840426445007324, "joint_mdd_node_expansions": 1630, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_26.txt", "heuristic_time": 0.033002376556396484, "time": 4.076744794845581, "joint_mdd_node_expansions": 232}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_27.txt", "heuristic_time": 0.03199291229248047, "time": 3.329237461090088, "joint_mdd_node_expansions": 167}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_28.txt", "heuristic_time": 0.0269925594329834, "time": 3.33367919921875, "joint_mdd_node_expansions": 2710, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_29.txt", "heuristic_time": 0.042508840560913086, "time": 2.800112724304199, "joint_mdd_node_expansions": 161}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_3.txt", "heuristic_time": 0.03100299835205078, "time": 0.9439337253570557, "joint_mdd_node_expansions": 112}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_30.txt", "heuristic_time": 0.0319826602935791, "time": 1.8440215587615967, "joint_mdd_node_expansions": 147}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_31.txt", "heuristic_time": 0.03275918960571289, "time": 0.9250059127807617, "joint_mdd_node_expansions": 2107, "expanded nodes": 11, "max_open_list_length": 13}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_32.txt", "heuristic_time": 0.03197121620178223, "time": 3.5450315475463867, "joint_mdd_node_expansions": 200}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_33.txt", "heuristic_time": 0.033007144927978516, "time": 4.383134603500366, "joint_mdd_node_expansions": 197}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_34.txt", "heuristic_time": 0.03100299835205078, "time": 3.3100931644439697, "joint_mdd_node_expansions": 1723, "expanded nodes": 10, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_35.txt", "heuristic_time": 0.031003475189208984, "time": 2.629136085510254, "joint_mdd_node_expansions": 169}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_36.txt", "heuristic_time": 0.03200507164001465, "time": 1.0686380863189697, "joint_mdd_node_expansions": 175}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_38.txt", "heuristic_time": 0.032989501953125, "time": 1.6557409763336182, "joint_mdd_node_expansions": 163}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_39.txt", "heuristic_time": 0.0320131778717041, "time": 2.4250247478485107, "joint_mdd_node_expansions": 180}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_4.txt", "heuristic_time": 0.030991315841674805, "time": 3.296994209289551, "joint_mdd_node_expansions": 8227, "expanded nodes": 19, "max_open_list_length": 16}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_40.txt", "heuristic_time": 0.03198981285095215, "time": 9.917097568511963, "joint_mdd_node_expansions": 49169, "expanded nodes": 51, "max_open_list_length": 29}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_41.txt", "heuristic_time": 0.030990123748779297, "time": 5.012115240097046, "joint_mdd_node_expansions": 49423, "expanded nodes": 52, "max_open_list_length": 29}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_42.txt", "heuristic_time": 0.03200817108154297, "time": 2.173036813735962, "joint_mdd_node_expansions": 162}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_43.txt", "heuristic_time": 0.030990123748779297, "time": 2.26568603515625, "joint_mdd_node_expansions": 175}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_44.txt", "heuristic_time": 0.031163454055786133, "time": 2.8040754795074463, "joint_mdd_node_expansions": 146}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_45.txt", "heuristic_time": 0.032007694244384766, "time": 3.766960382461548, "joint_mdd_node_expansions": 2120, "expanded nodes": 9, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_46.txt", "heuristic_time": 0.03200936317443848, "time": 2.0349504947662354, "joint_mdd_node_expansions": 895, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_47.txt", "heuristic_time": 0.03397226333618164, "time": 1.331979513168335, "joint_mdd_node_expansions": 22718, "expanded nodes": 52, "max_open_list_length": 29}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_48.txt", "heuristic_time": 0.032989501953125, "time": 1.6450443267822266, "joint_mdd_node_expansions": 150}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_49.txt", "heuristic_time": 0.032277584075927734, "time": 3.76989483833313, "joint_mdd_node_expansions": 7671, "expanded nodes": 19, "max_open_list_length": 16}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_5.txt", "heuristic_time": 0.030985116958618164, "time": 10.392986297607422, "joint_mdd_node_expansions": 365390, "expanded nodes": 175, "max_open_list_length": 61}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_50.txt", "heuristic_time": 0.03199028968811035, "time": 5.691838979721069, "joint_mdd_node_expansions": 23325, "expanded nodes": 42, "max_open_list_length": 27}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_51.txt", "heuristic_time": 0.03310966491699219, "time": 1.8832001686096191, "joint_mdd_node_expansions": 145}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_52.txt", "heuristic_time": 0.030984878540039062, "time": 1.5687954425811768, "joint_mdd_node_expansions": 182}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_53.txt", "heuristic_time": 0.03198981285095215, "time": 2.2479846477508545, "joint_mdd_node_expansions": 156}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_54.txt", "heuristic_time": 0.03176283836364746, "time": 5.839817047119141, "joint_mdd_node_expansions": 1798, "expanded nodes": 7, "max_open_list_length": 10}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_55.txt", "heuristic_time": 0.03212428092956543, "time": 2.246814727783203, "joint_mdd_node_expansions": 5564, "expanded nodes": 21, "max_open_list_length": 18}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_56.txt", "heuristic_time": 0.032236337661743164, "time": 5.630775690078735, "joint_mdd_node_expansions": 18650, "expanded nodes": 34, "max_open_list_length": 22}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_57.txt", "heuristic_time": 0.0309903621673584, "time": 7.282056093215942, "joint_mdd_node_expansions": 2840, "expanded nodes": 9, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_58.txt", "heuristic_time": 0.03199648857116699, "time": 4.749385833740234, "joint_mdd_node_expansions": 211}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_59.txt", "heuristic_time": 0.031003713607788086, "time": 0.2029271125793457, "joint_mdd_node_expansions": 118}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_60.txt", "heuristic_time": 0.03000640869140625, "time": 4.876931190490723, "joint_mdd_node_expansions": 23152, "expanded nodes": 36, "max_open_list_length": 24}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_61.txt", "heuristic_time": 0.031008005142211914, "time": 2.4258017539978027, "joint_mdd_node_expansions": 216}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_62.txt", "heuristic_time": 0.033006906509399414, "time": 2.3929643630981445, "joint_mdd_node_expansions": 168}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_63.txt", "heuristic_time": 0.032007694244384766, "time": 1.6971104145050049, "joint_mdd_node_expansions": 793, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_64.txt", "heuristic_time": 0.029003381729125977, "time": 0.7409384250640869, "joint_mdd_node_expansions": 113}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_65.txt", "heuristic_time": 0.029973983764648438, "time": 1.085230827331543, "joint_mdd_node_expansions": 101}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_66.txt", "heuristic_time": 0.030984878540039062, "time": 4.011950969696045, "joint_mdd_node_expansions": 199}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_67.txt", "heuristic_time": 0.032003164291381836, "time": 6.042904615402222, "joint_mdd_node_expansions": 26722, "expanded nodes": 35, "max_open_list_length": 22}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_68.txt", "heuristic_time": 0.03199291229248047, "time": 3.963961601257324, "joint_mdd_node_expansions": 245}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_69.txt", "heuristic_time": 0.03190422058105469, "time": 8.90085744857788, "joint_mdd_node_expansions": 293609, "expanded nodes": 112, "max_open_list_length": 45}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_7.txt", "heuristic_time": 0.03200960159301758, "time": 3.2121148109436035, "joint_mdd_node_expansions": 232}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_70.txt", "heuristic_time": 0.031003475189208984, "time": 2.372021436691284, "joint_mdd_node_expansions": 170}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_71.txt", "heuristic_time": 0.03198504447937012, "time": 3.1220035552978516, "joint_mdd_node_expansions": 568, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_72.txt", "heuristic_time": 0.031989097595214844, "time": 0.62152099609375, "joint_mdd_node_expansions": 147}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_73.txt", "heuristic_time": 0.03298592567443848, "time": 1.5710163116455078, "joint_mdd_node_expansions": 31453, "expanded nodes": 50, "max_open_list_length": 28}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_74.txt", "heuristic_time": 0.031996965408325195, "time": 3.72845721244812, "joint_mdd_node_expansions": 183}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_75.txt", "heuristic_time": 0.031989336013793945, "time": 2.2440338134765625, "joint_mdd_node_expansions": 229, "expanded nodes": 2, "max_open_list_length": 6}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_76.txt", "heuristic_time": 0.03191399574279785, "time": 1.3629350662231445, "joint_mdd_node_expansions": 142}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_77.txt", "heuristic_time": 0.03311944007873535, "time": 7.62508749961853, "joint_mdd_node_expansions": 44316, "expanded nodes": 40, "max_open_list_length": 26}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_78.txt", "heuristic_time": 0.030985116958618164, "time": 2.4464168548583984, "joint_mdd_node_expansions": 1349, "expanded nodes": 9, "max_open_list_length": 11}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_79.txt", "heuristic_time": 0.03596997261047363, "time": 1.7139694690704346, "joint_mdd_node_expansions": 147}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_8.txt", "heuristic_time": 0.030985593795776367, "time": 1.5970079898834229, "joint_mdd_node_expansions": 8690, "expanded nodes": 35, "max_open_list_length": 22}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_80.txt", "heuristic_time": 0.03097820281982422, "time": 16.375629901885986, "joint_mdd_node_expansions": 1201041, "expanded nodes": 285, "max_open_list_length": 79}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_81.txt", "heuristic_time": 0.03198885917663574, "time": 1.9521870613098145, "joint_mdd_node_expansions": 155}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_82.txt", "heuristic_time": 0.03098440170288086, "time": 1.6620287895202637, "joint_mdd_node_expansions": 146}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_83.txt", "heuristic_time": 0.03198885917663574, "time": 0.6460270881652832, "joint_mdd_node_expansions": 123}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_84.txt", "heuristic_time": 0.0309903621673584, "time": 0.5920710563659668, "joint_mdd_node_expansions": 2449, "expanded nodes": 19, "max_open_list_length": 16}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_85.txt", "heuristic_time": 0.0427854061126709, "time": 2.3167343139648438, "joint_mdd_node_expansions": 159}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_86.txt", "heuristic_time": 0.03225278854370117, "time": 1.1098227500915527, "joint_mdd_node_expansions": 142}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_87.txt", "heuristic_time": 0.029987812042236328, "time": 0.8651392459869385, "joint_mdd_node_expansions": 117}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_88.txt", "heuristic_time": 0.0329737663269043, "time": 1.398926019668579, "joint_mdd_node_expansions": 141}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_89.txt", "heuristic_time": 0.031002521514892578, "time": 4.517910718917847, "joint_mdd_node_expansions": 763, "expanded nodes": 4, "max_open_list_length": 7}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_9.txt", "heuristic_time": 0.0329892635345459, "time": 1.9669852256774902, "joint_mdd_node_expansions": 184}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_90.txt", "heuristic_time": 0.030985355377197266, "time": 6.411399841308594, "joint_mdd_node_expansions": 10482, "expanded nodes": 25, "max_open_list_length": 20}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_91.txt", "heuristic_time": 0.03200244903564453, "time": 0.6577825546264648, "joint_mdd_node_expansions": 133}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_92.txt", "heuristic_time": 0.03099513053894043, "time": 1.56577730178833, "joint_mdd_node_expansions": 128}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_93.txt", "heuristic_time": 0.03200340270996094, "time": 2.8348441123962402, "joint_mdd_node_expansions": 171}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_94.txt", "heuristic_time": 0.029990434646606445, "time": 1.4489860534667969, "joint_mdd_node_expansions": 189}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_95.txt", "heuristic_time": 0.031952857971191406, "time": 3.6908390522003174, "joint_mdd_node_expansions": 208}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_96.txt", "heuristic_time": 0.030971527099609375, "time": 0.2601926326751709, "joint_mdd_node_expansions": 102}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_97.txt", "heuristic_time": 0.030977249145507812, "time": 3.26617169380188, "joint_mdd_node_expansions": 97361, "expanded nodes": 77, "max_open_list_length": 36}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_98.txt", "heuristic_time": 0.03200840950012207, "time": 4.329967737197876, "joint_mdd_node_expansions": 18177, "expanded nodes": 35, "max_open_list_length": 22}
-{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_99.txt", "heuristic_time": 0.0328371524810791, "time": 4.0950727462768555, "joint_mdd_node_expansions": 1520, "expanded nodes": 7, "max_open_list_length": 10}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_0.txt", "heuristic_time": 0.05490303039550781, "time": 3.1455459594726562, "max_joint_mdd_visited": 149}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_1.txt", "heuristic_time": 0.05783534049987793, "time": 8.584028005599976, "max_joint_mdd_visited": 232}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_10.txt", "heuristic_time": 0.055884361267089844, "time": 1.6535696983337402, "max_joint_mdd_visited": 146}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_100.txt", "heuristic_time": 0.05688738822937012, "time": 1.4480981826782227, "max_joint_mdd_visited": 142}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_101.txt", "heuristic_time": 0.057845115661621094, "time": 0.15059638023376465, "max_joint_mdd_visited": 72}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_102.txt", "heuristic_time": 0.05984067916870117, "time": 2.3317649364471436, "max_joint_mdd_visited": 205}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_103.txt", "heuristic_time": 0.05089974403381348, "time": 2.1023476123809814, "max_joint_mdd_visited": 176}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_104.txt", "heuristic_time": 0.05887794494628906, "time": 4.807121515274048, "max_joint_mdd_visited": 229}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_105.txt", "heuristic_time": 0.0548856258392334, "time": 4.483017921447754, "max_joint_mdd_visited": 176}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_106.txt", "heuristic_time": 0.05690431594848633, "time": 2.1612191200256348, "max_joint_mdd_visited": 177}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_107.txt", "heuristic_time": 0.05787992477416992, "time": 3.5874102115631104, "max_joint_mdd_visited": 182}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_108.txt", "heuristic_time": 0.05588245391845703, "time": 1.803182601928711, "max_joint_mdd_visited": 163}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_109.txt", "heuristic_time": 0.05987238883972168, "time": 3.7709226608276367, "max_joint_mdd_visited": 339, "expanded nodes": 16, "max_open_list_length": 15}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_11.txt", "heuristic_time": 0.054886817932128906, "time": 2.461421012878418, "max_joint_mdd_visited": 129}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_110.txt", "heuristic_time": 0.0559077262878418, "time": 2.5561585426330566, "max_joint_mdd_visited": 164}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_112.txt", "heuristic_time": 0.053853511810302734, "time": 5.274903774261475, "max_joint_mdd_visited": 1936, "expanded nodes": 86, "max_open_list_length": 40}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_113.txt", "heuristic_time": 0.05489015579223633, "time": 1.7214288711547852, "max_joint_mdd_visited": 123}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_114.txt", "heuristic_time": 0.050867557525634766, "time": 3.977362871170044, "max_joint_mdd_visited": 204}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_115.txt", "heuristic_time": 0.057854652404785156, "time": 2.69180965423584, "max_joint_mdd_visited": 185}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_116.txt", "heuristic_time": 0.06083846092224121, "time": 1.7044720649719238, "max_joint_mdd_visited": 163}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_117.txt", "heuristic_time": 0.05787777900695801, "time": 1.467078685760498, "max_joint_mdd_visited": 145}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_118.txt", "heuristic_time": 0.05688595771789551, "time": 6.774895668029785, "max_joint_mdd_visited": 230}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_119.txt", "heuristic_time": 0.05287623405456543, "time": 0.25031447410583496, "max_joint_mdd_visited": 56}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_12.txt", "heuristic_time": 0.05289483070373535, "time": 2.126279354095459, "max_joint_mdd_visited": 277, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_120.txt", "heuristic_time": 0.06089138984680176, "time": 3.8676552772521973, "max_joint_mdd_visited": 151, "expanded nodes": 2, "max_open_list_length": 6}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_121.txt", "heuristic_time": 0.05688047409057617, "time": 3.5993893146514893, "max_joint_mdd_visited": 206}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_122.txt", "heuristic_time": 0.05784773826599121, "time": 6.612329006195068, "max_joint_mdd_visited": 426, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_123.txt", "heuristic_time": 0.050868988037109375, "time": 0.7809469699859619, "max_joint_mdd_visited": 90}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_124.txt", "heuristic_time": 0.06383085250854492, "time": 4.1708574295043945, "max_joint_mdd_visited": 137}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_125.txt", "heuristic_time": 0.05784440040588379, "time": 1.6226611137390137, "max_joint_mdd_visited": 172}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_126.txt", "heuristic_time": 0.05788302421569824, "time": 1.4661130905151367, "max_joint_mdd_visited": 117, "expanded nodes": 1, "max_open_list_length": 4}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_127.txt", "heuristic_time": 0.05884385108947754, "time": 0.19348502159118652, "max_joint_mdd_visited": 108}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_129.txt", "heuristic_time": 0.05983543395996094, "time": 3.1495859622955322, "max_joint_mdd_visited": 180}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_13.txt", "heuristic_time": 0.0528569221496582, "time": 1.2516891956329346, "max_joint_mdd_visited": 133}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_130.txt", "heuristic_time": 0.05684781074523926, "time": 6.232346534729004, "max_joint_mdd_visited": 807, "expanded nodes": 20, "max_open_list_length": 16}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_131.txt", "heuristic_time": 0.0538172721862793, "time": 1.7094252109527588, "max_joint_mdd_visited": 149}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_132.txt", "heuristic_time": 0.05788016319274902, "time": 4.153897762298584, "max_joint_mdd_visited": 1778, "expanded nodes": 44, "max_open_list_length": 27}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_133.txt", "heuristic_time": 0.05385589599609375, "time": 3.2593348026275635, "max_joint_mdd_visited": 226, "expanded nodes": 9, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_134.txt", "heuristic_time": 0.05887794494628906, "time": 4.43315577507019, "max_joint_mdd_visited": 237}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_135.txt", "heuristic_time": 0.054891347885131836, "time": 3.7799055576324463, "max_joint_mdd_visited": 297, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_136.txt", "heuristic_time": 0.04987740516662598, "time": 7.609654188156128, "max_joint_mdd_visited": 683, "expanded nodes": 12, "max_open_list_length": 14}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_137.txt", "heuristic_time": 0.06383371353149414, "time": 2.947084903717041, "max_joint_mdd_visited": 225}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_138.txt", "heuristic_time": 0.057877540588378906, "time": 3.5415406227111816, "max_joint_mdd_visited": 147}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_139.txt", "heuristic_time": 0.05285763740539551, "time": 2.674848794937134, "max_joint_mdd_visited": 203}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_14.txt", "heuristic_time": 0.0538485050201416, "time": 2.0495269298553467, "max_joint_mdd_visited": 359, "expanded nodes": 7, "max_open_list_length": 10}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_140.txt", "heuristic_time": 0.05385613441467285, "time": 1.5548458099365234, "max_joint_mdd_visited": 171, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_141.txt", "heuristic_time": 0.05685591697692871, "time": 2.6828243732452393, "max_joint_mdd_visited": 206}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_142.txt", "heuristic_time": 0.05390167236328125, "time": 1.0491867065429688, "max_joint_mdd_visited": 123}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_143.txt", "heuristic_time": 0.05787801742553711, "time": 1.3394570350646973, "max_joint_mdd_visited": 107}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_144.txt", "heuristic_time": 0.05585002899169922, "time": 4.362380027770996, "max_joint_mdd_visited": 202}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_145.txt", "heuristic_time": 0.05589938163757324, "time": 2.4294683933258057, "max_joint_mdd_visited": 138}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_146.txt", "heuristic_time": 0.05784273147583008, "time": 5.26094126701355, "max_joint_mdd_visited": 269}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_147.txt", "heuristic_time": 0.05985546112060547, "time": 3.1376187801361084, "max_joint_mdd_visited": 395, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_148.txt", "heuristic_time": 0.05988121032714844, "time": 3.0897743701934814, "max_joint_mdd_visited": 235}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_149.txt", "heuristic_time": 0.05688619613647461, "time": 2.750614881515503, "max_joint_mdd_visited": 129, "expanded nodes": 2, "max_open_list_length": 6}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_15.txt", "heuristic_time": 0.05584979057312012, "time": 4.1299614906311035, "max_joint_mdd_visited": 362, "expanded nodes": 16, "max_open_list_length": 15}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_150.txt", "heuristic_time": 0.050894975662231445, "time": 2.533236265182495, "max_joint_mdd_visited": 539, "expanded nodes": 16, "max_open_list_length": 15}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_151.txt", "heuristic_time": 0.05089712142944336, "time": 5.295857191085815, "max_joint_mdd_visited": 1669, "expanded nodes": 84, "max_open_list_length": 37}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_152.txt", "heuristic_time": 0.0638573169708252, "time": 8.841367244720459, "max_joint_mdd_visited": 2503, "expanded nodes": 74, "max_open_list_length": 36}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_153.txt", "heuristic_time": 0.05884146690368652, "time": 1.1000595092773438, "max_joint_mdd_visited": 117}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_154.txt", "heuristic_time": 0.06485915184020996, "time": 3.7529680728912354, "max_joint_mdd_visited": 169}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_155.txt", "heuristic_time": 0.056848764419555664, "time": 3.3909413814544678, "max_joint_mdd_visited": 377, "expanded nodes": 7, "max_open_list_length": 10}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_156.txt", "heuristic_time": 0.056847572326660156, "time": 1.7752516269683838, "max_joint_mdd_visited": 151}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_157.txt", "heuristic_time": 0.0598752498626709, "time": 3.2562649250030518, "max_joint_mdd_visited": 188}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_158.txt", "heuristic_time": 0.05988621711730957, "time": 4.504884243011475, "max_joint_mdd_visited": 430, "expanded nodes": 11, "max_open_list_length": 13}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_159.txt", "heuristic_time": 0.05687880516052246, "time": 6.075765132904053, "max_joint_mdd_visited": 943, "expanded nodes": 38, "max_open_list_length": 25}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_16.txt", "heuristic_time": 0.053855180740356445, "time": 3.888646364212036, "max_joint_mdd_visited": 199}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_160.txt", "heuristic_time": 0.053902387619018555, "time": 3.8446948528289795, "max_joint_mdd_visited": 340, "expanded nodes": 7, "max_open_list_length": 10}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_161.txt", "heuristic_time": 0.056888580322265625, "time": 4.829086542129517, "max_joint_mdd_visited": 221}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_162.txt", "heuristic_time": 0.05585360527038574, "time": 5.793512344360352, "max_joint_mdd_visited": 339, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_163.txt", "heuristic_time": 0.0688173770904541, "time": 3.161555290222168, "max_joint_mdd_visited": 181}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_164.txt", "heuristic_time": 0.0578460693359375, "time": 2.5651395320892334, "max_joint_mdd_visited": 160}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_166.txt", "heuristic_time": 0.07878971099853516, "time": 2.2599599361419678, "max_joint_mdd_visited": 293, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_167.txt", "heuristic_time": 0.05785012245178223, "time": 2.1522462368011475, "max_joint_mdd_visited": 417, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_168.txt", "heuristic_time": 0.060838937759399414, "time": 0.5904569625854492, "max_joint_mdd_visited": 128}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_169.txt", "heuristic_time": 0.0548403263092041, "time": 4.864970445632935, "max_joint_mdd_visited": 2030, "expanded nodes": 50, "max_open_list_length": 28}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_17.txt", "heuristic_time": 0.05585122108459473, "time": 3.9065611362457275, "max_joint_mdd_visited": 2083, "expanded nodes": 44, "max_open_list_length": 27}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_170.txt", "heuristic_time": 0.05784463882446289, "time": 5.506266117095947, "max_joint_mdd_visited": 938, "expanded nodes": 44, "max_open_list_length": 27}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_171.txt", "heuristic_time": 0.058893680572509766, "time": 1.736340045928955, "max_joint_mdd_visited": 121}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_172.txt", "heuristic_time": 0.051891326904296875, "time": 1.9098942279815674, "max_joint_mdd_visited": 131}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_173.txt", "heuristic_time": 0.06682133674621582, "time": 0.4597766399383545, "max_joint_mdd_visited": 82}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_174.txt", "heuristic_time": 0.05385088920593262, "time": 1.4660711288452148, "max_joint_mdd_visited": 161}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_175.txt", "heuristic_time": 0.0588374137878418, "time": 0.07874464988708496, "max_joint_mdd_visited": 56}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_176.txt", "heuristic_time": 0.05186033248901367, "time": 1.9946696758270264, "max_joint_mdd_visited": 259, "expanded nodes": 16, "max_open_list_length": 15}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_177.txt", "heuristic_time": 0.05884242057800293, "time": 4.135945558547974, "max_joint_mdd_visited": 208}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_178.txt", "heuristic_time": 0.07280850410461426, "time": 6.6113433837890625, "max_joint_mdd_visited": 418, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_179.txt", "heuristic_time": 0.053856611251831055, "time": 2.8942651748657227, "max_joint_mdd_visited": 281, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_18.txt", "heuristic_time": 0.06183481216430664, "time": 2.3946077823638916, "max_joint_mdd_visited": 199}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_180.txt", "heuristic_time": 0.06083846092224121, "time": 5.027563810348511, "max_joint_mdd_visited": 408, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_181.txt", "heuristic_time": 0.052858591079711914, "time": 6.451760530471802, "max_joint_mdd_visited": 538, "expanded nodes": 7, "max_open_list_length": 10}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_182.txt", "heuristic_time": 0.051863670349121094, "time": 2.1023800373077393, "max_joint_mdd_visited": 127}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_183.txt", "heuristic_time": 0.05485367774963379, "time": 4.494997978210449, "max_joint_mdd_visited": 187}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_184.txt", "heuristic_time": 0.061791419982910156, "time": 1.2835426330566406, "max_joint_mdd_visited": 578, "expanded nodes": 19, "max_open_list_length": 16}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_185.txt", "heuristic_time": 0.05286741256713867, "time": 3.746976613998413, "max_joint_mdd_visited": 1002, "expanded nodes": 35, "max_open_list_length": 22}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_186.txt", "heuristic_time": 0.05585074424743652, "time": 7.856010675430298, "max_joint_mdd_visited": 237}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_187.txt", "heuristic_time": 0.06283140182495117, "time": 3.8756399154663086, "max_joint_mdd_visited": 176}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_188.txt", "heuristic_time": 0.0678560733795166, "time": 4.0651469230651855, "max_joint_mdd_visited": 341, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_189.txt", "heuristic_time": 0.0568850040435791, "time": 2.3188016414642334, "max_joint_mdd_visited": 143}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_19.txt", "heuristic_time": 0.057845354080200195, "time": 2.7227578163146973, "max_joint_mdd_visited": 176}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_190.txt", "heuristic_time": 0.05381011962890625, "time": 2.8773415088653564, "max_joint_mdd_visited": 461, "expanded nodes": 55, "max_open_list_length": 29}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_191.txt", "heuristic_time": 0.056844472885131836, "time": 2.064479351043701, "max_joint_mdd_visited": 153}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_192.txt", "heuristic_time": 0.055855512619018555, "time": 6.461682319641113, "max_joint_mdd_visited": 1298, "expanded nodes": 44, "max_open_list_length": 27}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_193.txt", "heuristic_time": 0.05684685707092285, "time": 1.7483267784118652, "max_joint_mdd_visited": 218, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_194.txt", "heuristic_time": 0.05884075164794922, "time": 5.019585132598877, "max_joint_mdd_visited": 188}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_195.txt", "heuristic_time": 0.0518956184387207, "time": 3.4038727283477783, "max_joint_mdd_visited": 197}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_196.txt", "heuristic_time": 0.05282759666442871, "time": 1.1170790195465088, "max_joint_mdd_visited": 128}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_197.txt", "heuristic_time": 0.048865318298339844, "time": 3.997321844100952, "max_joint_mdd_visited": 227}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_198.txt", "heuristic_time": 0.06482863426208496, "time": 3.9275028705596924, "max_joint_mdd_visited": 194}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_199.txt", "heuristic_time": 0.06682610511779785, "time": 2.450448989868164, "max_joint_mdd_visited": 181}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_2.txt", "heuristic_time": 0.05884242057800293, "time": 3.3370797634124756, "max_joint_mdd_visited": 176}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_20.txt", "heuristic_time": 0.056847572326660156, "time": 1.8709971904754639, "max_joint_mdd_visited": 264, "expanded nodes": 7, "max_open_list_length": 10}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_21.txt", "heuristic_time": 0.0628354549407959, "time": 7.494969129562378, "max_joint_mdd_visited": 7467, "expanded nodes": 165, "max_open_list_length": 56}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_22.txt", "heuristic_time": 0.055901527404785156, "time": 3.0887482166290283, "max_joint_mdd_visited": 171}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_23.txt", "heuristic_time": 0.05482149124145508, "time": 1.3355069160461426, "max_joint_mdd_visited": 132}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_24.txt", "heuristic_time": 0.054891109466552734, "time": 0.820807695388794, "max_joint_mdd_visited": 115}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_25.txt", "heuristic_time": 0.05788016319274902, "time": 1.8081364631652832, "max_joint_mdd_visited": 222, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_26.txt", "heuristic_time": 0.05884218215942383, "time": 4.647600412368774, "max_joint_mdd_visited": 232}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_27.txt", "heuristic_time": 0.056899309158325195, "time": 4.680444240570068, "max_joint_mdd_visited": 167}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_28.txt", "heuristic_time": 0.04493236541748047, "time": 4.118985652923584, "max_joint_mdd_visited": 401, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_29.txt", "heuristic_time": 0.05785942077636719, "time": 3.4278383255004883, "max_joint_mdd_visited": 161}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_3.txt", "heuristic_time": 0.05390310287475586, "time": 1.2576367855072021, "max_joint_mdd_visited": 112}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_30.txt", "heuristic_time": 0.06087207794189453, "time": 2.233041524887085, "max_joint_mdd_visited": 147}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_31.txt", "heuristic_time": 0.049903154373168945, "time": 1.1788132190704346, "max_joint_mdd_visited": 331, "expanded nodes": 11, "max_open_list_length": 13}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_32.txt", "heuristic_time": 0.054894208908081055, "time": 4.3932576179504395, "max_joint_mdd_visited": 200}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_33.txt", "heuristic_time": 0.05588269233703613, "time": 5.1741392612457275, "max_joint_mdd_visited": 197}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_34.txt", "heuristic_time": 0.05688023567199707, "time": 3.8816421031951904, "max_joint_mdd_visited": 284, "expanded nodes": 10, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_35.txt", "heuristic_time": 0.05485343933105469, "time": 3.1755149364471436, "max_joint_mdd_visited": 169}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_36.txt", "heuristic_time": 0.05590367317199707, "time": 1.3932273387908936, "max_joint_mdd_visited": 175}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_38.txt", "heuristic_time": 0.05584573745727539, "time": 2.308832883834839, "max_joint_mdd_visited": 163}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_39.txt", "heuristic_time": 0.05285906791687012, "time": 2.992003917694092, "max_joint_mdd_visited": 180}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_4.txt", "heuristic_time": 0.05186128616333008, "time": 4.062140703201294, "max_joint_mdd_visited": 659, "expanded nodes": 19, "max_open_list_length": 16}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_40.txt", "heuristic_time": 0.05688595771789551, "time": 11.732646942138672, "max_joint_mdd_visited": 2403, "expanded nodes": 51, "max_open_list_length": 29}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_41.txt", "heuristic_time": 0.057878971099853516, "time": 5.984172344207764, "max_joint_mdd_visited": 2395, "expanded nodes": 52, "max_open_list_length": 29}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_42.txt", "heuristic_time": 0.05585050582885742, "time": 2.7426633834838867, "max_joint_mdd_visited": 162}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_43.txt", "heuristic_time": 0.05684638023376465, "time": 2.7845592498779297, "max_joint_mdd_visited": 175}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_44.txt", "heuristic_time": 0.06581950187683105, "time": 3.238339900970459, "max_joint_mdd_visited": 146}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_45.txt", "heuristic_time": 0.05585289001464844, "time": 4.764263153076172, "max_joint_mdd_visited": 372, "expanded nodes": 9, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_46.txt", "heuristic_time": 0.05588030815124512, "time": 2.4883170127868652, "max_joint_mdd_visited": 344, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_47.txt", "heuristic_time": 0.053850412368774414, "time": 1.6665470600128174, "max_joint_mdd_visited": 889, "expanded nodes": 52, "max_open_list_length": 29}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_48.txt", "heuristic_time": 0.0558474063873291, "time": 2.0036473274230957, "max_joint_mdd_visited": 150}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_49.txt", "heuristic_time": 0.05788087844848633, "time": 4.567757844924927, "max_joint_mdd_visited": 619, "expanded nodes": 19, "max_open_list_length": 16}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_5.txt", "heuristic_time": 0.05784440040588379, "time": 12.806772947311401, "max_joint_mdd_visited": 6022, "expanded nodes": 175, "max_open_list_length": 61}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_50.txt", "heuristic_time": 0.058840036392211914, "time": 6.38992714881897, "max_joint_mdd_visited": 1309, "expanded nodes": 42, "max_open_list_length": 27}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_51.txt", "heuristic_time": 0.06482577323913574, "time": 2.4245285987854004, "max_joint_mdd_visited": 145}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_52.txt", "heuristic_time": 0.055850982666015625, "time": 1.8949368000030518, "max_joint_mdd_visited": 182}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_53.txt", "heuristic_time": 0.058843135833740234, "time": 2.9631173610687256, "max_joint_mdd_visited": 156}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_54.txt", "heuristic_time": 0.05585026741027832, "time": 6.979344844818115, "max_joint_mdd_visited": 411, "expanded nodes": 7, "max_open_list_length": 10}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_55.txt", "heuristic_time": 0.06183505058288574, "time": 2.620999574661255, "max_joint_mdd_visited": 489, "expanded nodes": 21, "max_open_list_length": 18}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_56.txt", "heuristic_time": 0.05884289741516113, "time": 6.876654148101807, "max_joint_mdd_visited": 1113, "expanded nodes": 34, "max_open_list_length": 22}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_57.txt", "heuristic_time": 0.05684781074523926, "time": 8.820430040359497, "max_joint_mdd_visited": 443, "expanded nodes": 9, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_58.txt", "heuristic_time": 0.05585002899169922, "time": 5.902255058288574, "max_joint_mdd_visited": 211}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_59.txt", "heuristic_time": 0.054852962493896484, "time": 0.2842381000518799, "max_joint_mdd_visited": 118}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_60.txt", "heuristic_time": 0.056853294372558594, "time": 5.691779375076294, "max_joint_mdd_visited": 1164, "expanded nodes": 36, "max_open_list_length": 24}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_61.txt", "heuristic_time": 0.057878971099853516, "time": 3.0688037872314453, "max_joint_mdd_visited": 216}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_62.txt", "heuristic_time": 0.05588245391845703, "time": 2.9750232696533203, "max_joint_mdd_visited": 168}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_63.txt", "heuristic_time": 0.05585074424743652, "time": 2.109363317489624, "max_joint_mdd_visited": 300, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_64.txt", "heuristic_time": 0.053853511810302734, "time": 1.016343355178833, "max_joint_mdd_visited": 113}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_65.txt", "heuristic_time": 0.0578455924987793, "time": 1.3713366985321045, "max_joint_mdd_visited": 101}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_66.txt", "heuristic_time": 0.05687975883483887, "time": 5.125284433364868, "max_joint_mdd_visited": 199}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_67.txt", "heuristic_time": 0.054851531982421875, "time": 7.113977909088135, "max_joint_mdd_visited": 1415, "expanded nodes": 35, "max_open_list_length": 22}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_68.txt", "heuristic_time": 0.05588841438293457, "time": 4.676498174667358, "max_joint_mdd_visited": 245}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_69.txt", "heuristic_time": 0.05286121368408203, "time": 11.405718803405762, "max_joint_mdd_visited": 7622, "expanded nodes": 112, "max_open_list_length": 45}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_7.txt", "heuristic_time": 0.04986572265625, "time": 3.7789077758789062, "max_joint_mdd_visited": 232}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_70.txt", "heuristic_time": 0.05685234069824219, "time": 2.9481217861175537, "max_joint_mdd_visited": 170}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_71.txt", "heuristic_time": 0.05385422706604004, "time": 3.953477382659912, "max_joint_mdd_visited": 155, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_72.txt", "heuristic_time": 0.05784463882446289, "time": 0.7031240463256836, "max_joint_mdd_visited": 147}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_73.txt", "heuristic_time": 0.06682205200195312, "time": 2.016638994216919, "max_joint_mdd_visited": 1451, "expanded nodes": 50, "max_open_list_length": 28}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_74.txt", "heuristic_time": 0.06682538986206055, "time": 4.388332843780518, "max_joint_mdd_visited": 183}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_75.txt", "heuristic_time": 0.05285835266113281, "time": 2.7915351390838623, "max_joint_mdd_visited": 181, "expanded nodes": 2, "max_open_list_length": 6}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_76.txt", "heuristic_time": 0.0628664493560791, "time": 1.7263624668121338, "max_joint_mdd_visited": 142}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_77.txt", "heuristic_time": 0.05485391616821289, "time": 8.91816520690918, "max_joint_mdd_visited": 2554, "expanded nodes": 40, "max_open_list_length": 26}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_78.txt", "heuristic_time": 0.060837745666503906, "time": 2.833714246749878, "max_joint_mdd_visited": 252, "expanded nodes": 9, "max_open_list_length": 11}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_79.txt", "heuristic_time": 0.05784440040588379, "time": 2.1193349361419678, "max_joint_mdd_visited": 147}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_8.txt", "heuristic_time": 0.058843135833740234, "time": 2.1504738330841064, "max_joint_mdd_visited": 455, "expanded nodes": 35, "max_open_list_length": 22}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_80.txt", "heuristic_time": 0.05489826202392578, "time": 21.38385820388794, "max_joint_mdd_visited": 14341, "expanded nodes": 285, "max_open_list_length": 79}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_81.txt", "heuristic_time": 0.055847883224487305, "time": 2.403571367263794, "max_joint_mdd_visited": 155}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_82.txt", "heuristic_time": 0.06186938285827637, "time": 2.0435664653778076, "max_joint_mdd_visited": 146}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_83.txt", "heuristic_time": 0.05887436866760254, "time": 0.7928836345672607, "max_joint_mdd_visited": 123}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_84.txt", "heuristic_time": 0.05684781074523926, "time": 0.8028566837310791, "max_joint_mdd_visited": 212, "expanded nodes": 19, "max_open_list_length": 16}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_85.txt", "heuristic_time": 0.0568845272064209, "time": 2.999009132385254, "max_joint_mdd_visited": 159}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_86.txt", "heuristic_time": 0.05684614181518555, "time": 1.627619981765747, "max_joint_mdd_visited": 142}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_87.txt", "heuristic_time": 0.0548553466796875, "time": 1.1299808025360107, "max_joint_mdd_visited": 117}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_88.txt", "heuristic_time": 0.06785273551940918, "time": 1.8091590404510498, "max_joint_mdd_visited": 141}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_89.txt", "heuristic_time": 0.05884552001953125, "time": 5.515263319015503, "max_joint_mdd_visited": 360, "expanded nodes": 4, "max_open_list_length": 7}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_9.txt", "heuristic_time": 0.05684804916381836, "time": 2.7556354999542236, "max_joint_mdd_visited": 184}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_90.txt", "heuristic_time": 0.05784463882446289, "time": 7.561794281005859, "max_joint_mdd_visited": 1032, "expanded nodes": 25, "max_open_list_length": 20}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_91.txt", "heuristic_time": 0.05980801582336426, "time": 0.8726627826690674, "max_joint_mdd_visited": 133}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_92.txt", "heuristic_time": 0.05481386184692383, "time": 2.0395519733428955, "max_joint_mdd_visited": 128}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_93.txt", "heuristic_time": 0.057875633239746094, "time": 3.3370518684387207, "max_joint_mdd_visited": 171}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_94.txt", "heuristic_time": 0.05987405776977539, "time": 1.9816768169403076, "max_joint_mdd_visited": 189}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_95.txt", "heuristic_time": 0.05684828758239746, "time": 4.868994235992432, "max_joint_mdd_visited": 208}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_96.txt", "heuristic_time": 0.05385541915893555, "time": 0.3909933567047119, "max_joint_mdd_visited": 102}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_97.txt", "heuristic_time": 0.0628659725189209, "time": 4.067133903503418, "max_joint_mdd_visited": 3593, "expanded nodes": 77, "max_open_list_length": 36}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_98.txt", "heuristic_time": 0.057738542556762695, "time": 5.1512837409973145, "max_joint_mdd_visited": 943, "expanded nodes": 35, "max_open_list_length": 22}
+{"algorithm": "ICTS", "map_name": "mazes\\maze100x100_3_99.txt", "heuristic_time": 0.0538942813873291, "time": 4.906886339187622, "max_joint_mdd_visited": 373, "expanded nodes": 7, "max_open_list_length": 10}
