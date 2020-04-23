@@ -133,7 +133,11 @@ def is_solution_in_joint_mdd(mdds_list, stat_tracker, return_solution = False):
         found_path, visited = joint_mdd_dfs(mdds_list, (roots_key, 0), max(depths), visited)
         return found_path
     # else == return_solution
-    solution, visited = stat_tracker.count('joint_mdd_node_expansions', lambda: joint_mdd_dfs_return_solution(mdds_list, None, (roots_key, 0), max(depths), visited, stat_tracker))
+    solution, visited = joint_mdd_dfs_return_solution(mdds_list, None, (roots_key, 0), max(depths), visited)
+    if not 'max_joint_mdd_visited' in stat_tracker.stats:
+        stat_tracker.stats['max_joint_mdd_visited'] = len(visited)
+    else:
+        stat_tracker.stats['max_joint_mdd_visited'] = max(len(visited), stat_tracker.stats['max_joint_mdd_visited'])
     return solution
 
 def find_solution_in_joint_mdd(mdds_list, performance_tracker):
@@ -162,7 +166,7 @@ def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
     
     return False, visited
 
-def joint_mdd_dfs_return_solution(mdds_list, prev, curr, max_depth, visited, stat_tracker):
+def joint_mdd_dfs_return_solution(mdds_list, prev, curr, max_depth, visited):
     curr_nodes = curr[0]
     curr_depth = curr[1]
     if prev and is_invalid_move(prev, curr_nodes):
@@ -181,7 +185,7 @@ def joint_mdd_dfs_return_solution(mdds_list, prev, curr, max_depth, visited, sta
         child = (node, curr_depth+1)
         # Finding a solution
         if child not in visited:
-            solution, visited = stat_tracker.count('joint_mdd_node_expansions', lambda: joint_mdd_dfs_return_solution(mdds_list, curr_nodes, child, max_depth, visited, stat_tracker))
+            solution, visited = joint_mdd_dfs_return_solution(mdds_list, curr_nodes, child, max_depth, visited)
             if solution != []:
                 partial_solution.extend(solution)
                 return partial_solution, visited

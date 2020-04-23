@@ -84,7 +84,7 @@ class ICTSSolver(object):
         while(len(open_list) != 0):
             current_node = ict.get_next_node_to_expand()
             node_cost = current_node.get_cost()
-            if timer.time() - start_time > 300:
+            if timer.time() - start_time > 60:
                 return -1
             self.print_sanity_track(start_time, nodes_expanded)
             if not self.node_has_exceeded_upper_bound(current_node, self.upper_bound):

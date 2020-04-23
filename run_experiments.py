@@ -30,7 +30,8 @@ if __name__ == '__main__':
         util.print_mapf_instance(my_map, starts, goals)
 
         map_details = MapDetails(args.instance, file, my_map, starts, goals)
-        
+        result_file = None
+
         paths = []
         if args.solver == "ICTS":
             print("***Run ICTS***")
@@ -66,4 +67,5 @@ if __name__ == '__main__':
             # animation.save("output.mp4", 1.0)
             animation.show()
 
-    result_file.close()
+    if result_file:
+        result_file.close()
