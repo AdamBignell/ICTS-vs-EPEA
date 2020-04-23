@@ -1,18 +1,14 @@
 import random
 import collections
+import argparse
 from datetime import datetime as dt
 import os
 
 kGrowRate = 0.75
-kBridgeRate = 0.25
+kBridgeRate = 0
 random.seed(dt.now())
 kFilledRate = 0.25
-kMazeDirectory = "mazes/"
-
-kNum10x10 = 200
-kNum20x20 = 200
-kNum50x50 = 200
-kNum100x100 = 200
+kMazeDirectory = "user_mazes/"
 
 def generate_maze_to_file(x, y, num_agents, file_name):
     maze, open_cells = get_maze(x, y, num_agents, kFilledRate)
@@ -145,19 +141,26 @@ def print_maze(maze, file):
             file.write('\n')
 
 if __name__ == '__main__':
-    for i in range(kNum10x10):
+    parser = argparse.ArgumentParser(description='Create a randomly generated open map')
+    parser.add_argument('--dim', type=int, nargs='+',
+                        help="The dimension of the map")
+    parser.add_argument('--agents', type=int,
+                        help="The number of agents")
+    parser.add_argument('--startnum', type=int,
+                        help="The starting number for the naming convention")
+    parser.add_argument('--nummaps', type=int,
+                        help="The number of maps to generate")
+    parser.add_argument('--probability', type=float,
+                        help="The probability a direction will be opened")
+    parser.add_argument('--bridgeprobability', type=float,
+                        help="The probability two unconnected corridors will be bridged together")
+
+    args = parser.parse_args()
+
+    kGrowRate = args.probability
+    kBridgeRate = args.bridgeprobability
+    
+    for i in range(args.startnum, args.startnum + args.nummaps):
         name_string = "maze12x12_3_" + str(i) + ".txt"
-        generate_maze_to_file(12, 12, 3, name_string)
-        
-    for i in range(kNum20x20):
-        name_string = "maze25x25_3_" + str(i) + ".txt"
-        generate_maze_to_file(25, 25, 3, name_string)
-
-    for i in range(kNum50x50):
-        name_string = "maze50x50_3_" + str(i) + ".txt"
-        generate_maze_to_file(50, 50, 3, name_string)
-
-    for i in range(kNum100x100):
-        name_string = "maze100x100_3_" + str(i) + ".txt"
-        generate_maze_to_file(100, 100, 3, name_string)
+        generate_maze_to_file(args.dim[0], args.dim[1], args.agents, name_string)
     

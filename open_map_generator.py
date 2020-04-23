@@ -190,8 +190,6 @@ def location_is_valid(location, map_instance):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create a randomly generated open map')
-    parser.add_argument('--output', type=str, default=None,
-                        help='The name of the output file')
     parser.add_argument('--dim', type=int, nargs='+',
                         help="The dimension of the map")
     parser.add_argument('--agents', type=int,
@@ -223,7 +221,7 @@ if __name__ == '__main__':
             solution_is_found = solution_is_possible(start_and_goal_loc['start_loc'], start_and_goal_loc['goal_loc'], temp_map)
         random_open_map = temp_map
 
-        file_name = 'open_maps/open{0}x{1}_{2}_{3}.txt'.format(args.dim[0], args.dim[1], args.agents, map_number)
+        file_name = 'user_open_maps/open{0}x{1}_{2}_{3}.txt'.format(args.dim[0], args.dim[1], args.agents, map_number)
         f = open(file_name, 'w')
         string_to_write_to_file = '{0} {1}\n'.format(args.dim[0], args.dim[1])
         string_to_write_to_file = string_to_write_to_file + convert_logical_map_to_string(random_open_map)
