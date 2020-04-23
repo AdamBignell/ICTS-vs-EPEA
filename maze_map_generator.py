@@ -1,6 +1,7 @@
 import random
 import collections
 import argparse
+import os
 from datetime import datetime as dt
 import os
 
@@ -8,7 +9,7 @@ kGrowRate = 0.75
 kBridgeRate = 0
 random.seed(dt.now())
 kFilledRate = 0.25
-kMazeDirectory = "user_mazes/"
+kMazeDirectory = "mazes/"
 
 def generate_maze_to_file(x, y, num_agents, file_name):
     maze, open_cells = get_maze(x, y, num_agents, kFilledRate)
@@ -161,6 +162,6 @@ if __name__ == '__main__':
     kBridgeRate = args.bridgeprobability
     
     for i in range(args.startnum, args.startnum + args.nummaps):
-        name_string = "maze12x12_3_" + str(i) + ".txt"
+        name_string = "maze" + str(args.dim[0]) + "x" + str(args.dim[1]) + "_" + str(args.agents) + "_" + str(i) + ".txt"
         generate_maze_to_file(args.dim[0], args.dim[1], args.agents, name_string)
     
