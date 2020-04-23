@@ -109,7 +109,7 @@ def get_results(filename):
 def save_runtime_graph(epea_results, icts_results, labels, output_file):
     epea_median_times = get_medians(epea_results, 'time')
     icts_median_times = get_medians(icts_results, 'time')
-    y_lim = [-0.2, 3]
+    y_lim = [-0.2, 3.5]
     save_beautiful_graph_medians(epea_median_times, icts_median_times, labels, output_file, y_lim)
     
 def save_runtime_graph_means(epea_results, icts_results, labels, output_file):
@@ -120,7 +120,7 @@ def save_runtime_graph_means(epea_results, icts_results, labels, output_file):
 def save_expansion_graph(results, labels, output_file, algorithm):
     median_expansions = get_medians(results, 'expansions')
     if algorithm == 'ICTS':
-        y_lim = [-0.5, 11]
+        y_lim = [-0.5, 12]
     elif algorithm == 'EPEA':
         y_lim = [-0.5, 370]
     save_beautiful_graph_medians(median_expansions, [], labels, output_file, y_lim, algorithm=algorithm)
