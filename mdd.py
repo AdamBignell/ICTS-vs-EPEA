@@ -2,8 +2,8 @@
 # Used in ICTS
 from collections import deque
 from collections import defaultdict
+from performance_tracker import PerformanceTracker
 import itertools
-import time
 
 class MDD:
     def __init__(self, my_map, agent, start, goal, depth, generate = True, last_mdd = None):
@@ -117,7 +117,7 @@ class MDD:
 
 # ========== Non-Class Functions Below ========== 
 
-def is_solution_in_joint_mdd(mdds_list, return_solution = False):
+def is_solution_in_joint_mdd(mdds_list, stat_tracker, return_solution = False):
     for mdd in mdds_list:
         if not mdd.mdd:
             return False
@@ -133,11 +133,11 @@ def is_solution_in_joint_mdd(mdds_list, return_solution = False):
         found_path, visited = joint_mdd_dfs(mdds_list, (roots_key, 0), max(depths), visited)
         return found_path
     # else == return_solution
-    solution, visited = joint_mdd_dfs_return_solution(mdds_list, None, (roots_key, 0), max(depths), visited)
+    solution, visited = stat_tracker.count('joint_mdd_node_expansions', lambda: joint_mdd_dfs_return_solution(mdds_list, None, (roots_key, 0), max(depths), visited, stat_tracker))
     return solution
 
-def find_solution_in_joint_mdd(mdds_list):
-    solution = is_solution_in_joint_mdd(mdds_list, True)
+def find_solution_in_joint_mdd(mdds_list, performance_tracker):
+    solution = is_solution_in_joint_mdd(mdds_list, performance_tracker, True)
     return joint_mdd_nodes_to_list_of_paths(solution)
 
 def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
@@ -162,7 +162,7 @@ def joint_mdd_dfs(mdds_list, curr, max_depth, visited):
     
     return False, visited
 
-def joint_mdd_dfs_return_solution(mdds_list, prev, curr, max_depth, visited):
+def joint_mdd_dfs_return_solution(mdds_list, prev, curr, max_depth, visited, stat_tracker):
     curr_nodes = curr[0]
     curr_depth = curr[1]
     if prev and is_invalid_move(prev, curr_nodes):
@@ -181,7 +181,7 @@ def joint_mdd_dfs_return_solution(mdds_list, prev, curr, max_depth, visited):
         child = (node, curr_depth+1)
         # Finding a solution
         if child not in visited:
-            solution, visited = joint_mdd_dfs_return_solution(mdds_list, curr_nodes, child, max_depth, visited)
+            solution, visited = stat_tracker.count('joint_mdd_node_expansions', lambda: joint_mdd_dfs_return_solution(mdds_list, curr_nodes, child, max_depth, visited, stat_tracker))
             if solution != []:
                 partial_solution.extend(solution)
                 return partial_solution, visited

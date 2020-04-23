@@ -1,5 +1,8 @@
 import mdd
 import map_utils as util
+from performance_tracker import PerformanceTracker
+
+dummy_tracker = PerformanceTracker("test")
 
 def test_simple_construction(my_map, starts, goals):
     agent = 0
@@ -64,20 +67,20 @@ def test_two_agent_joint_mdd_search(my_map, starts, goals):
     depth = 2 # No solution
     a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
     a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth)
-    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd], dummy_tracker)
     assert found_path == False, "test_two_agent_joint_mdd_search Failed: Finds a solution when none exists"
 
     depth = 3 # Solution
     a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
     a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth)
-    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd], dummy_tracker)
     assert found_path == True, "test_two_agent_joint_mdd_search Failed: Finds no solution when one exists"
 
     depth1 = 3
     depth2 = 2 # Mismatched solution depths
     a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth1)
     a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth2)  
-    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd], dummy_tracker)
     assert found_path == True, "test_two_agent_joint_mdd_search Failed: Finds no solution when the depth of the input mdds mismatch"
 
 def test_three_agent_joint_mdd_search(my_map, starts, goals):
@@ -86,7 +89,7 @@ def test_three_agent_joint_mdd_search(my_map, starts, goals):
     a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
     a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth) 
     a3_mdd = mdd.MDD(my_map, a3, starts[a3], goals[a3], depth)
-    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd, a3_mdd])
+    found_path = mdd.is_solution_in_joint_mdd([a1_mdd, a2_mdd, a3_mdd], dummy_tracker)
     assert found_path == True, "test_three_agent_joint_mdd_search Failed: Finds no solution with 3 agents when one exists"
     print("test_three_agent_joint_mdd_search Passed")
 
@@ -96,7 +99,7 @@ def test_find_solution_in_joint_mdd(my_map, starts, goals):
     a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
     a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth) 
     a3_mdd = mdd.MDD(my_map, a3, starts[a3], goals[a3], depth)
-    solution_path = mdd.find_solution_in_joint_mdd([a1_mdd, a2_mdd, a3_mdd])
+    solution_path = mdd.find_solution_in_joint_mdd([a1_mdd, a2_mdd, a3_mdd], dummy_tracker)
     for i in range(len(solution_path[0])-1):
         this_locs = [solution_path[j][i] for j in range(len(solution_path))]
         next_locs = [solution_path[j][i+1] for j in range(len(solution_path))]
@@ -108,7 +111,7 @@ def test_find_no_solution_where_none_exists(my_map, starts, goals):
     a1, a2 = 0, 1
     a1_mdd = mdd.MDD(my_map, a1, starts[a1], goals[a1], depth)
     a2_mdd = mdd.MDD(my_map, a2, starts[a2], goals[a2], depth)  
-    solution_path = mdd.find_solution_in_joint_mdd([a1_mdd, a2_mdd])
+    solution_path = mdd.find_solution_in_joint_mdd([a1_mdd, a2_mdd], dummy_tracker)
     assert solution_path == None, "test_find_no_solution_where_none_exists Failed: Finds a solution where none exists"
     print("test_find_no_solution_where_none_exists Passed")
 

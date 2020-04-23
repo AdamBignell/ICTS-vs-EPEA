@@ -1,200 +1,200 @@
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_0.txt", "heuristic_time": 0.01595759391784668, "time": 0.29720640182495117}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_1.txt", "heuristic_time": 0.016024112701416016, "time": 0.2503046989440918}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_10.txt", "heuristic_time": 0.014960289001464844, "time": 0.22240591049194336}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_100.txt", "heuristic_time": 0.016023874282836914, "time": 0.042885541915893555}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_101.txt", "heuristic_time": 0.015957117080688477, "time": 0.3839740753173828}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_102.txt", "heuristic_time": 0.028926372528076172, "time": 0.32518625259399414}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_103.txt", "heuristic_time": 0.014960050582885742, "time": 0.4708089828491211}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_104.txt", "heuristic_time": 0.0159604549407959, "time": 0.3670201301574707}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_105.txt", "heuristic_time": 0.015958786010742188, "time": 0.5295765399932861}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_106.txt", "heuristic_time": 0.015957355499267578, "time": 0.8776555061340332}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_107.txt", "heuristic_time": 0.015957355499267578, "time": 0.16156959533691406}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_108.txt", "heuristic_time": 0.01695394515991211, "time": 0.637296199798584}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_109.txt", "heuristic_time": 0.01695561408996582, "time": 0.07978701591491699}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_11.txt", "heuristic_time": 0.016955852508544922, "time": 0.2373645305633545}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_110.txt", "heuristic_time": 0.017951488494873047, "time": 0.5156238079071045}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_111.txt", "heuristic_time": 0.028919458389282227, "time": 0.715080976486206}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_112.txt", "heuristic_time": 0.01695561408996582, "time": 0.2793111801147461}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_113.txt", "heuristic_time": 0.01595902442932129, "time": 0.32307958602905273}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_114.txt", "heuristic_time": 0.01695418357849121, "time": 0.21046853065490723}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_115.txt", "heuristic_time": 0.016955137252807617, "time": 0.31122851371765137}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_116.txt", "heuristic_time": 0.01696038246154785, "time": 0.2652714252471924}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_117.txt", "heuristic_time": 0.02692556381225586, "time": 0.31116819381713867}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_118.txt", "heuristic_time": 0.01791834831237793, "time": 0.1954786777496338}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_119.txt", "heuristic_time": 0.016955137252807617, "time": 0.3181493282318115}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_12.txt", "heuristic_time": 0.01595759391784668, "time": 0.38497233390808105}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_120.txt", "heuristic_time": 0.01695537567138672, "time": 0.1057126522064209}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_121.txt", "heuristic_time": 0.016960620880126953, "time": 0.41285276412963867}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_122.txt", "heuristic_time": 0.016956567764282227, "time": 0.3659791946411133}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_123.txt", "heuristic_time": 0.016959667205810547, "time": 0.3161590099334717}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_124.txt", "heuristic_time": 0.01701498031616211, "time": 0.5225467681884766}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_125.txt", "heuristic_time": 0.01795220375061035, "time": 0.4198787212371826}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_126.txt", "heuristic_time": 0.01795172691345215, "time": 0.3480720520019531}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_127.txt", "heuristic_time": 0.016954660415649414, "time": 0.5674855709075928}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_128.txt", "heuristic_time": 0.015957355499267578, "time": 0.37898826599121094}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_129.txt", "heuristic_time": 0.01695537567138672, "time": 0.11668872833251953}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_13.txt", "heuristic_time": 0.01795029640197754, "time": 0.37799072265625}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_130.txt", "heuristic_time": 0.01695537567138672, "time": 0.20146512985229492}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_131.txt", "heuristic_time": 0.015957117080688477, "time": 0.5046525001525879}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_132.txt", "heuristic_time": 0.016956567764282227, "time": 0.41390085220336914}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_133.txt", "heuristic_time": 0.015957117080688477, "time": 0.4717402458190918}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_134.txt", "heuristic_time": 0.026929140090942383, "time": 0.5196082592010498}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_135.txt", "heuristic_time": 0.017952442169189453, "time": 0.6143615245819092}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_136.txt", "heuristic_time": 0.016954660415649414, "time": 0.3590354919433594}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_137.txt", "heuristic_time": 0.017961502075195312, "time": 0.5723998546600342}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_138.txt", "heuristic_time": 0.017956256866455078, "time": 0.615319013595581}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_139.txt", "heuristic_time": 0.01595616340637207, "time": 0.25232768058776855}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_14.txt", "heuristic_time": 0.01795220375061035, "time": 0.02695775032043457}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_140.txt", "heuristic_time": 0.017953872680664062, "time": 0.2772502899169922}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_141.txt", "heuristic_time": 0.01789712905883789, "time": 0.307175874710083}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_142.txt", "heuristic_time": 0.016958951950073242, "time": 0.3470792770385742}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_143.txt", "heuristic_time": 0.017952442169189453, "time": 0.14263081550598145}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_144.txt", "heuristic_time": 0.01695418357849121, "time": 0.36203527450561523}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_145.txt", "heuristic_time": 0.016952991485595703, "time": 0.5804061889648438}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_146.txt", "heuristic_time": 0.016958951950073242, "time": 0.11369538307189941}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_147.txt", "heuristic_time": 0.017952442169189453, "time": 0.20046401023864746}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_148.txt", "heuristic_time": 0.017952442169189453, "time": 0.29122376441955566}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_149.txt", "heuristic_time": 0.01695561408996582, "time": 0.17852234840393066}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_15.txt", "heuristic_time": 0.016954421997070312, "time": 0.34906554222106934}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_150.txt", "heuristic_time": 0.017951250076293945, "time": 0.396939754486084}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_151.txt", "heuristic_time": 0.016954898834228516, "time": 0.6602394580841064}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_152.txt", "heuristic_time": 0.016956329345703125, "time": 0.6074244976043701}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_153.txt", "heuristic_time": 0.01795196533203125, "time": 0.8178160190582275}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_154.txt", "heuristic_time": 0.016953229904174805, "time": 0.11868405342102051}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_155.txt", "heuristic_time": 0.019946813583374023, "time": 0.3450798988342285}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_156.txt", "heuristic_time": 0.02097487449645996, "time": 0.21937966346740723}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_157.txt", "heuristic_time": 0.016954898834228516, "time": 0.32616209983825684}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_158.txt", "heuristic_time": 0.034906864166259766, "time": 0.3999297618865967}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_159.txt", "heuristic_time": 0.01696038246154785, "time": 0.2193906307220459}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_16.txt", "heuristic_time": 0.016954421997070312, "time": 0.6701650619506836}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_160.txt", "heuristic_time": 0.016000747680664062, "time": 0.10972428321838379}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_161.txt", "heuristic_time": 0.015954256057739258, "time": 0.34408092498779297}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_162.txt", "heuristic_time": 0.017951011657714844, "time": 0.1875011920928955}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_163.txt", "heuristic_time": 0.015961647033691406, "time": 0.533571720123291}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_164.txt", "heuristic_time": 0.017015933990478516, "time": 0.5754239559173584}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_165.txt", "heuristic_time": 0.01695704460144043, "time": 1.057115077972412}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_166.txt", "heuristic_time": 0.01995253562927246, "time": 0.2902190685272217}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_167.txt", "heuristic_time": 0.017952442169189453, "time": 0.4857029914855957}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_168.txt", "heuristic_time": 0.027927637100219727, "time": 0.2802281379699707}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_169.txt", "heuristic_time": 0.018925905227661133, "time": 0.3051908016204834}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_17.txt", "heuristic_time": 0.015962839126586914, "time": 0.06085085868835449}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_170.txt", "heuristic_time": 0.016956806182861328, "time": 0.25630807876586914}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_171.txt", "heuristic_time": 0.02792525291442871, "time": 0.4797184467315674}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_172.txt", "heuristic_time": 0.017990827560424805, "time": 0.1695702075958252}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_173.txt", "heuristic_time": 0.015958547592163086, "time": 0.11574912071228027}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_174.txt", "heuristic_time": 0.01795172691345215, "time": 0.22140860557556152}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_175.txt", "heuristic_time": 0.01795172691345215, "time": 0.05186200141906738}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_176.txt", "heuristic_time": 0.01795172691345215, "time": 0.37300920486450195}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_177.txt", "heuristic_time": 0.01795196533203125, "time": 0.31116557121276855}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_178.txt", "heuristic_time": 0.016954660415649414, "time": 0.3141613006591797}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_179.txt", "heuristic_time": 0.01795220375061035, "time": 0.35205936431884766}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_18.txt", "heuristic_time": 0.016954898834228516, "time": 0.2872326374053955}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_180.txt", "heuristic_time": 0.018952369689941406, "time": 0.4189951419830322}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_181.txt", "heuristic_time": 0.016954660415649414, "time": 0.2094407081604004}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_182.txt", "heuristic_time": 0.015967369079589844, "time": 0.22937560081481934}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_183.txt", "heuristic_time": 0.01795196533203125, "time": 0.7819132804870605}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_184.txt", "heuristic_time": 0.01795172691345215, "time": 0.3011963367462158}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_185.txt", "heuristic_time": 0.016954660415649414, "time": 0.1376328468322754}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_186.txt", "heuristic_time": 0.015956878662109375, "time": 0.8308119773864746}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_187.txt", "heuristic_time": 0.015997648239135742, "time": 0.27522826194763184}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_188.txt", "heuristic_time": 0.01795220375061035, "time": 0.2752654552459717}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_189.txt", "heuristic_time": 0.01595759391784668, "time": 0.7021243572235107}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_19.txt", "heuristic_time": 0.018949270248413086, "time": 0.3810412883758545}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_190.txt", "heuristic_time": 0.01795220375061035, "time": 0.45279526710510254}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_191.txt", "heuristic_time": 0.0189516544342041, "time": 0.47875165939331055}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_192.txt", "heuristic_time": 0.017989397048950195, "time": 0.04390907287597656}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_193.txt", "heuristic_time": 0.026928186416625977, "time": 0.1605391502380371}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_194.txt", "heuristic_time": 0.025867700576782227, "time": 0.364027738571167}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_195.txt", "heuristic_time": 0.01795220375061035, "time": 0.3660314083099365}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_196.txt", "heuristic_time": 0.017951011657714844, "time": 0.7161176204681396}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_197.txt", "heuristic_time": 0.016956329345703125, "time": 0.4906349182128906}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_198.txt", "heuristic_time": 0.016953468322753906, "time": 0.17556190490722656, "expanded nodes": 1}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_199.txt", "heuristic_time": 0.01791548728942871, "time": 0.5136284828186035}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_2.txt", "heuristic_time": 0.01794719696044922, "time": 0.2732717990875244}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_20.txt", "heuristic_time": 0.019945621490478516, "time": 0.1376352310180664}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_21.txt", "heuristic_time": 0.016955137252807617, "time": 0.30318713188171387}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_22.txt", "heuristic_time": 0.01795196533203125, "time": 0.1575789451599121}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_23.txt", "heuristic_time": 0.016954421997070312, "time": 0.6852436065673828}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_24.txt", "heuristic_time": 0.016954421997070312, "time": 0.4048616886138916}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_25.txt", "heuristic_time": 0.0269773006439209, "time": 0.3341104984283447}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_26.txt", "heuristic_time": 0.01899099349975586, "time": 0.3500247001647949}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_27.txt", "heuristic_time": 0.018949031829833984, "time": 0.3221712112426758}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_28.txt", "heuristic_time": 0.018985509872436523, "time": 0.25531792640686035}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_29.txt", "heuristic_time": 0.01795220375061035, "time": 0.21047329902648926}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_3.txt", "heuristic_time": 0.017956256866455078, "time": 0.5983679294586182}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_30.txt", "heuristic_time": 0.017950057983398438, "time": 0.19153547286987305}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_31.txt", "heuristic_time": 0.017948389053344727, "time": 0.3610565662384033}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_32.txt", "heuristic_time": 0.0169525146484375, "time": 0.3061408996582031}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_33.txt", "heuristic_time": 0.01695418357849121, "time": 0.406907320022583}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_34.txt", "heuristic_time": 0.017955780029296875, "time": 0.376025915145874}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_35.txt", "heuristic_time": 0.017956256866455078, "time": 0.2522885799407959}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_36.txt", "heuristic_time": 0.016965150833129883, "time": 0.06588172912597656}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_37.txt", "heuristic_time": 0.017945289611816406, "time": 0.6173508167266846}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_38.txt", "heuristic_time": 0.017956018447875977, "time": 0.0827794075012207}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_39.txt", "heuristic_time": 0.01795220375061035, "time": 0.4857311248779297}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_4.txt", "heuristic_time": 0.020912647247314453, "time": 0.4059164524078369}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_40.txt", "heuristic_time": 0.016954898834228516, "time": 0.3580918312072754}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_41.txt", "heuristic_time": 0.018949270248413086, "time": 0.20245933532714844}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_42.txt", "heuristic_time": 0.019946575164794922, "time": 0.23042011260986328}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_43.txt", "heuristic_time": 0.017965078353881836, "time": 0.22638726234436035}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_44.txt", "heuristic_time": 0.018949270248413086, "time": 0.08577251434326172}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_45.txt", "heuristic_time": 0.019983768463134766, "time": 0.6142847537994385}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_46.txt", "heuristic_time": 0.01795196533203125, "time": 0.7200756072998047}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_47.txt", "heuristic_time": 0.02393507957458496, "time": 0.5485312938690186}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_48.txt", "heuristic_time": 0.017955780029296875, "time": 0.4996633529663086}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_49.txt", "heuristic_time": 0.016999006271362305, "time": 0.315157413482666}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_5.txt", "heuristic_time": 0.020945072174072266, "time": 0.425915002822876}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_50.txt", "heuristic_time": 0.020943641662597656, "time": 0.08976316452026367}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_51.txt", "heuristic_time": 0.02094125747680664, "time": 0.8906500339508057}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_52.txt", "heuristic_time": 0.017947673797607422, "time": 0.4188814163208008}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_53.txt", "heuristic_time": 0.0209505558013916, "time": 0.21338176727294922}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_54.txt", "heuristic_time": 0.026933670043945312, "time": 0.3480668067932129}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_55.txt", "heuristic_time": 0.023936033248901367, "time": 0.2632930278778076}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_56.txt", "heuristic_time": 0.01795196533203125, "time": 0.3969411849975586}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_57.txt", "heuristic_time": 0.018949270248413086, "time": 0.27526378631591797}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_58.txt", "heuristic_time": 0.020955324172973633, "time": 0.0797722339630127}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_59.txt", "heuristic_time": 0.020943880081176758, "time": 0.28727054595947266}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_6.txt", "heuristic_time": 0.01894831657409668, "time": 0.14457988739013672}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_60.txt", "heuristic_time": 0.02094244956970215, "time": 0.7699406147003174}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_61.txt", "heuristic_time": 0.017949819564819336, "time": 0.4827115535736084}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_62.txt", "heuristic_time": 0.01795363426208496, "time": 0.21148252487182617}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_63.txt", "heuristic_time": 0.01795029640197754, "time": 0.47669053077697754}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_64.txt", "heuristic_time": 0.018947124481201172, "time": 0.4518287181854248}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_65.txt", "heuristic_time": 0.01996755599975586, "time": 0.7300403118133545}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_66.txt", "heuristic_time": 0.019951820373535156, "time": 0.12067151069641113}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_67.txt", "heuristic_time": 0.01695394515991211, "time": 0.5146305561065674}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_68.txt", "heuristic_time": 0.017952680587768555, "time": 0.3261597156524658}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_69.txt", "heuristic_time": 0.0368499755859375, "time": 0.13567161560058594}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_7.txt", "heuristic_time": 0.020907878875732422, "time": 0.6263363361358643}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_70.txt", "heuristic_time": 0.018947362899780273, "time": 0.15759849548339844}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_71.txt", "heuristic_time": 0.017963171005249023, "time": 0.15362262725830078}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_72.txt", "heuristic_time": 0.018948793411254883, "time": 0.36003732681274414}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_73.txt", "heuristic_time": 0.030945539474487305, "time": 0.7060840129852295}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_74.txt", "heuristic_time": 0.018952608108520508, "time": 0.08183145523071289}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_75.txt", "heuristic_time": 0.01794886589050293, "time": 0.6073493957519531}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_76.txt", "heuristic_time": 0.01695108413696289, "time": 0.6026613712310791}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_77.txt", "heuristic_time": 0.028965234756469727, "time": 0.08372640609741211}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_78.txt", "heuristic_time": 0.02388286590576172, "time": 0.5714707374572754}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_79.txt", "heuristic_time": 0.017951250076293945, "time": 0.26529431343078613}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_8.txt", "heuristic_time": 0.01695418357849121, "time": 0.19447922706604004}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_80.txt", "heuristic_time": 0.017951250076293945, "time": 0.6183538436889648}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_81.txt", "heuristic_time": 0.01795339584350586, "time": 0.660231351852417}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_82.txt", "heuristic_time": 0.01695418357849121, "time": 0.4019646644592285}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_83.txt", "heuristic_time": 0.017950773239135742, "time": 0.3799862861633301}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_84.txt", "heuristic_time": 0.01795172691345215, "time": 0.09574460983276367}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_85.txt", "heuristic_time": 0.021941661834716797, "time": 0.28124403953552246}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_86.txt", "heuristic_time": 0.023934125900268555, "time": 0.05684781074523926}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_87.txt", "heuristic_time": 0.022935152053833008, "time": 0.11673784255981445}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_88.txt", "heuristic_time": 0.022939682006835938, "time": 0.5375895500183105}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_89.txt", "heuristic_time": 0.02590656280517578, "time": 0.43981361389160156}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_9.txt", "heuristic_time": 0.018917322158813477, "time": 0.34707021713256836}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_90.txt", "heuristic_time": 0.02295684814453125, "time": 0.34507060050964355}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_91.txt", "heuristic_time": 0.01795196533203125, "time": 0.24937200546264648}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_92.txt", "heuristic_time": 0.021900415420532227, "time": 0.4298529624938965}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_93.txt", "heuristic_time": 0.01894831657409668, "time": 0.49468111991882324}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_94.txt", "heuristic_time": 0.020943641662597656, "time": 0.28225159645080566}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_95.txt", "heuristic_time": 0.02789163589477539, "time": 0.485701322555542}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_96.txt", "heuristic_time": 0.017992019653320312, "time": 0.11567497253417969}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_97.txt", "heuristic_time": 0.018949031829833984, "time": 0.8886783123016357}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_98.txt", "heuristic_time": 0.018937349319458008, "time": 0.2772979736328125}
-{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_99.txt", "heuristic_time": 0.02293872833251953, "time": 0.13077449798583984}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_0.txt", "heuristic_time": 0.010996818542480469, "time": 0.22993040084838867, "joint_mdd_node_expansions": 49}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_1.txt", "heuristic_time": 0.011014223098754883, "time": 0.23992180824279785, "joint_mdd_node_expansions": 34}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_10.txt", "heuristic_time": 0.011995315551757812, "time": 0.19893598556518555, "joint_mdd_node_expansions": 44}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_100.txt", "heuristic_time": 0.011995792388916016, "time": 0.03898906707763672, "joint_mdd_node_expansions": 21}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_101.txt", "heuristic_time": 0.011001348495483398, "time": 0.4038517475128174, "joint_mdd_node_expansions": 59}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_102.txt", "heuristic_time": 0.012995243072509766, "time": 0.27291107177734375, "joint_mdd_node_expansions": 45}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_103.txt", "heuristic_time": 0.013008356094360352, "time": 0.45782971382141113, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_104.txt", "heuristic_time": 0.01201486587524414, "time": 0.3598957061767578, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_105.txt", "heuristic_time": 0.01298213005065918, "time": 0.5368268489837646, "joint_mdd_node_expansions": 63}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_106.txt", "heuristic_time": 0.010977745056152344, "time": 0.8357334136962891, "joint_mdd_node_expansions": 73}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_107.txt", "heuristic_time": 0.012016773223876953, "time": 0.13293719291687012, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_108.txt", "heuristic_time": 0.011995792388916016, "time": 0.5798146724700928, "joint_mdd_node_expansions": 73}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_109.txt", "heuristic_time": 0.011992216110229492, "time": 0.0789794921875, "joint_mdd_node_expansions": 29}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_11.txt", "heuristic_time": 0.012013673782348633, "time": 0.1999351978302002, "joint_mdd_node_expansions": 42}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_110.txt", "heuristic_time": 0.011009454727172852, "time": 0.48084235191345215, "joint_mdd_node_expansions": 63}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_111.txt", "heuristic_time": 0.01199483871459961, "time": 0.5888097286224365, "joint_mdd_node_expansions": 56}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_112.txt", "heuristic_time": 0.011996269226074219, "time": 0.2799100875854492, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_113.txt", "heuristic_time": 0.010996341705322266, "time": 0.30790114402770996, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_114.txt", "heuristic_time": 0.010997295379638672, "time": 0.18593931198120117, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_115.txt", "heuristic_time": 0.012979507446289062, "time": 0.24592018127441406, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_116.txt", "heuristic_time": 0.011983871459960938, "time": 0.2369062900543213, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_117.txt", "heuristic_time": 0.01199650764465332, "time": 0.29190659523010254, "joint_mdd_node_expansions": 48}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_118.txt", "heuristic_time": 0.010993242263793945, "time": 0.16993188858032227, "joint_mdd_node_expansions": 36}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_119.txt", "heuristic_time": 0.011996030807495117, "time": 0.3069009780883789, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_12.txt", "heuristic_time": 0.01199650764465332, "time": 0.3808939456939697, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_120.txt", "heuristic_time": 0.011979341506958008, "time": 0.0719902515411377, "joint_mdd_node_expansions": 34}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_121.txt", "heuristic_time": 0.011993169784545898, "time": 0.3918602466583252, "joint_mdd_node_expansions": 66}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_122.txt", "heuristic_time": 0.022992372512817383, "time": 0.2929046154022217, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_123.txt", "heuristic_time": 0.010979652404785156, "time": 0.3198983669281006, "joint_mdd_node_expansions": 48}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_124.txt", "heuristic_time": 0.015994787216186523, "time": 0.5068354606628418, "joint_mdd_node_expansions": 66}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_125.txt", "heuristic_time": 0.01299595832824707, "time": 0.43186116218566895, "joint_mdd_node_expansions": 49}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_126.txt", "heuristic_time": 0.013995647430419922, "time": 0.4888429641723633, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_127.txt", "heuristic_time": 0.014994382858276367, "time": 0.8037741184234619, "joint_mdd_node_expansions": 68}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_128.txt", "heuristic_time": 0.011996269226074219, "time": 0.38689327239990234, "joint_mdd_node_expansions": 55}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_129.txt", "heuristic_time": 0.010982990264892578, "time": 0.11897826194763184, "joint_mdd_node_expansions": 34}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_13.txt", "heuristic_time": 0.012995243072509766, "time": 0.37277793884277344, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_130.txt", "heuristic_time": 0.013007879257202148, "time": 0.19582533836364746, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_131.txt", "heuristic_time": 0.014013051986694336, "time": 0.46038246154785156, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_132.txt", "heuristic_time": 0.01198267936706543, "time": 0.39164113998413086, "joint_mdd_node_expansions": 52}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_133.txt", "heuristic_time": 0.010984420776367188, "time": 0.42685484886169434, "joint_mdd_node_expansions": 61}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_134.txt", "heuristic_time": 0.013008356094360352, "time": 0.4880833625793457, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_135.txt", "heuristic_time": 0.012996196746826172, "time": 0.6143467426300049, "joint_mdd_node_expansions": 60}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_136.txt", "heuristic_time": 0.01201486587524414, "time": 0.34888601303100586, "joint_mdd_node_expansions": 55}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_137.txt", "heuristic_time": 0.013994932174682617, "time": 0.5108349323272705, "joint_mdd_node_expansions": 59}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_138.txt", "heuristic_time": 0.011996269226074219, "time": 0.590815544128418, "joint_mdd_node_expansions": 68}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_139.txt", "heuristic_time": 0.011995792388916016, "time": 0.2152996063232422, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_14.txt", "heuristic_time": 0.012008428573608398, "time": 0.012008190155029297, "joint_mdd_node_expansions": 14}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_140.txt", "heuristic_time": 0.011986732482910156, "time": 0.2619147300720215, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_141.txt", "heuristic_time": 0.011979341506958008, "time": 0.20093607902526855, "joint_mdd_node_expansions": 63}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_142.txt", "heuristic_time": 0.012995719909667969, "time": 0.35689687728881836, "joint_mdd_node_expansions": 45}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_143.txt", "heuristic_time": 0.011996269226074219, "time": 0.1279764175415039, "joint_mdd_node_expansions": 33}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_144.txt", "heuristic_time": 0.01199030876159668, "time": 0.3257873058319092, "joint_mdd_node_expansions": 47}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_145.txt", "heuristic_time": 0.010983467102050781, "time": 0.4482104778289795, "joint_mdd_node_expansions": 66}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_146.txt", "heuristic_time": 0.01099252700805664, "time": 0.10795164108276367, "joint_mdd_node_expansions": 33}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_147.txt", "heuristic_time": 0.010996103286743164, "time": 0.17894721031188965, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_148.txt", "heuristic_time": 0.011981010437011719, "time": 0.28990626335144043, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_149.txt", "heuristic_time": 0.013994932174682617, "time": 0.2689175605773926, "joint_mdd_node_expansions": 33}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_15.txt", "heuristic_time": 0.011225223541259766, "time": 0.3461625576019287, "joint_mdd_node_expansions": 52}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_150.txt", "heuristic_time": 0.010993003845214844, "time": 0.3461885452270508, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_151.txt", "heuristic_time": 0.01199650764465332, "time": 0.6037623882293701, "joint_mdd_node_expansions": 65}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_152.txt", "heuristic_time": 0.010991096496582031, "time": 0.616715669631958, "joint_mdd_node_expansions": 61}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_153.txt", "heuristic_time": 0.01212310791015625, "time": 0.8248445987701416, "joint_mdd_node_expansions": 84}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_154.txt", "heuristic_time": 0.01299595832824707, "time": 0.0869894027709961, "joint_mdd_node_expansions": 31}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_155.txt", "heuristic_time": 0.012007951736450195, "time": 0.2981269359588623, "joint_mdd_node_expansions": 63}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_156.txt", "heuristic_time": 0.010982990264892578, "time": 0.1540822982788086, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_157.txt", "heuristic_time": 0.011006593704223633, "time": 0.3188614845275879, "joint_mdd_node_expansions": 42}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_158.txt", "heuristic_time": 0.01130056381225586, "time": 0.2649354934692383, "joint_mdd_node_expansions": 56}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_159.txt", "heuristic_time": 0.02293252944946289, "time": 0.1951587200164795, "joint_mdd_node_expansions": 41}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_16.txt", "heuristic_time": 0.013001203536987305, "time": 0.6287229061126709, "joint_mdd_node_expansions": 65}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_160.txt", "heuristic_time": 0.012001514434814453, "time": 0.10404324531555176, "joint_mdd_node_expansions": 35}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_161.txt", "heuristic_time": 0.010998010635375977, "time": 0.312910795211792, "joint_mdd_node_expansions": 56}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_162.txt", "heuristic_time": 0.010993480682373047, "time": 0.17001676559448242, "joint_mdd_node_expansions": 48}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_163.txt", "heuristic_time": 0.011998176574707031, "time": 0.466106653213501, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_164.txt", "heuristic_time": 0.011998653411865234, "time": 0.4949479103088379, "joint_mdd_node_expansions": 64}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_165.txt", "heuristic_time": 0.011996269226074219, "time": 0.973029613494873, "joint_mdd_node_expansions": 70}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_166.txt", "heuristic_time": 0.012009143829345703, "time": 0.2190229892730713, "joint_mdd_node_expansions": 42}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_167.txt", "heuristic_time": 0.011995792388916016, "time": 0.4600038528442383, "joint_mdd_node_expansions": 45}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_168.txt", "heuristic_time": 0.011010169982910156, "time": 0.25890541076660156, "joint_mdd_node_expansions": 48}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_169.txt", "heuristic_time": 0.010993003845214844, "time": 0.24012494087219238, "joint_mdd_node_expansions": 48}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_17.txt", "heuristic_time": 0.010997533798217773, "time": 0.06297945976257324, "joint_mdd_node_expansions": 29}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_170.txt", "heuristic_time": 0.012011528015136719, "time": 0.21891546249389648, "joint_mdd_node_expansions": 47}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_171.txt", "heuristic_time": 0.012003660202026367, "time": 0.4718339443206787, "joint_mdd_node_expansions": 48}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_172.txt", "heuristic_time": 0.013014554977416992, "time": 0.12096166610717773, "joint_mdd_node_expansions": 42}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_173.txt", "heuristic_time": 0.011996746063232422, "time": 0.0999906063079834, "joint_mdd_node_expansions": 35}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_174.txt", "heuristic_time": 0.01198720932006836, "time": 0.17796659469604492, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_175.txt", "heuristic_time": 0.011977434158325195, "time": 0.05498218536376953, "joint_mdd_node_expansions": 23}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_176.txt", "heuristic_time": 0.011995077133178711, "time": 0.3508901596069336, "joint_mdd_node_expansions": 45}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_177.txt", "heuristic_time": 0.011992931365966797, "time": 0.24592089653015137, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_178.txt", "heuristic_time": 0.011979818344116211, "time": 0.29392385482788086, "joint_mdd_node_expansions": 58}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_179.txt", "heuristic_time": 0.012008190155029297, "time": 0.33087825775146484, "joint_mdd_node_expansions": 46}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_18.txt", "heuristic_time": 0.011999368667602539, "time": 0.19794011116027832, "joint_mdd_node_expansions": 34}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_180.txt", "heuristic_time": 0.012991905212402344, "time": 0.3717987537384033, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_181.txt", "heuristic_time": 0.023993492126464844, "time": 0.17609524726867676, "joint_mdd_node_expansions": 44}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_182.txt", "heuristic_time": 0.01202249526977539, "time": 0.20292115211486816, "joint_mdd_node_expansions": 49}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_183.txt", "heuristic_time": 0.012000322341918945, "time": 0.5470676422119141, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_184.txt", "heuristic_time": 0.011996030807495117, "time": 0.27588796615600586, "joint_mdd_node_expansions": 46}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_185.txt", "heuristic_time": 0.012093067169189453, "time": 0.11696672439575195, "joint_mdd_node_expansions": 38}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_186.txt", "heuristic_time": 0.01198267936706543, "time": 0.7680785655975342, "joint_mdd_node_expansions": 56}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_187.txt", "heuristic_time": 0.011991262435913086, "time": 0.23601222038269043, "joint_mdd_node_expansions": 39}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_188.txt", "heuristic_time": 0.01199960708618164, "time": 0.22294092178344727, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_189.txt", "heuristic_time": 0.022989749908447266, "time": 0.6560451984405518, "joint_mdd_node_expansions": 60}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_19.txt", "heuristic_time": 0.012009620666503906, "time": 0.3459928035736084, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_190.txt", "heuristic_time": 0.011013984680175781, "time": 0.4499795436859131, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_191.txt", "heuristic_time": 0.025992631912231445, "time": 0.4390227794647217, "joint_mdd_node_expansions": 56}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_192.txt", "heuristic_time": 0.013000249862670898, "time": 0.03702282905578613, "joint_mdd_node_expansions": 20}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_193.txt", "heuristic_time": 0.01199650764465332, "time": 0.14401602745056152, "joint_mdd_node_expansions": 31}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_194.txt", "heuristic_time": 0.011986255645751953, "time": 0.31897568702697754, "joint_mdd_node_expansions": 49}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_195.txt", "heuristic_time": 0.011995792388916016, "time": 0.2940073013305664, "joint_mdd_node_expansions": 87}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_196.txt", "heuristic_time": 0.01100921630859375, "time": 0.602088451385498, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_197.txt", "heuristic_time": 0.012003660202026367, "time": 0.46986842155456543, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_198.txt", "heuristic_time": 0.012981653213500977, "time": 0.15209650993347168, "joint_mdd_node_expansions": 74, "expanded nodes": 1, "max_open_list_length": 4}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_199.txt", "heuristic_time": 0.011996269226074219, "time": 0.5419588088989258, "joint_mdd_node_expansions": 50}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_2.txt", "heuristic_time": 0.011995315551757812, "time": 0.2539856433868408, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_20.txt", "heuristic_time": 0.011996269226074219, "time": 0.11296319961547852, "joint_mdd_node_expansions": 37}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_21.txt", "heuristic_time": 0.014994382858276367, "time": 0.2890174388885498, "joint_mdd_node_expansions": 52}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_22.txt", "heuristic_time": 0.010993003845214844, "time": 0.1279768943786621, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_23.txt", "heuristic_time": 0.010983943939208984, "time": 0.6391518115997314, "joint_mdd_node_expansions": 55}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_24.txt", "heuristic_time": 0.012009382247924805, "time": 0.3219790458679199, "joint_mdd_node_expansions": 49}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_25.txt", "heuristic_time": 0.025000810623168945, "time": 0.19801926612854004, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_26.txt", "heuristic_time": 0.011979103088378906, "time": 0.19496631622314453, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_27.txt", "heuristic_time": 0.012981891632080078, "time": 0.2740464210510254, "joint_mdd_node_expansions": 52}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_28.txt", "heuristic_time": 0.011049032211303711, "time": 0.1928706169128418, "joint_mdd_node_expansions": 46}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_29.txt", "heuristic_time": 0.012980461120605469, "time": 0.15497684478759766, "joint_mdd_node_expansions": 42}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_3.txt", "heuristic_time": 0.012502193450927734, "time": 0.5189950466156006, "joint_mdd_node_expansions": 58}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_30.txt", "heuristic_time": 0.01298213005065918, "time": 0.1579749584197998, "joint_mdd_node_expansions": 44}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_31.txt", "heuristic_time": 0.012002706527709961, "time": 0.3139975070953369, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_32.txt", "heuristic_time": 0.011983156204223633, "time": 0.21493148803710938, "joint_mdd_node_expansions": 44}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_33.txt", "heuristic_time": 0.011980533599853516, "time": 0.3590977191925049, "joint_mdd_node_expansions": 55}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_34.txt", "heuristic_time": 0.011992692947387695, "time": 0.321824312210083, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_35.txt", "heuristic_time": 0.011994600296020508, "time": 0.21592926979064941, "joint_mdd_node_expansions": 46}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_36.txt", "heuristic_time": 0.012994527816772461, "time": 0.05924630165100098, "joint_mdd_node_expansions": 27}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_37.txt", "heuristic_time": 0.010996818542480469, "time": 0.5488221645355225, "joint_mdd_node_expansions": 71}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_38.txt", "heuristic_time": 0.011996269226074219, "time": 0.06423187255859375, "joint_mdd_node_expansions": 28}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_39.txt", "heuristic_time": 0.010991811752319336, "time": 0.3379700183868408, "joint_mdd_node_expansions": 61}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_4.txt", "heuristic_time": 0.011037111282348633, "time": 0.3159668445587158, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_40.txt", "heuristic_time": 0.011013269424438477, "time": 0.2740144729614258, "joint_mdd_node_expansions": 49}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_41.txt", "heuristic_time": 0.010988235473632812, "time": 0.15796732902526855, "joint_mdd_node_expansions": 37}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_42.txt", "heuristic_time": 0.012007951736450195, "time": 0.19698166847229004, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_43.txt", "heuristic_time": 0.012982845306396484, "time": 0.18309354782104492, "joint_mdd_node_expansions": 53}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_44.txt", "heuristic_time": 0.011995792388916016, "time": 0.07097744941711426, "joint_mdd_node_expansions": 35}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_45.txt", "heuristic_time": 0.010995864868164062, "time": 0.4470388889312744, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_46.txt", "heuristic_time": 0.011983156204223633, "time": 0.625206708908081, "joint_mdd_node_expansions": 148}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_47.txt", "heuristic_time": 0.011996030807495117, "time": 0.44096875190734863, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_48.txt", "heuristic_time": 0.012997150421142578, "time": 0.4488534927368164, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_49.txt", "heuristic_time": 0.01200103759765625, "time": 0.25490355491638184, "joint_mdd_node_expansions": 44}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_5.txt", "heuristic_time": 0.011996030807495117, "time": 0.3769106864929199, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_50.txt", "heuristic_time": 0.01299595832824707, "time": 0.07297682762145996, "joint_mdd_node_expansions": 32}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_51.txt", "heuristic_time": 0.011995792388916016, "time": 0.8439779281616211, "joint_mdd_node_expansions": 59}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_52.txt", "heuristic_time": 0.011977434158325195, "time": 0.3469054698944092, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_53.txt", "heuristic_time": 0.011992931365966797, "time": 0.16813087463378906, "joint_mdd_node_expansions": 46}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_54.txt", "heuristic_time": 0.012996673583984375, "time": 0.2359602451324463, "joint_mdd_node_expansions": 52}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_55.txt", "heuristic_time": 0.011970758438110352, "time": 0.14696502685546875, "joint_mdd_node_expansions": 36}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_56.txt", "heuristic_time": 0.010993480682373047, "time": 0.2659435272216797, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_57.txt", "heuristic_time": 0.01200103759765625, "time": 0.1969738006591797, "joint_mdd_node_expansions": 50}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_58.txt", "heuristic_time": 0.01297307014465332, "time": 0.06499147415161133, "joint_mdd_node_expansions": 25}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_59.txt", "heuristic_time": 0.012000799179077148, "time": 0.1881723403930664, "joint_mdd_node_expansions": 44}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_6.txt", "heuristic_time": 0.012001276016235352, "time": 0.11495018005371094, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_60.txt", "heuristic_time": 0.0120086669921875, "time": 0.5970618724822998, "joint_mdd_node_expansions": 66}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_61.txt", "heuristic_time": 0.010996580123901367, "time": 0.35698890686035156, "joint_mdd_node_expansions": 120}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_62.txt", "heuristic_time": 0.021993160247802734, "time": 0.1379554271697998, "joint_mdd_node_expansions": 32}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_63.txt", "heuristic_time": 0.028007984161376953, "time": 0.39832234382629395, "joint_mdd_node_expansions": 50}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_64.txt", "heuristic_time": 0.013001203536987305, "time": 0.38087940216064453, "joint_mdd_node_expansions": 52}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_65.txt", "heuristic_time": 0.011007070541381836, "time": 0.5418405532836914, "joint_mdd_node_expansions": 61}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_66.txt", "heuristic_time": 0.010991811752319336, "time": 0.07994580268859863, "joint_mdd_node_expansions": 32}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_67.txt", "heuristic_time": 0.010993480682373047, "time": 0.4268805980682373, "joint_mdd_node_expansions": 50}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_68.txt", "heuristic_time": 0.011993169784545898, "time": 0.2521858215332031, "joint_mdd_node_expansions": 47}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_69.txt", "heuristic_time": 0.01100468635559082, "time": 0.10295844078063965, "joint_mdd_node_expansions": 45}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_7.txt", "heuristic_time": 0.011033296585083008, "time": 0.5180478096008301, "joint_mdd_node_expansions": 60}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_70.txt", "heuristic_time": 0.011993408203125, "time": 0.12496280670166016, "joint_mdd_node_expansions": 32}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_71.txt", "heuristic_time": 0.010978937149047852, "time": 0.11201739311218262, "joint_mdd_node_expansions": 31}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_72.txt", "heuristic_time": 0.010996103286743164, "time": 0.24297356605529785, "joint_mdd_node_expansions": 39}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_73.txt", "heuristic_time": 0.023987770080566406, "time": 0.6010234355926514, "joint_mdd_node_expansions": 68}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_74.txt", "heuristic_time": 0.011998414993286133, "time": 0.05898094177246094, "joint_mdd_node_expansions": 34}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_75.txt", "heuristic_time": 0.012978315353393555, "time": 0.5069735050201416, "joint_mdd_node_expansions": 57}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_76.txt", "heuristic_time": 0.011986255645751953, "time": 0.4779229164123535, "joint_mdd_node_expansions": 71}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_77.txt", "heuristic_time": 0.024996042251586914, "time": 0.056986331939697266, "joint_mdd_node_expansions": 24}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_78.txt", "heuristic_time": 0.01198887825012207, "time": 0.4872000217437744, "joint_mdd_node_expansions": 62}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_79.txt", "heuristic_time": 0.013995170593261719, "time": 0.25107741355895996, "joint_mdd_node_expansions": 41}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_8.txt", "heuristic_time": 0.011995553970336914, "time": 0.17794322967529297, "joint_mdd_node_expansions": 36}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_80.txt", "heuristic_time": 0.014007329940795898, "time": 0.6583449840545654, "joint_mdd_node_expansions": 52}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_81.txt", "heuristic_time": 0.01199650764465332, "time": 0.6466836929321289, "joint_mdd_node_expansions": 60}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_82.txt", "heuristic_time": 0.011996984481811523, "time": 0.3499577045440674, "joint_mdd_node_expansions": 56}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_83.txt", "heuristic_time": 0.011995553970336914, "time": 0.3267233371734619, "joint_mdd_node_expansions": 43}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_84.txt", "heuristic_time": 0.012009620666503906, "time": 0.08400154113769531, "joint_mdd_node_expansions": 31}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_85.txt", "heuristic_time": 0.01298379898071289, "time": 0.21609735488891602, "joint_mdd_node_expansions": 40}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_86.txt", "heuristic_time": 0.011996269226074219, "time": 0.03106093406677246, "joint_mdd_node_expansions": 20}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_87.txt", "heuristic_time": 0.012014389038085938, "time": 0.08797407150268555, "joint_mdd_node_expansions": 23}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_88.txt", "heuristic_time": 0.012995243072509766, "time": 0.42305445671081543, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_89.txt", "heuristic_time": 0.012016057968139648, "time": 0.3443608283996582, "joint_mdd_node_expansions": 61}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_9.txt", "heuristic_time": 0.011009454727172852, "time": 0.2619040012359619, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_90.txt", "heuristic_time": 0.012996435165405273, "time": 0.3029012680053711, "joint_mdd_node_expansions": 55}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_91.txt", "heuristic_time": 0.011998414993286133, "time": 0.20483040809631348, "joint_mdd_node_expansions": 39}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_92.txt", "heuristic_time": 0.01398921012878418, "time": 0.3848755359649658, "joint_mdd_node_expansions": 50}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_93.txt", "heuristic_time": 0.01199483871459961, "time": 0.37110209465026855, "joint_mdd_node_expansions": 54}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_94.txt", "heuristic_time": 0.011002063751220703, "time": 0.2569293975830078, "joint_mdd_node_expansions": 51}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_95.txt", "heuristic_time": 0.011995553970336914, "time": 0.42972326278686523, "joint_mdd_node_expansions": 68}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_96.txt", "heuristic_time": 0.0119781494140625, "time": 0.09838485717773438, "joint_mdd_node_expansions": 34}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_97.txt", "heuristic_time": 0.012983322143554688, "time": 0.7042770385742188, "joint_mdd_node_expansions": 60}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_98.txt", "heuristic_time": 0.014014244079589844, "time": 0.2554001808166504, "joint_mdd_node_expansions": 42}
+{"algorithm": "ICTS", "map_name": "open_maps\\open50x50_3_99.txt", "heuristic_time": 0.013994932174682617, "time": 0.08797121047973633, "joint_mdd_node_expansions": 29}

@@ -7,6 +7,7 @@ class PerformanceTracker(object):
         self.stats = self.create_stats()
         self.stats['algorithm'] = algorithm_name
         self.res_file_name = "no_name"
+        self.lists = dict()
 
     def create_stats(self):
         return dict()
@@ -30,16 +31,22 @@ class PerformanceTracker(object):
     def update_time(self, stat_name, new_time):
         self.stats[stat_name] = self.stats[stat_name] + new_time
 
-    def count(self, statName, func):
-        if self.stats_contain_stat(statName):
-            self.increment_stat(statName, 1)
+    def count(self, stat_name, func):
+        if self.stats_contain_stat(stat_name):
+            self.increment_stat(stat_name, 1)
         else:
-            self.add_stat(statName, 1)
+            self.add_stat(stat_name, 1)
 
         return func()
 
-    def stats_contain_stat(self, statName):
-        return statName in self.stats
+    def record_max(self, stat_name, list_length):
+        if self.stats_contain_stat(stat_name):
+            self.stats[stat_name] = max(self.stats[stat_name], list_length)
+        else:
+            self.stats[stat_name] = max(0, list_length)
+
+    def stats_contain_stat(self, stat_name):
+        return stat_name in self.stats
 
     def increment_stat(self, stat_name, amount_to_increment):
         self.stats[stat_name] = self.stats[stat_name] + amount_to_increment
@@ -77,3 +84,10 @@ class PerformanceTracker(object):
 
     def get_results_file_name(self):
         return self.res_file_name
+
+    def add_list_to_record(self, list_name, list_reference):
+        self.lists[list_name] = list_reference
+
+    def update_all_list_lengths(self):
+        for key in self.lists:
+            self.add_stat(key, len(self.lists[key]))
