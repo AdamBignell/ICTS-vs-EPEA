@@ -19,9 +19,6 @@ It is a requirement you have python (at least 3.7 or higher), pip, and git alrea
 ## Setting up the environment
 Clone the repo using either of the commands
 
-SSH:
-```git clone git@github.com:AdamBignell/ICTS-vs-EPEA.git```
-
 HTTPS:
 ```git clone https://github.com/AdamBignell/ICTS-vs-EPEA.git```
 
@@ -77,6 +74,8 @@ The probability parameter sets the probability an open space becomes an obstacle
 The adjacent probability parameter is added to the probability parameter for each adjacent obstacle. This prevents having too many adjacent obstacles
 
 ## Running the map instances
+Note: if the below commands do not work, try use the same commands without the tick character (') around the --instance argument. Powershell and Git Bash terminals worked fine but the command prompt on windows interprets the ' character differently.
+
 The results of these commands will be saved to a file in a 'results' folder.
 This command will run all open map instances that are 12 by 12 and write the results to
 the file 'results/open12x12_3_ICTS_results.txt'.
