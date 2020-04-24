@@ -194,7 +194,7 @@ def test_tracker_can_track_the_max_length_of_a_list():
     elements_to_remove = 3
 
     for i in range(size_of_list):
-        lambda: test_list.append(0)
+        test_list.append(0)
         tracker.record_max(list_name, len(test_list))
 
     for j in range(elements_to_remove):
