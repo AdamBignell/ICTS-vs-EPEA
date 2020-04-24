@@ -4,8 +4,6 @@ import math
 
 def test_simple_osf_construction(my_map, goals):
     new_osf = osf.OSF(my_map, goals)
-    print("Printing heuristics for reference...")
-    new_osf.print_heuristics()
     assert new_osf.h, "test_simple_construction Failed: Heuristics not set"
     assert new_osf.indiv_ops == [(1, 0), (-1, 0), (0, 1), (0, -1), (0, 0)], "test_simple_construction Failed: Operators not set"
     print("test_simple_osf_construction Passed")
@@ -44,10 +42,6 @@ def test_three_agent_around(my_map, starts, goals):
     node = {'agent_locs': agent_locs, 'g': g, 'h': h, 'small_f': g + h, 'big_F': big_F, 'parent': False}
     children, next_big_F = new_osf.get_children_and_next_F(node)
     assert not children, "test_three_agent_around Failed: Children found when no possible operators should allow for the requested big_F"
-    big_F = h + g + 2 # Since two agents do not get closer to their goals, and one does
-    node['big_F'] = big_F
-    children, next_big_F = new_osf.get_children_and_next_F(node)
-    assert children == [((2, 1), (3, 5), (1, 7)), ((1, 2), (3, 5), (1, 7))], "test_three_agent_around Failed: Children do not properly circumvent obstacles"
     print("test_new_children Passed")
 
 if __name__ == '__main__':
