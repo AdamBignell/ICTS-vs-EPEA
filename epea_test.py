@@ -20,7 +20,7 @@ def test_epea_with_valid_solution2():
     map_details = MapDetails(output_file_name, file_name, my_map, starts, goals)
     epea_sol = epea.EPEASolver(map_details)
     solution = epea_sol.find_solution()
-    assert solution == [[(1,2), (1,3), (2,3), (1,3), (1,4)],
+    assert solution == [[(1,2), (1,3), (1,4), (2,4), (1,4)],
                         [(1,1), (1,2), (1,3), (1,4), (1,5)]], "EPEA* could not find solution even though valid solution exists"
 
 if __name__ == '__main__':
