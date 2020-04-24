@@ -68,8 +68,8 @@ For Open Maps:
 
 ```python open_map_generator.py --dim 50 50 --agents 3 --startnum 1 --nummaps 10 --probability 0.42 --adjacentprobability -0.08```
 
-The probability parameter sets the probability an open space becomes an obstacle
-The adjacent probability parameter is added to the probability parameter for each adjacent obstacle. This prevents having too many adjacent obstacles
+The probability parameter sets the probability an open space becomes an obstacle.
+The adjacent probability parameter is added to the probability parameter for each adjacent obstacle. This prevents having too many adjacent obstacles.
 
 For Mazes:
 
@@ -84,7 +84,13 @@ The results of these commands will be saved to a file in a 'results' folder.
 This command will run all open map instances that are 12 by 12 and write the results to
 the file 'results/open12x12_3_ICTS_results.txt'.
 
+Testing ICTS:
+
 ```python run_experiments.py --batch --instance 'open_maps\open12x12_3_*' --solver ICTS```
+
+Testing EPEA*:
+
+```python run_experiments.py --batch --instance 'open_maps\open12x12_3_*' --solver EPEA```
 
 Here is a sample of the results:
 
@@ -97,5 +103,11 @@ Here is a sample of the results:
 
 To run a single instance with an animation showing the solution, use the following command:
 
+For ICTS:
+
 ```python run_experiments.py --instance 'open_maps\open12x12_3_0.txt' --solver ICTS```
+
+For EPEA*:
+
+```python run_experiments.py --instance 'open_maps\open12x12_3_0.txt' --solver EPEA```
 

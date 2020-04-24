@@ -2,7 +2,7 @@ import epea
 import map_utils
 from map_utils import MapDetails
 
-output_file_name = 'results/epea_test_output'
+output_file_name = 'results/epea_test_output.txt'
 
 def test_epea_with_valid_solution():
     file_name = "instances/exp2_1.txt"
