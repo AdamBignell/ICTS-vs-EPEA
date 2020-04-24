@@ -3,7 +3,7 @@ from ict import IncreasingCostTree, TreeNode
 def test_constructor_adds_root_to_open_list():
     ict = IncreasingCostTree([], [], [], (10, 10, 10))
     open_list = ict.get_open_list()
-    root = open_list.pop(0)
+    root = open_list.pop()
     assert root is not None, "Cannot construct ict"
 
 def test_getting_node_to_expand():
