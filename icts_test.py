@@ -5,11 +5,11 @@ from icts import ICTSSolver
 
 file_name = "instances/exp2_1.txt"
 my_map, starts, goals = map_utils.import_mapf_instance(file_name)
-map_details1 = MapDetails("test_file.txt", file_name, my_map, starts, goals)
+map_details1 = MapDetails("results/icts_test.txt", file_name, my_map, starts, goals)
 
 no_solutions = "instances/no_solution.txt"
 my_map, starts, goals = map_utils.import_mapf_instance(no_solutions)
-map_details2 = MapDetails("test_file.txt", no_solutions, my_map, starts, goals)
+map_details2 = MapDetails("results/icts_test.txt", no_solutions, my_map, starts, goals)
 
 def test_find_most_optimal_paths():
     icts = ICTSSolver(map_details1)
