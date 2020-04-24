@@ -75,7 +75,7 @@ For Mazes:
 
 ```python maze_map_generator.py --dim 50 50 --agents 3 --startnum 1 --nummaps 10 --probability 0.75```
 
-The probability paramter sets the probability of opening a (non-cycle creating) cell during BFS from some seed location. 0.75 will in 3 directions on average. 0.50 will branch in 2 on average.
+The probability paramter sets the probability of opening a (non-cycle creating) cell during BFS from some seed location. 0.75 will branch in 3 directions on average. 0.50 will branch in 2 directions on average.
 
 ## Running the map instances
 Note: if the below commands do not work, try use the same commands without the tick character (') around the --instance argument. Powershell and Git Bash terminals worked fine but the command prompt on windows interprets the ' character differently.
