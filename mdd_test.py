@@ -143,3 +143,5 @@ if __name__ == '__main__':
 
     my_impossible_map, starts, goals = util.import_mapf_instance("instances/no_solution.txt")
     test_find_no_solution_where_none_exists(my_impossible_map, starts, goals)
+
+    print("All Tests Passed!")

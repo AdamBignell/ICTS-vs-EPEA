@@ -26,4 +26,4 @@ def test_epea_with_valid_solution2():
 if __name__ == '__main__':
     print(" === Running epea* Tests === ")
     test_epea_with_valid_solution2()
-    print("ALL TEST PASSED")
+    print("\nALL TEST PASSED")
