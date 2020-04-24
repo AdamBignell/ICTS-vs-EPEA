@@ -63,15 +63,19 @@ Map instances have already been generated for you and are provided in the 'mazes
 If you would like to generate your own maps, you can run the following commands
 
 Note: Running these commands will overwrite the maps provided.
-To make new maps, create a new folder and change 'open_maps' in the output parameter to the new directory name.
-This only works for open_map_generator.py.
 
-```python open_map_generator.py --output open_maps/test.txt --dim 50 50 --agents 3 --startnum 1 --nummaps 10 --probability 0.42 --adjacentprobability -0.08```
+For Open Maps:
 
-```python generate_mazes.py```
+```python open_map_generator.py --dim 50 50 --agents 3 --startnum 1 --nummaps 10 --probability 0.42 --adjacentprobability -0.08```
 
 The probability parameter sets the probability an open space becomes an obstacle
 The adjacent probability parameter is added to the probability parameter for each adjacent obstacle. This prevents having too many adjacent obstacles
+
+For Mazes:
+
+```python maze_map_generator.py --dim 50 50 --agents 3 --startnum 1 --nummaps 10 --probability 0.75```
+
+The probability paramter sets the probability of opening a (non-cycle creating) cell during BFS from some seed location. 0.75 will in 3 directions on average. 0.50 will branch in 2 on average.
 
 ## Running the map instances
 Note: if the below commands do not work, try use the same commands without the tick character (') around the --instance argument. Powershell and Git Bash terminals worked fine but the command prompt on windows interprets the ' character differently.

@@ -2,6 +2,7 @@ import argparse
 import copy
 from random import random, randrange, seed
 from datetime import datetime as dt
+import os
 
 OPEN_SPACE = 0
 OBSTACLE = 1
@@ -190,8 +191,6 @@ def location_is_valid(location, map_instance):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Create a randomly generated open map')
-    parser.add_argument('--output', type=str, default=None,
-                        help='The name of the output file')
     parser.add_argument('--dim', type=int, nargs='+',
                         help="The dimension of the map")
     parser.add_argument('--agents', type=int,
