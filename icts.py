@@ -34,8 +34,13 @@ class ICTSSolver(object):
         self.upper_bound = self.calculate_upper_bound_cost()
 
     def calculate_heuristics(self):
-        for goal in self.goals:
-            self.heuristics.append(self.true_distance_bfs(self.my_map, goal))
+        h = [dict() for g in range(len(self.goals))]
+        for x, row in enumerate(self.my_map):
+            for y, col in enumerate(row):
+                if not col:
+                    for g, goal in enumerate(self.goals):
+                        h[g][(x,y)] = self.manhattan_distance((x,y), goal)
+        self.heuristics = h
 
     def true_distance_bfs(self, my_map, goal):
         h = dict()
@@ -56,6 +61,9 @@ class ICTSSolver(object):
             if children:
                 q.extend(children)
         return h
+
+    def manhattan_distance(self, my_loc, goal):
+        return abs(my_loc[0] - goal[0]) + abs(my_loc[1] - goal[1])
 
     def find_solution(self):
         """ Finds paths for all agents from their start locations to their goal locations
