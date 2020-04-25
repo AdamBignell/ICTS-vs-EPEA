@@ -7,11 +7,7 @@ In this project we implement and test ICTS and EPEA*, and compare the algorithms
 
 Our solution is built on top of the skeleton code provided in the assignment *Model AI Assignments 2020: A Project on Multi-Agent Path Finding (MAPF)* by Wolfgang Hönig, Jiaoyang Li, and Sven Koenig of the University of Southern California.
 
-[Project Proposal Link](https://www.overleaf.com/6315664961tjvgfbzpqpcb)
-
-[Final Report Link](https://www.overleaf.com/4142651994vxvckbxqfnwv)
-
-#### PREREQUISITE
+#### PREREQUISITES
 
 Note: I am running these commands on a windows machine using powershell. If you are not, please use the appropriate slash (\ or /) for your terminal.
 It is a requirement you have python (at least 3.7 or higher), pip, and git already installed on your machine
